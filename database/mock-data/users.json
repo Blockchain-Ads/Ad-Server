@@ -1,0 +1,50 @@
+[
+  {
+    "email": "dev@dev.dev",
+    "password": "dev@dev.dev",
+    "isConfirmed": true,
+    "isAdmin": false,
+    "isPublisher": true,
+    "isAdvertiser": true
+  },
+  {
+    "email": "postman@dev.dev",
+    "password": "postman@dev.dev",
+    "isConfirmed": true,
+    "isAdmin": true,
+    "isPublisher": true,
+    "isAdvertiser": true
+  },
+  {
+    "email": "pub@dev.dev",
+    "password": "pub@dev.dev",
+    "isConfirmed": true,
+    "isAdmin": false,
+    "isPublisher": true,
+    "isAdvertiser": true
+  },
+  {
+    "email": "adv@dev.dev",
+    "password": "adv@dev.dev",
+    "isConfirmed": true,
+    "isAdmin": false,
+    "isPublisher": true,
+    "isAdvertiser": true
+  },
+  {
+    "email": "test@dev.dev",
+    "password": "test@dev.dev",
+    "isConfirmed": true,
+    "isAdmin": false,
+    "isPublisher": true,
+    "isAdvertiser": true
+  },
+  {
+    "email": "test2@dev.dev",
+    "password": "test@dev.dev",
+    "isConfirmed": true,
+    "isAdmin": false,
+    "isPublisher": true,
+    "isAdvertiser": true
+  }
+]

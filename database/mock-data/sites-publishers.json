@@ -1,0 +1,76 @@
+[
+  {
+    "email": "pub@dev.dev",
+    "sites": [
+      {
+        "name": "tea site",
+        "status": 2,
+        "zones": {
+          "Leaderboard": {
+            "uuid": "950A658CACB246F8A142EFB722A2ACD1",
+            "size": "728x90",
+            "label": "leaderboard"
+          },
+          "Wide Skycraper": {
+            "uuid": "950A658CACB246F8A142EFB722A2ACD2",
+            "size": "160x600",
+            "label": "wide-skyscraper"
+          },
+          "Large Rectangle": {
+            "uuid": "950A658CACB246F8A142EFB722A2ACD3",
+            "size": "336x280",
+            "label": "large-rectangle"
+          },
+          "Half Page": {
+            "uuid": "950A658CACB246F8A142EFB722A2ACD4",
+            "size": "300x600",
+            "label": "half-page"
+          },
+          "Large Mobile": {
+            "uuid": "950A658CACB246F8A142EFB722A2ACD5",
+            "size": "320x100",
+            "label": "large-mobile-banner"
+          },
+          "Leaderboard 2": {
+            "uuid": "950A658CACB246F8A142EFB722A2ACD6",
+            "size": "728x90",
+            "label": "leaderboard"
+          },
+          "Leaderboard 3": {
+            "uuid": "950A658CACB246F8A142EFB722A2ACD7",
+            "size": "728x90",
+            "label": "leaderboard"
+          },
+          "Large Rectangle 2": {
+            "uuid": "950A658CACB246F8A142EFB722A2ACD8",
+            "size": "336x280",
+            "label": "large-rectangle"
+          },
+          "Large Mobile 2": {
+            "uuid": "950A658CACB246F8A142EFB722A2ACD9",
+            "size": "320x100",
+            "label": "large-mobile-banner"
+          },
+          "Large Mobile 3": {
+            "uuid": "950A658CACB246F8A142EFB722A2ACDA",
+            "size": "320x100",
+            "label": "large-mobile-banner"
+          },
+          "Wide Skyscraper 2": {
+            "uuid": "950A658CACB246F8A142EFB722A2ACDB",
+            "size": "160x600",
+            "label": "wide-skyscraper"
+          }
+        }
+      },
+      {
+        "name": "travel site",
+        "status": 2
+      },
+      {
+        "name": "veterinarian site",
+        "status": 2
+      }
+    ]
+  }
+]
