@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,18 +21,18 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Repository\Publisher;
+namespace Blockchain-Ads\Adserver\Repository\Publisher;
 
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Models\Site;
-use Adshares\Adserver\Utilities\DateUtils;
-use Adshares\Publisher\Dto\Result\ChartResult;
-use Adshares\Publisher\Dto\Result\Stats\Calculation;
-use Adshares\Publisher\Dto\Result\Stats\DataCollection;
-use Adshares\Publisher\Dto\Result\Stats\DataEntry;
-use Adshares\Publisher\Dto\Result\Stats\ReportCalculation;
-use Adshares\Publisher\Dto\Result\Stats\Total;
-use Adshares\Publisher\Repository\StatsRepository;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Models\Site;
+use Blockchain-Ads\Adserver\Utilities\DateUtils;
+use Blockchain-Ads\Publisher\Dto\Result\ChartResult;
+use Blockchain-Ads\Publisher\Dto\Result\Stats\Calculation;
+use Blockchain-Ads\Publisher\Dto\Result\Stats\DataCollection;
+use Blockchain-Ads\Publisher\Dto\Result\Stats\DataEntry;
+use Blockchain-Ads\Publisher\Dto\Result\Stats\ReportCalculation;
+use Blockchain-Ads\Publisher\Dto\Result\Stats\Total;
+use Blockchain-Ads\Publisher\Repository\StatsRepository;
 use DateTime;
 use DateTimeInterface;
 use DateTimeZone;

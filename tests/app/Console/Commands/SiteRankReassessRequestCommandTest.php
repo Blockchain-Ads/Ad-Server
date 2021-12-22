@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Console\Commands;
+namespace Blockchain-Ads\Adserver\Tests\Console\Commands;
 
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Models\Site;
-use Adshares\Adserver\Tests\Console\ConsoleTestCase;
-use Adshares\Common\Application\Service\AdUser;
-use Adshares\Common\Exception\RuntimeException;
-use Adshares\Supply\Application\Service\Exception\UnexpectedClientResponseException;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Models\Site;
+use Blockchain-Ads\Adserver\Tests\Console\ConsoleTestCase;
+use Blockchain-Ads\Common\Application\Service\AdUser;
+use Blockchain-Ads\Common\Exception\RuntimeException;
+use Blockchain-Ads\Supply\Application\Service\Exception\UnexpectedClientResponseException;
 use DateTimeImmutable;
 use Exception;
 use Illuminate\Support\Facades\DB;

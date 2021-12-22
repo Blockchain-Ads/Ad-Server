@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018 Adshares sp. z o.o.
+ * Copyright (c) 2018 Blockchain-Ads sp. z o.o.
  *
  * This file is part of AdServer
  *
@@ -18,9 +18,9 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-use Adshares\Adserver\Http\Utils;
-use Adshares\Adserver\Models\EventLog;
-use Adshares\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Adserver\Http\Utils;
+use Blockchain-Ads\Adserver\Models\EventLog;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
 use Faker\Generator as Faker;
 
 $factory->define(

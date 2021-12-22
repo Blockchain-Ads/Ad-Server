@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,13 +21,13 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Controllers;
+namespace Blockchain-Ads\Adserver\Http\Controllers;
 
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Http\Response\InfoResponse;
-use Adshares\Adserver\Models\PanelPlaceholder;
-use Adshares\Adserver\Repository\Common\MySqlServerStatisticsRepository;
-use Adshares\Adserver\Repository\Common\TotalFeeReader;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Http\Response\InfoResponse;
+use Blockchain-Ads\Adserver\Models\PanelPlaceholder;
+use Blockchain-Ads\Adserver\Repository\Common\MySqlServerStatisticsRepository;
+use Blockchain-Ads\Adserver\Repository\Common\TotalFeeReader;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;

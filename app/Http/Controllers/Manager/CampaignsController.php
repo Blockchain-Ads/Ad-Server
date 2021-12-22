@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,32 +21,32 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Http\Controllers\Manager;
 
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Http\Requests\Campaign\TargetingProcessor;
-use Adshares\Adserver\Http\Utils;
-use Adshares\Adserver\Jobs\ClassifyCampaign;
-use Adshares\Adserver\Mail\Crm\CampaignCreated;
-use Adshares\Adserver\Models\Banner;
-use Adshares\Adserver\Models\BannerClassification;
-use Adshares\Adserver\Models\BidStrategy;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\ConfigException;
-use Adshares\Adserver\Models\ConversionDefinition;
-use Adshares\Adserver\Models\Notification;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Repository\CampaignRepository;
-use Adshares\Adserver\Repository\Common\ClassifierExternalRepository;
-use Adshares\Adserver\Services\Demand\BannerClassificationCreator;
-use Adshares\Adserver\Uploader\Factory;
-use Adshares\Adserver\Uploader\Image\ImageUploader;
-use Adshares\Adserver\Uploader\UploadedFile;
-use Adshares\Adserver\Uploader\Zip\ZipUploader;
-use Adshares\Common\Application\Service\ConfigurationRepository;
-use Adshares\Common\Application\Service\Exception\ExchangeRateNotAvailableException;
-use Adshares\Common\Infrastructure\Service\ExchangeRateReader;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Http\Requests\Campaign\TargetingProcessor;
+use Blockchain-Ads\Adserver\Http\Utils;
+use Blockchain-Ads\Adserver\Jobs\ClassifyCampaign;
+use Blockchain-Ads\Adserver\Mail\Crm\CampaignCreated;
+use Blockchain-Ads\Adserver\Models\Banner;
+use Blockchain-Ads\Adserver\Models\BannerClassification;
+use Blockchain-Ads\Adserver\Models\BidStrategy;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\ConfigException;
+use Blockchain-Ads\Adserver\Models\ConversionDefinition;
+use Blockchain-Ads\Adserver\Models\Notification;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Repository\CampaignRepository;
+use Blockchain-Ads\Adserver\Repository\Common\ClassifierExternalRepository;
+use Blockchain-Ads\Adserver\Services\Demand\BannerClassificationCreator;
+use Blockchain-Ads\Adserver\Uploader\Factory;
+use Blockchain-Ads\Adserver\Uploader\Image\ImageUploader;
+use Blockchain-Ads\Adserver\Uploader\UploadedFile;
+use Blockchain-Ads\Adserver\Uploader\Zip\ZipUploader;
+use Blockchain-Ads\Common\Application\Service\ConfigurationRepository;
+use Blockchain-Ads\Common\Application\Service\Exception\ExchangeRateNotAvailableException;
+use Blockchain-Ads\Common\Infrastructure\Service\ExchangeRateReader;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;

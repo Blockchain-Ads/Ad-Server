@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,18 +19,18 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Test\Supply\Domain\Model;
+namespace Blockchain-Ads\Test\Supply\Domain\Model;
 
-use Adshares\Common\Domain\ValueObject\Uuid;
-use Adshares\Supply\Domain\Model\Banner;
-use Adshares\Supply\Domain\Model\Campaign;
-use Adshares\Supply\Domain\ValueObject\BannerUrl;
-use Adshares\Supply\Domain\ValueObject\Budget;
-use Adshares\Supply\Domain\ValueObject\CampaignDate;
-use Adshares\Supply\Domain\ValueObject\Classification;
-use Adshares\Supply\Domain\ValueObject\Exception\UnsupportedBannerTypeException;
-use Adshares\Supply\Domain\ValueObject\SourceCampaign;
-use Adshares\Supply\Domain\ValueObject\Status;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Supply\Domain\Model\Banner;
+use Blockchain-Ads\Supply\Domain\Model\Campaign;
+use Blockchain-Ads\Supply\Domain\ValueObject\BannerUrl;
+use Blockchain-Ads\Supply\Domain\ValueObject\Budget;
+use Blockchain-Ads\Supply\Domain\ValueObject\CampaignDate;
+use Blockchain-Ads\Supply\Domain\ValueObject\Classification;
+use Blockchain-Ads\Supply\Domain\ValueObject\Exception\UnsupportedBannerTypeException;
+use Blockchain-Ads\Supply\Domain\ValueObject\SourceCampaign;
+use Blockchain-Ads\Supply\Domain\ValueObject\Status;
 use DateTime;
 use Exception;
 use PHPUnit\Framework\TestCase;

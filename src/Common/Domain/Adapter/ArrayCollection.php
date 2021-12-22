@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Common\Domain\Adapter;
+namespace Blockchain-Ads\Common\Domain\Adapter;
 
-use Adshares\Common\Domain\Collection;
+use Blockchain-Ads\Common\Domain\Collection;
 use Doctrine\Common\Collections\ArrayCollection as DoctrineArrayCollection;
 
 class ArrayCollection extends DoctrineArrayCollection implements Collection

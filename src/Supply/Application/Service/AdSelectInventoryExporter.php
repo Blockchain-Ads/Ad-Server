@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,12 +19,12 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Supply\Application\Service;
+namespace Blockchain-Ads\Supply\Application\Service;
 
-use Adshares\Supply\Application\Service\Exception\UnexpectedClientResponseException;
-use Adshares\Supply\Domain\Model\Campaign;
-use Adshares\Supply\Domain\Model\CampaignCollection;
-use Adshares\Supply\Domain\Repository\CampaignRepository;
+use Blockchain-Ads\Supply\Application\Service\Exception\UnexpectedClientResponseException;
+use Blockchain-Ads\Supply\Domain\Model\Campaign;
+use Blockchain-Ads\Supply\Domain\Model\CampaignCollection;
+use Blockchain-Ads\Supply\Domain\Repository\CampaignRepository;
 use Psr\Log\LoggerInterface;
 
 class AdSelectInventoryExporter

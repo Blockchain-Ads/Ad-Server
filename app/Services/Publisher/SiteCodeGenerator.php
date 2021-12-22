@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,13 +21,13 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Services\Publisher;
+namespace Blockchain-Ads\Adserver\Services\Publisher;
 
-use Adshares\Adserver\Models\Site;
-use Adshares\Adserver\Models\Zone;
-use Adshares\Adserver\Utilities\CssUtils;
-use Adshares\Common\Domain\ValueObject\SecureUrl;
-use Adshares\Supply\Domain\ValueObject\Size;
+use Blockchain-Ads\Adserver\Models\Site;
+use Blockchain-Ads\Adserver\Models\Zone;
+use Blockchain-Ads\Adserver\Utilities\CssUtils;
+use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;
+use Blockchain-Ads\Supply\Domain\ValueObject\Size;
 
 class SiteCodeGenerator
 {

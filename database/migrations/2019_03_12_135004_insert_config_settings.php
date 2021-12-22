@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018-2019 Adshares sp. z o.o.
+ * Copyright (c) 2018-2019 Blockchain-Ads sp. z o.o.
  *
  * This file is part of AdServer
  *
@@ -18,7 +18,7 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-use Adshares\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\Config;
 use Illuminate\Database\Migrations\Migration;
 
 class InsertConfigSettings extends Migration
@@ -33,14 +33,14 @@ class InsertConfigSettings extends Migration
         DB::table('configs')->insert(
             [
                 'key' => Config::HOT_WALLET_MIN_VALUE,
-                'value' => config('app.adshares_wallet_min_amount') ?? '2000000000000000',
+                'value' => config('app.Blockchain-Ads_wallet_min_amount') ?? '2000000000000000',
             ]
         );
 
         DB::table('configs')->insert(
             [
                 'key' => Config::HOT_WALLET_MAX_VALUE,
-                'value' => config('app.adshares_wallet_max_amount') ?? '50000000000000000',
+                'value' => config('app.Blockchain-Ads_wallet_max_amount') ?? '50000000000000000',
             ]
         );
 
@@ -54,14 +54,14 @@ class InsertConfigSettings extends Migration
         DB::table('configs')->insert(
             [
                 'key' => Config::TECHNICAL_EMAIL,
-                'value' => config('app.adshares_operator_email') ?? 'mail@example.com',
+                'value' => config('app.Blockchain-Ads_operator_email') ?? 'mail@example.com',
             ]
         );
 
         DB::table('configs')->insert(
             [
                 'key' => Config::SUPPORT_EMAIL,
-                'value' => config('app.adshares_operator_email') ?? 'mail@example.com',
+                'value' => config('app.Blockchain-Ads_operator_email') ?? 'mail@example.com',
             ]
         );
     }

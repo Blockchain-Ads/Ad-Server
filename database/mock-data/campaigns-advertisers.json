@@ -5,7 +5,7 @@
       {
         "code": "cats",
         "name": "Cat Campaign",
-        "url": "https://adshares.net/",
+        "url": "https://blockchain-ads.com/",
         "max_cpm": 100000000000,
         "max_cpc": 100000000000,
         "budget_per_hour": 100000000000,
@@ -15,7 +15,7 @@
       {
         "code": "tea",
         "name": "Tea Campaign",
-        "url": "https://adshares.net/",
+        "url": "https://blockchain-ads.com/",
         "max_cpm": 100000000000,
         "max_cpc": 100000000000,
         "budget_per_hour": 100000000000,
@@ -41,7 +41,7 @@
       {
         "code": "travel",
         "name": "Travel Campaign",
-        "url": "https://adshares.net/",
+        "url": "https://blockchain-ads.com/",
         "max_cpm": 100000000000,
         "max_cpc": 100000000000,
         "budget_per_hour": 100000000000,
@@ -55,8 +55,8 @@
     "campaigns": [
       {
         "code": "ads2",
-        "name": "Adshares 2",
-        "url": "https://adshares.net/",
+        "name": "Blockchain-Ads 2",
+        "url": "https://blockchain-ads.com/",
         "max_cpm": 100000000000,
         "max_cpc": 100000000000,
         "budget_per_hour": 100000000000,
@@ -71,7 +71,7 @@
       {
         "code": "ads",
         "name": "Postman",
-        "url": "https://adshares.net/",
+        "url": "https://blockchain-ads.com/",
         "max_cpm": 100000000000,
         "max_cpc": 100000000000,
         "budget_per_hour": 100000000000,

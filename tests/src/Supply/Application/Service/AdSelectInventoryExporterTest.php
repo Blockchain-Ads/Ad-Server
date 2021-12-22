@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,18 +19,18 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Tests\Supply\Application\Service;
+namespace Blockchain-Ads\Tests\Supply\Application\Service;
 
-use Adshares\Common\Domain\ValueObject\Uuid;
-use Adshares\Supply\Application\Service\AdSelect;
-use Adshares\Supply\Application\Service\AdSelectInventoryExporter;
-use Adshares\Supply\Domain\Model\Campaign;
-use Adshares\Supply\Domain\Model\CampaignCollection;
-use Adshares\Supply\Domain\Repository\CampaignRepository;
-use Adshares\Supply\Domain\ValueObject\Budget;
-use Adshares\Supply\Domain\ValueObject\CampaignDate;
-use Adshares\Supply\Domain\ValueObject\SourceCampaign;
-use Adshares\Supply\Domain\ValueObject\Status;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Supply\Application\Service\AdSelect;
+use Blockchain-Ads\Supply\Application\Service\AdSelectInventoryExporter;
+use Blockchain-Ads\Supply\Domain\Model\Campaign;
+use Blockchain-Ads\Supply\Domain\Model\CampaignCollection;
+use Blockchain-Ads\Supply\Domain\Repository\CampaignRepository;
+use Blockchain-Ads\Supply\Domain\ValueObject\Budget;
+use Blockchain-Ads\Supply\Domain\ValueObject\CampaignDate;
+use Blockchain-Ads\Supply\Domain\ValueObject\SourceCampaign;
+use Blockchain-Ads\Supply\Domain\ValueObject\Status;
 use DateTime;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;

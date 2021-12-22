@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Uploader\Image;
+namespace Blockchain-Ads\Adserver\Uploader\Image;
 
-use Adshares\Adserver\Uploader\UploadedFile;
-use Adshares\Adserver\Uploader\Uploader;
-use Adshares\Common\Domain\ValueObject\SecureUrl;
+use Blockchain-Ads\Adserver\Uploader\UploadedFile;
+use Blockchain-Ads\Adserver\Uploader\Uploader;
+use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;

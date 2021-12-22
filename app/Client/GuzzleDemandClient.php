@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,26 +21,26 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Client;
+namespace Blockchain-Ads\Adserver\Client;
 
-use Adshares\Adserver\Client\Mapper\AbstractFilterMapper;
-use Adshares\Adserver\Models\NetworkBanner;
-use Adshares\Adserver\Models\NetworkCampaign;
-use Adshares\Adserver\Repository\Common\ClassifierExternalRepository;
-use Adshares\Adserver\Services\Common\ClassifierExternalSignatureVerifier;
-use Adshares\Adserver\Services\Supply\SiteFilteringUpdater;
-use Adshares\Common\Application\Service\SignatureVerifier;
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Common\Domain\ValueObject\Uuid;
-use Adshares\Common\Exception\RuntimeException;
-use Adshares\Common\Exception\RuntimeException as DomainRuntimeException;
-use Adshares\Common\UrlInterface;
-use Adshares\Supply\Application\Dto\Info;
-use Adshares\Supply\Application\Service\DemandClient;
-use Adshares\Supply\Application\Service\Exception\EmptyInventoryException;
-use Adshares\Supply\Application\Service\Exception\UnexpectedClientResponseException;
-use Adshares\Supply\Domain\Factory\CampaignFactory;
-use Adshares\Supply\Domain\Model\CampaignCollection;
+use Blockchain-Ads\Adserver\Client\Mapper\AbstractFilterMapper;
+use Blockchain-Ads\Adserver\Models\NetworkBanner;
+use Blockchain-Ads\Adserver\Models\NetworkCampaign;
+use Blockchain-Ads\Adserver\Repository\Common\ClassifierExternalRepository;
+use Blockchain-Ads\Adserver\Services\Common\ClassifierExternalSignatureVerifier;
+use Blockchain-Ads\Adserver\Services\Supply\SiteFilteringUpdater;
+use Blockchain-Ads\Common\Application\Service\SignatureVerifier;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Common\Exception\RuntimeException;
+use Blockchain-Ads\Common\Exception\RuntimeException as DomainRuntimeException;
+use Blockchain-Ads\Common\UrlInterface;
+use Blockchain-Ads\Supply\Application\Dto\Info;
+use Blockchain-Ads\Supply\Application\Service\DemandClient;
+use Blockchain-Ads\Supply\Application\Service\Exception\EmptyInventoryException;
+use Blockchain-Ads\Supply\Application\Service\Exception\UnexpectedClientResponseException;
+use Blockchain-Ads\Supply\Domain\Factory\CampaignFactory;
+use Blockchain-Ads\Supply\Domain\Model\CampaignCollection;
 use DateTime;
 use DateTimeInterface;
 use GuzzleHttp\Client;
@@ -137,8 +137,8 @@ final class GuzzleDemandClient implements DemandClient
     {
         $client = new Client($this->requestParameters($host));
 
-        $privateKey = (string)config('app.adshares_secret');
-        $accountAddress = (string)config('app.adshares_address');
+        $privateKey = (string)config('app.Blockchain-Ads_secret');
+        $accountAddress = (string)config('app.Blockchain-Ads_address');
         $date = new DateTime();
         $signature = $this->signatureVerifier->create($privateKey, $transactionId, $accountAddress, $date);
 

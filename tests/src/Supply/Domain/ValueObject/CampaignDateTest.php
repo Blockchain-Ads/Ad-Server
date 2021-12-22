@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,10 +19,10 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Test\Supply\Domain\ValueObject;
+namespace Blockchain-Ads\Test\Supply\Domain\ValueObject;
 
-use Adshares\Supply\Domain\ValueObject\CampaignDate;
-use Adshares\Supply\Domain\ValueObject\Exception\InvalidCampaignDateException;
+use Blockchain-Ads\Supply\Domain\ValueObject\CampaignDate;
+use Blockchain-Ads\Supply\Domain\ValueObject\Exception\InvalidCampaignDateException;
 use PHPUnit\Framework\TestCase;
 use DateTime;
 

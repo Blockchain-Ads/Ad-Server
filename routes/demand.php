@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018-2019 Adshares sp. z o.o.
+ * Copyright (c) 2018-2019 Blockchain-Ads sp. z o.o.
  *
  * This file is part of AdServer
  *
@@ -20,14 +20,14 @@
 
 declare(strict_types = 1);
 
-use Adshares\Adserver\Http\Controllers\ClassificationController;
-use Adshares\Adserver\Http\Controllers\ConversionController;
-use Adshares\Adserver\Http\Controllers\DemandController;
-use Adshares\Adserver\Http\Controllers\Manager\CampaignsController;
-use Adshares\Adserver\Http\Controllers\Manager\Simulator;
+use Blockchain-Ads\Adserver\Http\Controllers\ClassificationController;
+use Blockchain-Ads\Adserver\Http\Controllers\ConversionController;
+use Blockchain-Ads\Adserver\Http\Controllers\DemandController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\CampaignsController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\Simulator;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/adshares/inventory/list', [DemandController::class, 'inventoryList'])
+Route::get('/Blockchain-Ads/inventory/list', [DemandController::class, 'inventoryList'])
     ->name('demand-inventory');
 Route::patch('/callback/classifications/{classifier}', [ClassificationController::class, 'updateClassification'])
     ->name('demand-classifications-update');

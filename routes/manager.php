@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,7 +21,7 @@
 declare(strict_types=1);
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -40,19 +40,19 @@ declare(strict_types=1);
  */
 
 
-use Adshares\Adserver\Http\Controllers\Manager\BidStrategyController;
-use Adshares\Adserver\Http\Controllers\Manager\CampaignsController;
-use Adshares\Adserver\Http\Controllers\Manager\ClassifierController;
-use Adshares\Adserver\Http\Controllers\Manager\ConfigController;
-use Adshares\Adserver\Http\Controllers\Manager\InvoicesController;
-use Adshares\Adserver\Http\Controllers\Manager\NotificationsController;
-use Adshares\Adserver\Http\Controllers\Manager\OptionsController;
-use Adshares\Adserver\Http\Controllers\Manager\RefLinksController;
-use Adshares\Adserver\Http\Controllers\Manager\SettingsController;
-use Adshares\Adserver\Http\Controllers\Manager\SitesController;
-use Adshares\Adserver\Http\Controllers\Manager\StatsController;
-use Adshares\Adserver\Http\Controllers\Manager\WalletController;
-use Adshares\Adserver\Http\Kernel;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\BidStrategyController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\CampaignsController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\ClassifierController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\ConfigController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\InvoicesController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\NotificationsController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\OptionsController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\RefLinksController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\SettingsController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\SitesController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\StatsController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\WalletController;
+use Blockchain-Ads\Adserver\Http\Kernel;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware([Kernel::JSON_API])->group(
@@ -132,7 +132,7 @@ Route::middleware([Kernel::USER_ACCESS, Kernel::JSON_API])->group(
             ->name('app.sites.code');
 
 # actions
-        Route::get('config/adshares-address', [ConfigController::class, 'adsharesAddress']);
+        Route::get('config/Blockchain-Ads-address', [ConfigController::class, 'Blockchain-AdsAddress']);
         Route::get('countries', [ConfigController::class, 'countries']);
         Route::get('notifications', [NotificationsController::class, 'read']);
         Route::get('settings/notifications', [SettingsController::class, 'readNotifications']);

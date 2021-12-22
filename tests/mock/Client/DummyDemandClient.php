@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,18 +19,18 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Mock\Client;
+namespace Blockchain-Ads\Mock\Client;
 
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Common\Domain\ValueObject\Email;
-use Adshares\Common\Domain\ValueObject\Url;
-use Adshares\Common\Domain\ValueObject\Uuid;
-use Adshares\Common\UrlInterface;
-use Adshares\Supply\Application\Dto\Info;
-use Adshares\Supply\Application\Dto\InfoStatistics;
-use Adshares\Supply\Application\Service\DemandClient;
-use Adshares\Supply\Domain\Factory\CampaignFactory;
-use Adshares\Supply\Domain\Model\CampaignCollection;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Common\Domain\ValueObject\Email;
+use Blockchain-Ads\Common\Domain\ValueObject\Url;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Common\UrlInterface;
+use Blockchain-Ads\Supply\Application\Dto\Info;
+use Blockchain-Ads\Supply\Application\Dto\InfoStatistics;
+use Blockchain-Ads\Supply\Application\Service\DemandClient;
+use Blockchain-Ads\Supply\Domain\Factory\CampaignFactory;
+use Blockchain-Ads\Supply\Domain\Model\CampaignCollection;
 use DateTime;
 
 use function array_chunk;
@@ -46,7 +46,7 @@ final class DummyDemandClient implements DemandClient
             CampaignFactory::createFromArray([
                 'demand_id' => Uuid::v4(),
                 'publisher_id' => Uuid::v4(),
-                'landing_url' => 'http://adshares.pl',
+                'landing_url' => 'http://Blockchain-Ads.pl',
                 'date_start' => (new DateTime())->modify('-1 day'),
                 'date_end' => (new DateTime())->modify('+2 days'),
                 'created_at' => (new DateTime())->modify('-1 days'),
@@ -98,7 +98,7 @@ final class DummyDemandClient implements DemandClient
             CampaignFactory::createFromArray([
                 'demand_id' => Uuid::v4(),
                 'publisher_id' => Uuid::v4(),
-                'landing_url' => 'http://adshares.net',
+                'landing_url' => 'http://blockchain-ads.com',
                 'date_start' => (new DateTime())->modify('-10 day'),
                 'date_end' => (new DateTime())->modify('+20 days'),
                 'created_at' => (new DateTime())->modify('-10 days'),

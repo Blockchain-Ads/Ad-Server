@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Supply\Application\Dto\Classification;
+namespace Blockchain-Ads\Supply\Application\Dto\Classification;
 
-use Adshares\Common\Domain\Adapter\ArrayCollection;
-use Adshares\Supply\Domain\ValueObject\Classification;
+use Blockchain-Ads\Common\Domain\Adapter\ArrayCollection;
+use Blockchain-Ads\Supply\Domain\ValueObject\Classification;
 
 class Collection extends ArrayCollection
 {

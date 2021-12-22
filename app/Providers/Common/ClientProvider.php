@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,36 +21,36 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Providers\Common;
+namespace Blockchain-Ads\Adserver\Providers\Common;
 
-use Adshares\Ads\AdsClient;
-use Adshares\Adserver\Client\ClassifierExternalClient;
-use Adshares\Adserver\Client\GuzzleAdPayClient;
-use Adshares\Adserver\Client\GuzzleAdSelectClient;
-use Adshares\Adserver\Client\GuzzleAdsOperatorClient;
-use Adshares\Adserver\Client\GuzzleAdUserClient;
-use Adshares\Adserver\Client\GuzzleClassifierExternalClient;
-use Adshares\Adserver\Client\GuzzleDemandClient;
-use Adshares\Adserver\Client\GuzzleLicenseClient;
-use Adshares\Adserver\Client\GuzzleSupplyClient;
-use Adshares\Adserver\Client\LocalPublisherBannerClassifier;
-use Adshares\Adserver\Client\MultipleExternalClassifierAdClassifyClient;
-use Adshares\Adserver\Repository\Common\ClassifierExternalRepository;
-use Adshares\Adserver\Repository\Common\EloquentExchangeRateRepository;
-use Adshares\Adserver\Services\Common\ClassifierExternalSignatureVerifier;
-use Adshares\Classify\Application\Service\ClassifierInterface;
-use Adshares\Common\Application\Service\AdClassify;
-use Adshares\Common\Application\Service\Ads;
-use Adshares\Common\Application\Service\AdUser;
-use Adshares\Common\Application\Service\ExchangeRateRepository;
-use Adshares\Common\Application\Service\LicenseProvider;
-use Adshares\Common\Application\Service\SignatureVerifier;
-use Adshares\Common\Infrastructure\Service\PhpAdsClient;
-use Adshares\Demand\Application\Service\AdPay;
-use Adshares\Supply\Application\Service\AdSelect;
-use Adshares\Supply\Application\Service\BannerClassifier;
-use Adshares\Supply\Application\Service\DemandClient;
-use Adshares\Supply\Application\Service\SupplyClient;
+use Blockchain-Ads\Ads\AdsClient;
+use Blockchain-Ads\Adserver\Client\ClassifierExternalClient;
+use Blockchain-Ads\Adserver\Client\GuzzleAdPayClient;
+use Blockchain-Ads\Adserver\Client\GuzzleAdSelectClient;
+use Blockchain-Ads\Adserver\Client\GuzzleAdsOperatorClient;
+use Blockchain-Ads\Adserver\Client\GuzzleAdUserClient;
+use Blockchain-Ads\Adserver\Client\GuzzleClassifierExternalClient;
+use Blockchain-Ads\Adserver\Client\GuzzleDemandClient;
+use Blockchain-Ads\Adserver\Client\GuzzleLicenseClient;
+use Blockchain-Ads\Adserver\Client\GuzzleSupplyClient;
+use Blockchain-Ads\Adserver\Client\LocalPublisherBannerClassifier;
+use Blockchain-Ads\Adserver\Client\MultipleExternalClassifierAdClassifyClient;
+use Blockchain-Ads\Adserver\Repository\Common\ClassifierExternalRepository;
+use Blockchain-Ads\Adserver\Repository\Common\EloquentExchangeRateRepository;
+use Blockchain-Ads\Adserver\Services\Common\ClassifierExternalSignatureVerifier;
+use Blockchain-Ads\Classify\Application\Service\ClassifierInterface;
+use Blockchain-Ads\Common\Application\Service\AdClassify;
+use Blockchain-Ads\Common\Application\Service\Ads;
+use Blockchain-Ads\Common\Application\Service\AdUser;
+use Blockchain-Ads\Common\Application\Service\ExchangeRateRepository;
+use Blockchain-Ads\Common\Application\Service\LicenseProvider;
+use Blockchain-Ads\Common\Application\Service\SignatureVerifier;
+use Blockchain-Ads\Common\Infrastructure\Service\PhpAdsClient;
+use Blockchain-Ads\Demand\Application\Service\AdPay;
+use Blockchain-Ads\Supply\Application\Service\AdSelect;
+use Blockchain-Ads\Supply\Application\Service\BannerClassifier;
+use Blockchain-Ads\Supply\Application\Service\DemandClient;
+use Blockchain-Ads\Supply\Application\Service\SupplyClient;
 use GuzzleHttp\Client;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;

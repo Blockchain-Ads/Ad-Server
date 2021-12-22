@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Client\Mapper;
+namespace Blockchain-Ads\Adserver\Client\Mapper;
 
-use Adshares\Adserver\Utilities\ArrayUtils;
+use Blockchain-Ads\Adserver\Utilities\ArrayUtils;
 
 use function array_combine;
 use function array_filter;

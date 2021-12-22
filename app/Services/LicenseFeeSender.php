@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,17 +21,17 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Services;
+namespace Blockchain-Ads\Adserver\Services;
 
-use Adshares\Ads\AdsClient;
-use Adshares\Ads\Command\SendOneCommand;
-use Adshares\Ads\Driver\CommandError;
-use Adshares\Ads\Exception\CommandException;
-use Adshares\Adserver\Exceptions\MissingInitialConfigurationException;
-use Adshares\Adserver\Models\AdsPayment;
-use Adshares\Adserver\Models\NetworkPayment;
-use Adshares\Adserver\Services\Dto\PaymentProcessingResult;
-use Adshares\Common\Infrastructure\Service\LicenseReader;
+use Blockchain-Ads\Ads\AdsClient;
+use Blockchain-Ads\Ads\Command\SendOneCommand;
+use Blockchain-Ads\Ads\Driver\CommandError;
+use Blockchain-Ads\Ads\Exception\CommandException;
+use Blockchain-Ads\Adserver\Exceptions\MissingInitialConfigurationException;
+use Blockchain-Ads\Adserver\Models\AdsPayment;
+use Blockchain-Ads\Adserver\Models\NetworkPayment;
+use Blockchain-Ads\Adserver\Services\Dto\PaymentProcessingResult;
+use Blockchain-Ads\Common\Infrastructure\Service\LicenseReader;
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Log;
@@ -92,7 +92,7 @@ final class LicenseFeeSender
     {
         $payment = NetworkPayment::registerNetworkPayment(
             $this->fetchLicenseAccount(),
-            (string)config('app.adshares_address'),
+            (string)config('app.Blockchain-Ads_address'),
             $this->licenseFeeSum(),
             $this->adsPayment
         );

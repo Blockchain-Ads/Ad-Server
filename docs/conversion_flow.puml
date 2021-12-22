@@ -1,6 +1,6 @@
 @startuml
 
-header Adshares Conversion Flow
+header Blockchain-Ads Conversion Flow
 title Conversion
 
 actor User << browser >>

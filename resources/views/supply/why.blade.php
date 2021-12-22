@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link href="<?php use Adshares\Common\Domain\ValueObject\SecureUrl;echo SecureUrl::change(
+        <link href="<?php use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;echo SecureUrl::change(
             asset('css/why.css')
         )?>" rel="stylesheet">
     </head>
@@ -37,11 +37,11 @@
             </section>
             @endif
 
-            <section id="adshares">
-                <h3>Ecosystem is powered by Adshares</h3>
+            <section id="Blockchain-Ads">
+                <h3>Ecosystem is powered by Blockchain-Ads</h3>
                 <ul>
-                    <li>Website: <a href="https://adshares.net">https://adshares.net</a></li>
-                    <li>Contact: <a href="mailto:office@adshares.net">office@adshares.net</a></li>
+                    <li>Website: <a href="https://blockchain-ads.com">https://blockchain-ads.com</a></li>
+                    <li>Contact: <a href="mailto:office@blockchain-ads.com">office@blockchain-ads.com</a></li>
                 </ul>
             </section>
         </div>

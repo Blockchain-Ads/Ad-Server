@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018 Adshares sp. z o.o.
+ * Copyright (c) 2018 Blockchain-Ads sp. z o.o.
  *
  * This file is part of AdServer
  *
@@ -18,8 +18,8 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Models\Zone;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Models\Zone;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

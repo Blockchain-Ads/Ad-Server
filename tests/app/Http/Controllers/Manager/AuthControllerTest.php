@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,20 +21,20 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Tests\Http\Controllers\Manager;
 
-use Adshares\Adserver\Mail\UserEmailActivate;
-use Adshares\Adserver\Mail\UserConfirmed;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\RefLink;
-use Adshares\Adserver\Models\Token;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\UserLedgerEntry;
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Common\Application\Service\Exception\ExchangeRateNotAvailableException;
-use Adshares\Common\Application\Service\ExchangeRateRepository;
-use Adshares\Config\RegistrationMode;
-use Adshares\Mock\Client\DummyExchangeRateRepository;
+use Blockchain-Ads\Adserver\Mail\UserEmailActivate;
+use Blockchain-Ads\Adserver\Mail\UserConfirmed;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\RefLink;
+use Blockchain-Ads\Adserver\Models\Token;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\UserLedgerEntry;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Common\Application\Service\Exception\ExchangeRateNotAvailableException;
+use Blockchain-Ads\Common\Application\Service\ExchangeRateRepository;
+use Blockchain-Ads\Config\RegistrationMode;
+use Blockchain-Ads\Mock\Client\DummyExchangeRateRepository;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Mail;
 

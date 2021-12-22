@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,7 +19,7 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Providers;
+namespace Blockchain-Ads\Adserver\Providers;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
@@ -31,7 +31,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'Adshares\Adserver\Model' => 'Adshares\Adserver\Policies\ModelPolicy',
+        'Blockchain-Ads\Adserver\Model' => 'Blockchain-Ads\Adserver\Policies\ModelPolicy',
     ];
 
     /**

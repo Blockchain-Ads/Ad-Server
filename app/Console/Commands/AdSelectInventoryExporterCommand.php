@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Repository\Supply\NetworkCampaignRepository;
-use Adshares\Supply\Application\Service\AdSelectInventoryExporter;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Repository\Supply\NetworkCampaignRepository;
+use Blockchain-Ads\Supply\Application\Service\AdSelectInventoryExporter;
 use DateTime;
 
 class AdSelectInventoryExporterCommand extends BaseCommand

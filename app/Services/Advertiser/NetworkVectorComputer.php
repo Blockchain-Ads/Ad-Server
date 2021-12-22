@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Services\Advertiser;
+namespace Blockchain-Ads\Adserver\Services\Advertiser;
 
-use Adshares\Adserver\Client\Mapper\AbstractFilterMapper;
-use Adshares\Adserver\Models\NetworkVectorsMeta;
-use Adshares\Adserver\Utilities\PercentileComputer;
+use Blockchain-Ads\Adserver\Client\Mapper\AbstractFilterMapper;
+use Blockchain-Ads\Adserver\Models\NetworkVectorsMeta;
+use Blockchain-Ads\Adserver\Utilities\PercentileComputer;
 use DateTimeInterface;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;

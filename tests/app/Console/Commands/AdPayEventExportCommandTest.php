@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,19 +21,19 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Console\Commands;
+namespace Blockchain-Ads\Adserver\Tests\Console\Commands;
 
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\Conversion;
-use Adshares\Adserver\Models\ConversionDefinition;
-use Adshares\Adserver\Models\EventLog;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Tests\Console\ConsoleTestCase;
-use Adshares\Common\Application\Service\AdUser;
-use Adshares\Common\Domain\ValueObject\Uuid;
-use Adshares\Demand\Application\Dto\AdPayEvents;
-use Adshares\Demand\Application\Service\AdPay;
-use Adshares\Supply\Application\Dto\UserContext;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\Conversion;
+use Blockchain-Ads\Adserver\Models\ConversionDefinition;
+use Blockchain-Ads\Adserver\Models\EventLog;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Tests\Console\ConsoleTestCase;
+use Blockchain-Ads\Common\Application\Service\AdUser;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Demand\Application\Dto\AdPayEvents;
+use Blockchain-Ads\Demand\Application\Service\AdPay;
+use Blockchain-Ads\Supply\Application\Dto\UserContext;
 use DateTime;
 use DateTimeInterface;
 

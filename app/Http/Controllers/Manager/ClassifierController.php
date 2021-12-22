@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Http\Controllers\Manager;
 
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Http\Request\Classifier\NetworkBannerFilter;
-use Adshares\Adserver\Http\Response\Classifier\ClassifierResponse;
-use Adshares\Adserver\Models\Classification;
-use Adshares\Adserver\Models\NetworkBanner;
-use Adshares\Adserver\Models\Site;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Http\Request\Classifier\NetworkBannerFilter;
+use Blockchain-Ads\Adserver\Http\Response\Classifier\ClassifierResponse;
+use Blockchain-Ads\Adserver\Models\Classification;
+use Blockchain-Ads\Adserver\Models\NetworkBanner;
+use Blockchain-Ads\Adserver\Models\Site;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Collection;
 use Illuminate\Http\JsonResponse;

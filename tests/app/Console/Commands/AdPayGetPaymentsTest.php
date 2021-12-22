@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,19 +21,19 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Console\Commands;
+namespace Blockchain-Ads\Adserver\Tests\Console\Commands;
 
-use Adshares\Adserver\Models\Banner;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\EventLog;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\UserLedgerEntry;
-use Adshares\Adserver\Tests\Console\ConsoleTestCase;
-use Adshares\Common\Application\Dto\ExchangeRate;
-use Adshares\Common\Application\Service\ExchangeRateRepository;
-use Adshares\Common\Infrastructure\Service\ExchangeRateReader;
-use Adshares\Demand\Application\Service\AdPay;
-use Adshares\Mock\Client\DummyExchangeRateRepository;
+use Blockchain-Ads\Adserver\Models\Banner;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\EventLog;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\UserLedgerEntry;
+use Blockchain-Ads\Adserver\Tests\Console\ConsoleTestCase;
+use Blockchain-Ads\Common\Application\Dto\ExchangeRate;
+use Blockchain-Ads\Common\Application\Service\ExchangeRateRepository;
+use Blockchain-Ads\Common\Infrastructure\Service\ExchangeRateReader;
+use Blockchain-Ads\Demand\Application\Service\AdPay;
+use Blockchain-Ads\Mock\Client\DummyExchangeRateRepository;
 use DateTime;
 use Illuminate\Database\Eloquent\Collection;
 
@@ -144,7 +144,7 @@ class AdPayGetPaymentsTest extends ConsoleTestCase
                 'user_id' => $user->id,
                 'budget' => 100,
                 'status' => Campaign::STATUS_ACTIVE,
-                'targeting_requires' => json_decode('{"site": {"domain": ["www.adshares.net"]}}', true),
+                'targeting_requires' => json_decode('{"site": {"domain": ["www.blockchain-ads.com"]}}', true),
             ]);
 
             Campaign::all()->each(static function (Campaign $campaign) {

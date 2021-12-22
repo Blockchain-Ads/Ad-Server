@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Services\Supply;
+namespace Blockchain-Ads\Adserver\Tests\Services\Supply;
 
-use Adshares\Adserver\Models\Site;
-use Adshares\Adserver\Services\Supply\SiteFilteringMatcher;
-use Adshares\Adserver\Tests\TestCase;
+use Blockchain-Ads\Adserver\Models\Site;
+use Blockchain-Ads\Adserver\Services\Supply\SiteFilteringMatcher;
+use Blockchain-Ads\Adserver\Tests\TestCase;
 
 class SiteFilteringMatcherTest extends TestCase
 {

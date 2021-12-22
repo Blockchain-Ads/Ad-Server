@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,7 +21,7 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console;
+namespace Blockchain-Ads\Adserver\Console;
 
 use Symfony\Component\Console\Exception\LogicException;
 use Symfony\Component\Lock\Factory;
@@ -32,7 +32,7 @@ use Symfony\Component\Lock\Store\SemaphoreStore;
 /**
  * Class Locker created basing on Symfony\Component\Console\Command\LockableTrait
  *
- * @package Adshares\Adserver\Console
+ * @package Blockchain-Ads\Adserver\Console
  */
 class Locker
 {

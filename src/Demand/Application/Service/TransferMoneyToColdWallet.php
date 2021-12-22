@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,13 +21,13 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Demand\Application\Service;
+namespace Blockchain-Ads\Demand\Application\Service;
 
-use Adshares\Ads\AdsClient;
-use Adshares\Ads\Command\SendOneCommand;
-use Adshares\Ads\Util\AdsValidator;
-use Adshares\Demand\Application\Dto\TransferMoneyResponse;
-use Adshares\Demand\Application\Exception\TransferMoneyException;
+use Blockchain-Ads\Ads\AdsClient;
+use Blockchain-Ads\Ads\Command\SendOneCommand;
+use Blockchain-Ads\Ads\Util\AdsValidator;
+use Blockchain-Ads\Demand\Application\Dto\TransferMoneyResponse;
+use Blockchain-Ads\Demand\Application\Exception\TransferMoneyException;
 
 class TransferMoneyToColdWallet
 {

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,7 +19,7 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Utilities;
+namespace Blockchain-Ads\Adserver\Utilities;
 
 final class AdsUtils
 {
@@ -135,7 +135,7 @@ final class AdsUtils
     {
         $x = preg_replace('/[^0-9A-FX]+/', '', strtoupper($address));
         if (16 != strlen($x)) {
-            throw new \RuntimeException('Invalid adshares address');
+            throw new \RuntimeException('Invalid Blockchain-Ads address');
         }
 
         return sprintf('%s-%s-%s', substr($x, 0, 4), substr($x, 4, 8), substr($x, 12, 4));
@@ -145,7 +145,7 @@ final class AdsUtils
     {
         $x = preg_replace('/[^0-9A-F]+/', '', strtoupper($txid));
         if (16 != strlen($x)) {
-            throw new \RuntimeException('Invalid adshares transaction');
+            throw new \RuntimeException('Invalid Blockchain-Ads transaction');
         }
 
         return sprintf('%s:%s:%s', substr($x, 0, 4), substr($x, 4, 8), substr($x, 12, 4));

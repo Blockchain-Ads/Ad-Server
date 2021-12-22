@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Services\Publisher;
+namespace Blockchain-Ads\Adserver\Tests\Services\Publisher;
 
-use Adshares\Adserver\Services\Publisher\SiteCategoriesValidator;
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Common\Exception\InvalidArgumentException;
-use Adshares\Mock\Repository\DummyConfigurationRepository;
+use Blockchain-Ads\Adserver\Services\Publisher\SiteCategoriesValidator;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Common\Exception\InvalidArgumentException;
+use Blockchain-Ads\Mock\Repository\DummyConfigurationRepository;
 
 final class SiteCategoriesValidatorTest extends TestCase
 {

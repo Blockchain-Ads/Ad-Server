@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Tests\Common\Domain\ValueObject;
+namespace Blockchain-Ads\Tests\Common\Domain\ValueObject;
 
-use Adshares\Common\Domain\ValueObject\Commission;
-use Adshares\Common\Exception\RuntimeException;
+use Blockchain-Ads\Common\Domain\ValueObject\Commission;
+use Blockchain-Ads\Common\Exception\RuntimeException;
 use PHPUnit\Framework\TestCase;
 
 final class CommissionTest extends TestCase

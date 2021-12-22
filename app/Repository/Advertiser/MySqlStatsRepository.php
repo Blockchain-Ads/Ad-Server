@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,22 +21,22 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Repository\Advertiser;
+namespace Blockchain-Ads\Adserver\Repository\Advertiser;
 
-use Adshares\Adserver\Exceptions\Advertiser\MissingEventsException;
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\PaymentReport;
-use Adshares\Adserver\Utilities\DateUtils;
-use Adshares\Advertiser\Dto\Result\ChartResult;
-use Adshares\Advertiser\Dto\Result\Stats\Calculation;
-use Adshares\Advertiser\Dto\Result\Stats\ConversionDataCollection;
-use Adshares\Advertiser\Dto\Result\Stats\ConversionDataEntry;
-use Adshares\Advertiser\Dto\Result\Stats\DataCollection;
-use Adshares\Advertiser\Dto\Result\Stats\DataEntry;
-use Adshares\Advertiser\Dto\Result\Stats\ReportCalculation;
-use Adshares\Advertiser\Dto\Result\Stats\Total;
-use Adshares\Advertiser\Repository\StatsRepository;
+use Blockchain-Ads\Adserver\Exceptions\Advertiser\MissingEventsException;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\PaymentReport;
+use Blockchain-Ads\Adserver\Utilities\DateUtils;
+use Blockchain-Ads\Advertiser\Dto\Result\ChartResult;
+use Blockchain-Ads\Advertiser\Dto\Result\Stats\Calculation;
+use Blockchain-Ads\Advertiser\Dto\Result\Stats\ConversionDataCollection;
+use Blockchain-Ads\Advertiser\Dto\Result\Stats\ConversionDataEntry;
+use Blockchain-Ads\Advertiser\Dto\Result\Stats\DataCollection;
+use Blockchain-Ads\Advertiser\Dto\Result\Stats\DataEntry;
+use Blockchain-Ads\Advertiser\Dto\Result\Stats\ReportCalculation;
+use Blockchain-Ads\Advertiser\Dto\Result\Stats\Total;
+use Blockchain-Ads\Advertiser\Repository\StatsRepository;
 use DateTime;
 use DateTimeInterface;
 use DateTimeZone;

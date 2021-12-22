@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Models;
+namespace Blockchain-Ads\Adserver\Tests\Models;
 
-use Adshares\Adserver\Models\SupplyBlacklistedDomain;
-use Adshares\Adserver\Tests\TestCase;
+use Blockchain-Ads\Adserver\Models\SupplyBlacklistedDomain;
+use Blockchain-Ads\Adserver\Tests\TestCase;
 
 class SupplyBlacklistedDomainTest extends TestCase
 {
@@ -32,17 +32,17 @@ class SupplyBlacklistedDomainTest extends TestCase
     {
         SupplyBlacklistedDomain::register('example.com');
 
-        $this->assertFalse(SupplyBlacklistedDomain::isDomainBlacklisted('adshares.net'));
+        $this->assertFalse(SupplyBlacklistedDomain::isDomainBlacklisted('blockchain-ads.com'));
         $this->assertFalse(SupplyBlacklistedDomain::isDomainBlacklisted('dot.com'));
 
         $this->assertTrue(SupplyBlacklistedDomain::isDomainBlacklisted('example.com'));
         $this->assertTrue(SupplyBlacklistedDomain::isDomainBlacklisted('one.example.com'));
         $this->assertTrue(SupplyBlacklistedDomain::isDomainBlacklisted('www.one.example.com'));
 
-        SupplyBlacklistedDomain::register('adshares.net');
+        SupplyBlacklistedDomain::register('blockchain-ads.com');
 
-        $this->assertTrue(SupplyBlacklistedDomain::isDomainBlacklisted('adshares.net'));
-        $this->assertTrue(SupplyBlacklistedDomain::isDomainBlacklisted('all.adshares.net'));
+        $this->assertTrue(SupplyBlacklistedDomain::isDomainBlacklisted('blockchain-ads.com'));
+        $this->assertTrue(SupplyBlacklistedDomain::isDomainBlacklisted('all.blockchain-ads.com'));
     }
 
     public function testBlacklistedSpecial(): void

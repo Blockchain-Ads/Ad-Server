@@ -1,7 +1,7 @@
 <?php
 
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Models\EventConversionLog;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Models\EventConversionLog;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

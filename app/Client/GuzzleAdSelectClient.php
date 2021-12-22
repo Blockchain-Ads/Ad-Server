@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,27 +21,27 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Client;
+namespace Blockchain-Ads\Adserver\Client;
 
-use Adshares\Adserver\Client\Mapper\AdSelect\CampaignMapper;
-use Adshares\Adserver\Client\Mapper\AdSelect\CaseClickMapper;
-use Adshares\Adserver\Client\Mapper\AdSelect\CaseMapper;
-use Adshares\Adserver\Client\Mapper\AdSelect\CasePaymentMapper;
-use Adshares\Adserver\Http\Utils;
-use Adshares\Adserver\Models\NetworkBanner;
-use Adshares\Adserver\Models\ServeDomain;
-use Adshares\Adserver\Models\Site;
-use Adshares\Adserver\Models\Zone;
-use Adshares\Adserver\Utilities\AdsUtils;
-use Adshares\Adserver\Utilities\DomainReader;
-use Adshares\Common\Domain\ValueObject\SecureUrl;
-use Adshares\Common\Exception\RuntimeException as DomainRuntimeException;
-use Adshares\Supply\Application\Dto\FoundBanners;
-use Adshares\Supply\Application\Dto\ImpressionContext;
-use Adshares\Supply\Application\Service\AdSelect;
-use Adshares\Supply\Application\Service\Exception\UnexpectedClientResponseException;
-use Adshares\Supply\Domain\Model\Campaign;
-use Adshares\Supply\Domain\Model\CampaignCollection;
+use Blockchain-Ads\Adserver\Client\Mapper\AdSelect\CampaignMapper;
+use Blockchain-Ads\Adserver\Client\Mapper\AdSelect\CaseClickMapper;
+use Blockchain-Ads\Adserver\Client\Mapper\AdSelect\CaseMapper;
+use Blockchain-Ads\Adserver\Client\Mapper\AdSelect\CasePaymentMapper;
+use Blockchain-Ads\Adserver\Http\Utils;
+use Blockchain-Ads\Adserver\Models\NetworkBanner;
+use Blockchain-Ads\Adserver\Models\ServeDomain;
+use Blockchain-Ads\Adserver\Models\Site;
+use Blockchain-Ads\Adserver\Models\Zone;
+use Blockchain-Ads\Adserver\Utilities\AdsUtils;
+use Blockchain-Ads\Adserver\Utilities\DomainReader;
+use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;
+use Blockchain-Ads\Common\Exception\RuntimeException as DomainRuntimeException;
+use Blockchain-Ads\Supply\Application\Dto\FoundBanners;
+use Blockchain-Ads\Supply\Application\Dto\ImpressionContext;
+use Blockchain-Ads\Supply\Application\Service\AdSelect;
+use Blockchain-Ads\Supply\Application\Service\Exception\UnexpectedClientResponseException;
+use Blockchain-Ads\Supply\Domain\Model\Campaign;
+use Blockchain-Ads\Supply\Domain\Model\CampaignCollection;
 use Generator;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
@@ -299,7 +299,7 @@ class GuzzleAdSelectClient implements AdSelect
                         'publisher_id'  => $zone->site->user->uuid,
                         'zone_id'       => $zone->uuid,
                         'pay_from'      => $campaign->source_address,
-                        'pay_to'        => AdsUtils::normalizeAddress(config('app.adshares_address')),
+                        'pay_to'        => AdsUtils::normalizeAddress(config('app.Blockchain-Ads_address')),
                         'type'          => $banner->type,
                         'size'          => $banner->size,
                         'serve_url'     => $banner->serve_url,

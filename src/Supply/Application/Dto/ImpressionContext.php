@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,13 +21,13 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Supply\Application\Dto;
+namespace Blockchain-Ads\Supply\Application\Dto;
 
-use Adshares\Adserver\Client\Mapper\AbstractFilterMapper;
-use Adshares\Adserver\Http\Utils;
-use Adshares\Adserver\Models\Zone;
-use Adshares\Common\Domain\ValueObject\Uuid;
-use Adshares\Common\Exception\RuntimeException;
+use Blockchain-Ads\Adserver\Client\Mapper\AbstractFilterMapper;
+use Blockchain-Ads\Adserver\Http\Utils;
+use Blockchain-Ads\Adserver\Models\Zone;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Common\Exception\RuntimeException;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\HeaderUtils;

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Tests\Supply\Domain\ValueObject;
+namespace Blockchain-Ads\Tests\Supply\Domain\ValueObject;
 
-use Adshares\Supply\Domain\ValueObject\Classification;
+use Blockchain-Ads\Supply\Domain\ValueObject\Classification;
 use PHPUnit\Framework\TestCase;
 
 final class ClassificationTest extends TestCase

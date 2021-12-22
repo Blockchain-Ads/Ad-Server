@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Client;
+namespace Blockchain-Ads\Adserver\Client;
 
-use Adshares\Adserver\Exceptions\Demand\AdPayReportMissingEventsException;
-use Adshares\Adserver\Exceptions\Demand\AdPayReportNotReadyException;
-use Adshares\Common\Exception\RuntimeException;
-use Adshares\Demand\Application\Dto\AdPayEvents;
-use Adshares\Demand\Application\Service\AdPay;
-use Adshares\Supply\Application\Service\Exception\UnexpectedClientResponseException;
+use Blockchain-Ads\Adserver\Exceptions\Demand\AdPayReportMissingEventsException;
+use Blockchain-Ads\Adserver\Exceptions\Demand\AdPayReportNotReadyException;
+use Blockchain-Ads\Common\Exception\RuntimeException;
+use Blockchain-Ads\Demand\Application\Dto\AdPayEvents;
+use Blockchain-Ads\Demand\Application\Service\AdPay;
+use Blockchain-Ads\Supply\Application\Service\Exception\UnexpectedClientResponseException;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\RequestOptions;

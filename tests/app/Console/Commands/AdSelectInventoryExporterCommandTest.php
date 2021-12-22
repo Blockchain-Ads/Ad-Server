@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,10 +19,10 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Tests\Console\Commands;
+namespace Blockchain-Ads\Adserver\Tests\Console\Commands;
 
-use Adshares\Adserver\Tests\Console\ConsoleTestCase;
-use Adshares\Supply\Application\Service\AdSelect;
+use Blockchain-Ads\Adserver\Tests\Console\ConsoleTestCase;
+use Blockchain-Ads\Supply\Application\Service\AdSelect;
 
 class AdSelectInventoryExporterCommandTest extends ConsoleTestCase
 {

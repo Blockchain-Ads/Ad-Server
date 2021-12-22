@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Tests\Supply\Application\Dto\Classification;
+namespace Blockchain-Ads\Tests\Supply\Application\Dto\Classification;
 
-use Adshares\Common\Domain\ValueObject\Uuid;
-use Adshares\Supply\Application\Dto\Classification\Collection;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Supply\Application\Dto\Classification\Collection;
 use PHPUnit\Framework\TestCase;
 
 final class CollectionTest extends TestCase

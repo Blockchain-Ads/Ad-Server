@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,19 +21,19 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Mail\SiteVerified;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\Site;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Services\Publisher\SiteCategoriesValidator;
-use Adshares\Common\Application\Dto\PageRank;
-use Adshares\Common\Application\Service\AdUser;
-use Adshares\Common\Exception\InvalidArgumentException;
-use Adshares\Common\Exception\RuntimeException;
-use Adshares\Supply\Application\Service\Exception\UnexpectedClientResponseException;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Mail\SiteVerified;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\Site;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Services\Publisher\SiteCategoriesValidator;
+use Blockchain-Ads\Common\Application\Dto\PageRank;
+use Blockchain-Ads\Common\Application\Service\AdUser;
+use Blockchain-Ads\Common\Exception\InvalidArgumentException;
+use Blockchain-Ads\Common\Exception\RuntimeException;
+use Blockchain-Ads\Supply\Application\Service\Exception\UnexpectedClientResponseException;
 use DateTime;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;

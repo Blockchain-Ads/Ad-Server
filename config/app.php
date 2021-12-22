@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -86,7 +86,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Adshares Adserver & Network Components Integration configuration
+    | Blockchain-Ads Adserver & Network Components Integration configuration
     |--------------------------------------------------------------------------
     */
 
@@ -95,17 +95,17 @@ return [
     'adserver_id' => env('APP_ID', env('ADSERVER_ID', 'a-name-that-does-not-collide')),
     'terms_url' => $appUrl.'/policies/terms.html',
     'privacy_url' => $appUrl.'/policies/privacy.html',
-    'adshares_address' => env('ADSHARES_ADDRESS'),
-    'adshares_wallet_cold_address' => env('ADSHARES_WALLET_COLD_ADDRESS'),
-    'adshares_wallet_min_amount' => env('ADSHARES_WALLET_MIN_AMOUNT'),
-    'adshares_wallet_max_amount' => env('ADSHARES_WALLET_MAX_AMOUNT'),
-    'adshares_operator_email' => env('ADSHARES_OPERATOR_EMAIL'),
-    'adshares_node_host' => env('ADSHARES_NODE_HOST'),
-    'adshares_node_port' => env('ADSHARES_NODE_PORT'),
-    'adshares_secret' => env('ADSHARES_SECRET'),
-    'adshares_command' => env('ADSHARES_COMMAND'),
-    'adshares_workingdir' => env('ADSHARES_WORKINGDIR'),
-    'ads_operator_server_url' => env('ADS_OPERATOR_SERVER_URL', 'https://ads-operator.adshares.net'),
+    'Blockchain-Ads_address' => env('Blockchain-Ads_ADDRESS'),
+    'Blockchain-Ads_wallet_cold_address' => env('Blockchain-Ads_WALLET_COLD_ADDRESS'),
+    'Blockchain-Ads_wallet_min_amount' => env('Blockchain-Ads_WALLET_MIN_AMOUNT'),
+    'Blockchain-Ads_wallet_max_amount' => env('Blockchain-Ads_WALLET_MAX_AMOUNT'),
+    'Blockchain-Ads_operator_email' => env('Blockchain-Ads_OPERATOR_EMAIL'),
+    'Blockchain-Ads_node_host' => env('Blockchain-Ads_NODE_HOST'),
+    'Blockchain-Ads_node_port' => env('Blockchain-Ads_NODE_PORT'),
+    'Blockchain-Ads_secret' => env('Blockchain-Ads_SECRET'),
+    'Blockchain-Ads_command' => env('Blockchain-Ads_COMMAND'),
+    'Blockchain-Ads_workingdir' => env('Blockchain-Ads_WORKINGDIR'),
+    'ads_operator_server_url' => env('ADS_OPERATOR_SERVER_URL', 'https://ads-operator.blockchain-ads.com'),
     'aduser_base_url' => $aduserUrl,
     'aduser_serve_subdomain' => env('ADUSER_SERVE_SUBDOMAIN'),
     'aduser_info_url' => env('ADUSER_INFO_URL', $aduserUrl . '/panel.html?rated=1&url={domain}'),
@@ -126,9 +126,9 @@ return [
     'classifier_external_public_key' => env('CLASSIFIER_EXTERNAL_PUBLIC_KEY'),
     'classifier_external_api_key_name' => env('CLASSIFIER_EXTERNAL_API_KEY_NAME'),
     'classifier_external_api_key_secret' => env('CLASSIFIER_EXTERNAL_API_KEY_SECRET'),
-    'license_url' => env('ADSHARES_LICENSE_SERVER_URL', 'https://account.adshares.pl'),
-    'license_key' => env('ADSHARES_LICENSE_KEY', env('ADSHARES_LICENSE_SERVER_KEY')),
-    'license_id' => substr(env('ADSHARES_LICENSE_KEY', env('ADSHARES_LICENSE_SERVER_KEY')), 0, 10),
+    'license_url' => env('Blockchain-Ads_LICENSE_SERVER_URL', 'https://account.Blockchain-Ads.pl'),
+    'license_key' => env('Blockchain-Ads_LICENSE_KEY', env('Blockchain-Ads_LICENSE_SERVER_KEY')),
+    'license_id' => substr(env('Blockchain-Ads_LICENSE_KEY', env('Blockchain-Ads_LICENSE_SERVER_KEY')), 0, 10),
     'serve_base_url' => env('SERVE_BASE_URL') ?: $appUrl,
     'main_js_base_url' => env('MAIN_JS_BASE_URL') ?: $appUrl,
     'main_js_tld' => env('MAIN_JS_TLD'),
@@ -201,16 +201,16 @@ return [
         /*
          * Application Service Providers...
          */
-        Adshares\Adserver\Providers\CloudflareIpServiceProvider::class,
-        Adshares\Adserver\Providers\AppServiceProvider::class,
-        Adshares\Adserver\Providers\AuthServiceProvider::class,
-        Adshares\Adserver\Providers\EventServiceProvider::class,
-        Adshares\Adserver\Providers\RouteServiceProvider::class,
-        Adshares\Adserver\Providers\Supply\InventoryImporterProvider::class,
-        Adshares\Adserver\Providers\Common\ClientProvider::class,
-        Adshares\Adserver\Providers\Common\OptionsProvider::class,
-        Adshares\Adserver\Providers\Supply\PaymentDetailsVerifyProvider::class,
-        Adshares\Adserver\Providers\Supply\ClassifyProvider::class,
+        Blockchain-Ads\Adserver\Providers\CloudflareIpServiceProvider::class,
+        Blockchain-Ads\Adserver\Providers\AppServiceProvider::class,
+        Blockchain-Ads\Adserver\Providers\AuthServiceProvider::class,
+        Blockchain-Ads\Adserver\Providers\EventServiceProvider::class,
+        Blockchain-Ads\Adserver\Providers\RouteServiceProvider::class,
+        Blockchain-Ads\Adserver\Providers\Supply\InventoryImporterProvider::class,
+        Blockchain-Ads\Adserver\Providers\Common\ClientProvider::class,
+        Blockchain-Ads\Adserver\Providers\Common\OptionsProvider::class,
+        Blockchain-Ads\Adserver\Providers\Supply\PaymentDetailsVerifyProvider::class,
+        Blockchain-Ads\Adserver\Providers\Supply\ClassifyProvider::class,
     ],
 
     /*
@@ -235,7 +235,7 @@ return [
         'Config' => Illuminate\Support\Facades\Config::class,
         'Cookie' => Illuminate\Support\Facades\Cookie::class,
         'Crypt' => Illuminate\Support\Facades\Crypt::class,
-        'DB' => Adshares\Adserver\Facades\DB::class,
+        'DB' => Blockchain-Ads\Adserver\Facades\DB::class,
         'Eloquent' => Illuminate\Database\Eloquent\Model::class,
         'Event' => Illuminate\Support\Facades\Event::class,
         'File' => Illuminate\Support\Facades\File::class,

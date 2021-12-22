@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Tests\Common\Application\Dto\TaxonomyVersion0;
+namespace Blockchain-Ads\Tests\Common\Application\Dto\TaxonomyVersion0;
 
-use Adshares\Common\Domain\ValueObject\SemVer;
+use Blockchain-Ads\Common\Domain\ValueObject\SemVer;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 

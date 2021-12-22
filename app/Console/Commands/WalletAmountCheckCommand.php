@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Ads\Util\AdsConverter;
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Mail\WalletFundsEmail;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\UserLedgerEntry;
-use Adshares\Demand\Application\Service\WalletFundsChecker;
+use Blockchain-Ads\Ads\Util\AdsConverter;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Mail\WalletFundsEmail;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\UserLedgerEntry;
+use Blockchain-Ads\Demand\Application\Service\WalletFundsChecker;
 use DateTime;
 use Illuminate\Support\Facades\Mail;
 
@@ -78,19 +78,19 @@ class WalletAmountCheckCommand extends BaseCommand
         }
 
         if ($this->shouldEmailBeSent()) {
-            $email = config('app.adshares_operator_email');
+            $email = config('app.Blockchain-Ads_operator_email');
             $transferValueInAds = (string)number_format((float)AdsConverter::clicksToAds($transferValue), 4, '.', '');
 
             Mail::to($email)->queue(
-                new WalletFundsEmail($transferValueInAds, (string)config('app.adshares_address'))
+                new WalletFundsEmail($transferValueInAds, (string)config('app.Blockchain-Ads_address'))
             );
 
             $message = sprintf(
                 '[Wallet] Email has been sent to %s to transfer %s ADS from Cold (%s) to Hot Wallet (%s).',
                 $email,
                 $transferValueInAds,
-                config('app.adshares_wallet_cold_address'),
-                config('app.adshares_address')
+                config('app.Blockchain-Ads_wallet_cold_address'),
+                config('app.Blockchain-Ads_address')
             );
 
             Config::upsertDateTime(Config::OPERATOR_WALLET_EMAIL_LAST_TIME, new DateTime());

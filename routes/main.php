@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -20,12 +20,12 @@
 
 declare(strict_types = 1);
 
-use Adshares\Adserver\Http\Controllers\InfoController;
-use Adshares\Adserver\Http\Controllers\Manager\CampaignsController;
-use Adshares\Adserver\Http\Controllers\Manager\InvoicesController;
-use Adshares\Adserver\Http\Controllers\Manager\SettingsController;
-use Adshares\Adserver\Http\Controllers\Manager\StatisticsGlobalController;
-use Adshares\Adserver\Http\Controllers\Manager\WalletController;
+use Blockchain-Ads\Adserver\Http\Controllers\InfoController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\CampaignsController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\InvoicesController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\SettingsController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\StatisticsGlobalController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\WalletController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [InfoController::class, 'info'])

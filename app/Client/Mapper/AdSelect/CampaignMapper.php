@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Blockchain-Ads sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -75,7 +75,7 @@ class CampaignMapper
             'banners' => $banners,
             'keywords' => [
                 'source_host' => $campaignArray['source_host'],
-                'adshares_address' => $campaignArray['source_address'],
+                'Blockchain-Ads_address' => $campaignArray['source_address'],
             ],
             'budget' => $campaign->getBudget(),
             'max_cpc' => $campaign->getMaxCpc(),

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Tests\Demand\Application\Service;
+namespace Blockchain-Ads\Tests\Demand\Application\Service;
 
-use Adshares\Ads\AdsClient;
-use Adshares\Ads\Entity\Account;
-use Adshares\Ads\Response\GetAccountResponse;
-use Adshares\Demand\Application\Service\WalletFundsChecker;
+use Blockchain-Ads\Ads\AdsClient;
+use Blockchain-Ads\Ads\Entity\Account;
+use Blockchain-Ads\Ads\Response\GetAccountResponse;
+use Blockchain-Ads\Demand\Application\Service\WalletFundsChecker;
 use PHPUnit\Framework\TestCase;
 
 class WalletFundsCheckerTest extends TestCase

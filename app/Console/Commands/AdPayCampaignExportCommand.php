@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,15 +21,15 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Client\Mapper\AdPay\DemandBidStrategyMapper;
-use Adshares\Adserver\Client\Mapper\AdPay\DemandCampaignMapper;
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Models\BidStrategy;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\Config;
-use Adshares\Demand\Application\Service\AdPay;
+use Blockchain-Ads\Adserver\Client\Mapper\AdPay\DemandBidStrategyMapper;
+use Blockchain-Ads\Adserver\Client\Mapper\AdPay\DemandCampaignMapper;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Models\BidStrategy;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Demand\Application\Service\AdPay;
 use DateTime;
 
 use function count;

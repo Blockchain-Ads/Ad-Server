@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Console\Locker;
-use Adshares\Common\Application\Service\LicenseDecoder;
-use Adshares\Common\Application\Service\LicenseProvider;
-use Adshares\Common\Application\Service\LicenseVault;
-use Adshares\Common\Exception\RuntimeException;
-use Adshares\Supply\Application\Service\Exception\UnexpectedClientResponseException;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Common\Application\Service\LicenseDecoder;
+use Blockchain-Ads\Common\Application\Service\LicenseProvider;
+use Blockchain-Ads\Common\Application\Service\LicenseVault;
+use Blockchain-Ads\Common\Exception\RuntimeException;
+use Blockchain-Ads\Supply\Application\Service\Exception\UnexpectedClientResponseException;
 
 class FetchLicenseCommand extends BaseCommand
 {

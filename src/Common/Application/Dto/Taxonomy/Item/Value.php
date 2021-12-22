@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Common\Application\Dto\Taxonomy\Item;
+namespace Blockchain-Ads\Common\Application\Dto\Taxonomy\Item;
 
-use Adshares\Common\Application\Model\Selector\OptionValue;
+use Blockchain-Ads\Common\Application\Model\Selector\OptionValue;
 
 final class Value
 {

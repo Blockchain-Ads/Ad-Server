@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Services\Demand;
+namespace Blockchain-Ads\Adserver\Services\Demand;
 
-use Adshares\Adserver\Models\Banner;
-use Adshares\Adserver\Models\BannerClassification;
+use Blockchain-Ads\Adserver\Models\Banner;
+use Blockchain-Ads\Adserver\Models\BannerClassification;
 
 class BannerClassificationCreator
 {

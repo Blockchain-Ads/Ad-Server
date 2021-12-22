@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,17 +21,17 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Mail\CampaignSuspension;
-use Adshares\Adserver\Models\AdvertiserBudget;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\UserLedgerEntry;
-use Adshares\Common\Application\Dto\ExchangeRate;
-use Adshares\Common\Infrastructure\Service\ExchangeRateReader;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Mail\CampaignSuspension;
+use Blockchain-Ads\Adserver\Models\AdvertiserBudget;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\UserLedgerEntry;
+use Blockchain-Ads\Common\Application\Dto\ExchangeRate;
+use Blockchain-Ads\Common\Infrastructure\Service\ExchangeRateReader;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;

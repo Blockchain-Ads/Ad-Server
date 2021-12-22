@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,29 +21,29 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Http\Controllers\Manager;
 
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Http\Response\Stats\AdvertiserReportResponse;
-use Adshares\Adserver\Http\Response\Stats\PublisherReportResponse;
-use Adshares\Adserver\Http\Response\Stats\ReportsListResponse;
-use Adshares\Adserver\Http\Utils;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\ReportMeta;
-use Adshares\Adserver\Models\Site;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Services\Common\ReportsStorage;
-use Adshares\Advertiser\Dto\Input\ChartInput as AdvertiserChartInput;
-use Adshares\Advertiser\Dto\Input\ConversionDataInput;
-use Adshares\Advertiser\Dto\Input\InvalidInputException as AdvertiserInvalidInputException;
-use Adshares\Advertiser\Dto\Input\StatsInput as AdvertiserStatsInput;
-use Adshares\Advertiser\Service\ChartDataProvider as AdvertiserChartDataProvider;
-use Adshares\Advertiser\Service\StatsDataProvider as AdvertiserStatsDataProvider;
-use Adshares\Publisher\Dto\Input\ChartInput as PublisherChartInput;
-use Adshares\Publisher\Dto\Input\InvalidInputException as PublisherInvalidInputException;
-use Adshares\Publisher\Dto\Input\StatsInput as PublisherStatsInput;
-use Adshares\Publisher\Service\ChartDataProvider as PublisherChartDataProvider;
-use Adshares\Publisher\Service\StatsDataProvider as PublisherStatsDataProvider;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Http\Response\Stats\AdvertiserReportResponse;
+use Blockchain-Ads\Adserver\Http\Response\Stats\PublisherReportResponse;
+use Blockchain-Ads\Adserver\Http\Response\Stats\ReportsListResponse;
+use Blockchain-Ads\Adserver\Http\Utils;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\ReportMeta;
+use Blockchain-Ads\Adserver\Models\Site;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Services\Common\ReportsStorage;
+use Blockchain-Ads\Advertiser\Dto\Input\ChartInput as AdvertiserChartInput;
+use Blockchain-Ads\Advertiser\Dto\Input\ConversionDataInput;
+use Blockchain-Ads\Advertiser\Dto\Input\InvalidInputException as AdvertiserInvalidInputException;
+use Blockchain-Ads\Advertiser\Dto\Input\StatsInput as AdvertiserStatsInput;
+use Blockchain-Ads\Advertiser\Service\ChartDataProvider as AdvertiserChartDataProvider;
+use Blockchain-Ads\Advertiser\Service\StatsDataProvider as AdvertiserStatsDataProvider;
+use Blockchain-Ads\Publisher\Dto\Input\ChartInput as PublisherChartInput;
+use Blockchain-Ads\Publisher\Dto\Input\InvalidInputException as PublisherInvalidInputException;
+use Blockchain-Ads\Publisher\Dto\Input\StatsInput as PublisherStatsInput;
+use Blockchain-Ads\Publisher\Service\ChartDataProvider as PublisherChartDataProvider;
+use Blockchain-Ads\Publisher\Service\StatsDataProvider as PublisherStatsDataProvider;
 use DateTime;
 use DateTimeInterface;
 use Illuminate\Http\JsonResponse;

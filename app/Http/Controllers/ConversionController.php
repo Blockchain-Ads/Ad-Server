@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,22 +19,22 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Http\Controllers;
+namespace Blockchain-Ads\Adserver\Http\Controllers;
 
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Http\Utils;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\Conversion;
-use Adshares\Adserver\Models\ConversionDefinition;
-use Adshares\Adserver\Models\EventLog;
-use Adshares\Adserver\Models\ServeDomain;
-use Adshares\Adserver\Repository\CampaignRepository;
-use Adshares\Adserver\Services\ConversionValidator;
-use Adshares\Adserver\Services\EventCaseFinder;
-use Adshares\Common\Domain\ValueObject\SecureUrl;
-use Adshares\Common\Domain\ValueObject\Uuid;
-use Adshares\Common\Exception\RuntimeException;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Http\Utils;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\Conversion;
+use Blockchain-Ads\Adserver\Models\ConversionDefinition;
+use Blockchain-Ads\Adserver\Models\EventLog;
+use Blockchain-Ads\Adserver\Models\ServeDomain;
+use Blockchain-Ads\Adserver\Repository\CampaignRepository;
+use Blockchain-Ads\Adserver\Services\ConversionValidator;
+use Blockchain-Ads\Adserver\Services\EventCaseFinder;
+use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Common\Exception\RuntimeException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;

@@ -24,7 +24,7 @@ mv * ${INSTALLATION_PATH}/
 mv .env* ${INSTALLATION_PATH}/
 rm -rf ${INSTALLATION_PATH}/node_modules
 
-mkdir -pm 777 ${ADSHARES_WORKINGDIR}
+mkdir -pm 777 ${Blockchain-Ads_WORKINGDIR}
 mkdir -pm 777 ${INSTALLATION_PATH}/storage
 mkdir -pm 777 ${INSTALLATION_PATH}/storage/framework/views
 

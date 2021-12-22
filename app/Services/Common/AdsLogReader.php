@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Services\Common;
+namespace Blockchain-Ads\Adserver\Services\Common;
 
-use Adshares\Ads\AdsClient;
-use Adshares\Ads\Exception\CommandException;
-use Adshares\Ads\Util\AdsConverter;
-use Adshares\Adserver\Models\AdsPayment;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Utilities\SqlUtils;
+use Blockchain-Ads\Ads\AdsClient;
+use Blockchain-Ads\Ads\Exception\CommandException;
+use Blockchain-Ads\Ads\Util\AdsConverter;
+use Blockchain-Ads\Adserver\Models\AdsPayment;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Utilities\SqlUtils;
 use DateTime;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Log;

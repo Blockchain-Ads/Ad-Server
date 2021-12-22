@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,12 +19,12 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Tests\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Tests\Http\Controllers\Manager;
 
-use Adshares\Adserver\Models\RefLink;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\UserLedgerEntry;
-use Adshares\Adserver\Tests\TestCase;
+use Blockchain-Ads\Adserver\Models\RefLink;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\UserLedgerEntry;
+use Blockchain-Ads\Adserver\Tests\TestCase;
 use Illuminate\Http\Response;
 
 class RefLinksControllerTest extends TestCase

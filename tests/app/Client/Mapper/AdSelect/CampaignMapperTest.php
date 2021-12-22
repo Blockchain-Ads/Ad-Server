@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Client\Mapper\AdSelect;
+namespace Blockchain-Ads\Adserver\Tests\Client\Mapper\AdSelect;
 
-use Adshares\Adserver\Client\Mapper\AdSelect\CampaignMapper;
-use Adshares\Common\Domain\ValueObject\Uuid;
-use Adshares\Supply\Domain\Factory\CampaignFactory;
+use Blockchain-Ads\Adserver\Client\Mapper\AdSelect\CampaignMapper;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Supply\Domain\Factory\CampaignFactory;
 use DateTime;
 use PHPUnit\Framework\TestCase;
 use stdClass;
@@ -58,7 +58,7 @@ final class CampaignMapperTest extends TestCase
             ],
             'keywords' => [
                 'source_host' => $campaignData['source_campaign']['host'],
-                'adshares_address' => $campaignData['source_campaign']['address'],
+                'Blockchain-Ads_address' => $campaignData['source_campaign']['address'],
             ],
             'filters' => [
                 'require' => new stdClass(),
@@ -97,7 +97,7 @@ final class CampaignMapperTest extends TestCase
             ],
             'keywords' => [
                 'source_host' => $campaignDataWithClassification['source_campaign']['host'],
-                'adshares_address' => $campaignDataWithClassification['source_campaign']['address'],
+                'Blockchain-Ads_address' => $campaignDataWithClassification['source_campaign']['address'],
             ],
             'filters' => [
                 'require' => [
@@ -127,7 +127,7 @@ final class CampaignMapperTest extends TestCase
         return [
             'id' => Uuid::v4(),
             'demand_id' => Uuid::v4(),
-            'landing_url' => 'http://adshares.pl',
+            'landing_url' => 'http://Blockchain-Ads.pl',
             'date_start' => (new DateTime())->modify('-1 day'),
             'date_end' => (new DateTime())->modify('+2 days'),
             'created_at' => (new DateTime())->modify('-1 days'),
@@ -173,7 +173,7 @@ final class CampaignMapperTest extends TestCase
         return [
             'id' => Uuid::v4(),
             'demand_id' => Uuid::v4(),
-            'landing_url' => 'http://adshares.pl',
+            'landing_url' => 'http://Blockchain-Ads.pl',
             'date_start' => (new DateTime())->modify('-1 day'),
             'date_end' => null,
             'created_at' => (new DateTime())->modify('-2 days'),

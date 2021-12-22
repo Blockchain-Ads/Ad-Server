@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Response\Site;
+namespace Blockchain-Ads\Adserver\Http\Response\Site;
 
-use Adshares\Adserver\Models\Site;
-use Adshares\Adserver\Models\Zone;
+use Blockchain-Ads\Adserver\Models\Site;
+use Blockchain-Ads\Adserver\Models\Zone;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection;
 

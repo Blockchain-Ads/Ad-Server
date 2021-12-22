@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Exceptions\Publisher\MissingCasesException;
-use Adshares\Adserver\Models\NetworkCase;
-use Adshares\Adserver\Models\NetworkCaseLogsHourlyMeta;
-use Adshares\Adserver\Utilities\DateUtils;
+use Blockchain-Ads\Adserver\Exceptions\Publisher\MissingCasesException;
+use Blockchain-Ads\Adserver\Models\NetworkCase;
+use Blockchain-Ads\Adserver\Models\NetworkCaseLogsHourlyMeta;
+use Blockchain-Ads\Adserver\Utilities\DateUtils;
 use DateTimeImmutable;
 use DateTimeInterface;
 use Illuminate\Support\Facades\DB;

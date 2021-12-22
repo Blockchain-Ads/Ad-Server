@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,25 +19,25 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Tests\Console\Commands;
+namespace Blockchain-Ads\Adserver\Tests\Console\Commands;
 
-use Adshares\Ads\AdsClient;
-use Adshares\Ads\Command\GetBlockIdsCommand;
-use Adshares\Ads\Exception\CommandException;
-use Adshares\Ads\Response\GetBlockIdsResponse;
-use Adshares\Ads\Response\GetTransactionResponse;
-use Adshares\Adserver\Console\Commands\AdsProcessTx;
-use Adshares\Adserver\Models\AdsPayment;
-use Adshares\Adserver\Models\NetworkCase;
-use Adshares\Adserver\Models\NetworkHost;
-use Adshares\Adserver\Models\NetworkImpression;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Tests\Console\ConsoleTestCase;
-use Adshares\Common\Domain\ValueObject\NullUrl;
-use Adshares\Mock\Client\DummyAdSelectClient;
-use Adshares\Mock\Client\DummyDemandClient;
-use Adshares\Supply\Application\Service\AdSelect;
-use Adshares\Supply\Application\Service\DemandClient;
+use Blockchain-Ads\Ads\AdsClient;
+use Blockchain-Ads\Ads\Command\GetBlockIdsCommand;
+use Blockchain-Ads\Ads\Exception\CommandException;
+use Blockchain-Ads\Ads\Response\GetBlockIdsResponse;
+use Blockchain-Ads\Ads\Response\GetTransactionResponse;
+use Blockchain-Ads\Adserver\Console\Commands\AdsProcessTx;
+use Blockchain-Ads\Adserver\Models\AdsPayment;
+use Blockchain-Ads\Adserver\Models\NetworkCase;
+use Blockchain-Ads\Adserver\Models\NetworkHost;
+use Blockchain-Ads\Adserver\Models\NetworkImpression;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Tests\Console\ConsoleTestCase;
+use Blockchain-Ads\Common\Domain\ValueObject\NullUrl;
+use Blockchain-Ads\Mock\Client\DummyAdSelectClient;
+use Blockchain-Ads\Mock\Client\DummyDemandClient;
+use Blockchain-Ads\Supply\Application\Service\AdSelect;
+use Blockchain-Ads\Supply\Application\Service\DemandClient;
 use Exception;
 use PHPUnit\Framework\MockObject\Stub\ConsecutiveCalls;
 

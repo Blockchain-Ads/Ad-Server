@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Mock\Client;
+namespace Blockchain-Ads\Mock\Client;
 
-use Adshares\Common\Application\Dto\PageRank;
-use Adshares\Common\Application\Dto\Taxonomy;
-use Adshares\Common\Application\Factory\TaxonomyFactory;
-use Adshares\Common\Application\Service\AdUser;
-use Adshares\Supply\Application\Dto\ImpressionContext;
-use Adshares\Supply\Application\Dto\UserContext;
+use Blockchain-Ads\Common\Application\Dto\PageRank;
+use Blockchain-Ads\Common\Application\Dto\Taxonomy;
+use Blockchain-Ads\Common\Application\Factory\TaxonomyFactory;
+use Blockchain-Ads\Common\Application\Service\AdUser;
+use Blockchain-Ads\Supply\Application\Dto\ImpressionContext;
+use Blockchain-Ads\Supply\Application\Dto\UserContext;
 use RuntimeException;
 
 use function base_path;

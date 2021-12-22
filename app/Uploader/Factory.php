@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Uploader;
+namespace Blockchain-Ads\Adserver\Uploader;
 
-use Adshares\Adserver\Uploader\Image\ImageUploader;
-use Adshares\Adserver\Uploader\Zip\ZipUploader;
+use Blockchain-Ads\Adserver\Uploader\Image\ImageUploader;
+use Blockchain-Ads\Adserver\Uploader\Zip\ZipUploader;
 use Illuminate\Http\Request;
 
 use function strrpos;

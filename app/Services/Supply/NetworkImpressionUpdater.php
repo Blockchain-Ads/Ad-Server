@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,16 +21,16 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Services\Supply;
+namespace Blockchain-Ads\Adserver\Services\Supply;
 
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\NetworkImpression;
-use Adshares\Common\Application\Service\AdUser;
-use Adshares\Common\Exception\Exception;
-use Adshares\Common\Exception\RuntimeException;
-use Adshares\Supply\Application\Dto\ImpressionContext;
-use Adshares\Supply\Application\Dto\ImpressionContextException;
-use Adshares\Supply\Application\Dto\UserContext;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\NetworkImpression;
+use Blockchain-Ads\Common\Application\Service\AdUser;
+use Blockchain-Ads\Common\Exception\Exception;
+use Blockchain-Ads\Common\Exception\RuntimeException;
+use Blockchain-Ads\Supply\Application\Dto\ImpressionContext;
+use Blockchain-Ads\Supply\Application\Dto\ImpressionContextException;
+use Blockchain-Ads\Supply\Application\Dto\UserContext;
 use DateTime;
 use Illuminate\Support\Facades\Log;
 

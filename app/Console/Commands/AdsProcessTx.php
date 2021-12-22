@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,24 +19,24 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Ads\AdsClient;
-use Adshares\Ads\Driver\CommandError;
-use Adshares\Ads\Entity\Transaction\SendManyTransaction;
-use Adshares\Ads\Entity\Transaction\SendManyTransactionWire;
-use Adshares\Ads\Entity\Transaction\SendOneTransaction;
-use Adshares\Ads\Exception\CommandException;
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Mail\CampaignResume;
-use Adshares\Adserver\Mail\DepositProcessed;
-use Adshares\Adserver\Models\AdsPayment;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\UserLedgerEntry;
-use Adshares\Adserver\Services\Common\AdsLogReader;
-use Adshares\Common\Infrastructure\Service\ExchangeRateReader;
+use Blockchain-Ads\Ads\AdsClient;
+use Blockchain-Ads\Ads\Driver\CommandError;
+use Blockchain-Ads\Ads\Entity\Transaction\SendManyTransaction;
+use Blockchain-Ads\Ads\Entity\Transaction\SendManyTransactionWire;
+use Blockchain-Ads\Ads\Entity\Transaction\SendOneTransaction;
+use Blockchain-Ads\Ads\Exception\CommandException;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Mail\CampaignResume;
+use Blockchain-Ads\Adserver\Mail\DepositProcessed;
+use Blockchain-Ads\Adserver\Models\AdsPayment;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\UserLedgerEntry;
+use Blockchain-Ads\Adserver\Services\Common\AdsLogReader;
+use Blockchain-Ads\Common\Infrastructure\Service\ExchangeRateReader;
 use Exception;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
@@ -73,7 +73,7 @@ class AdsProcessTx extends BaseCommand
         AdsClient $adsClient
     ) {
         parent::__construct($locker);
-        $this->adServerAddress = (string)config('app.adshares_address');
+        $this->adServerAddress = (string)config('app.Blockchain-Ads_address');
         $this->adsLogReader = $adsLogReader;
         $this->exchangeRateReader = $exchangeRateReader;
         $this->adsClient = $adsClient;
@@ -222,7 +222,7 @@ class AdsProcessTx extends BaseCommand
 
     private function checkIfColdWalletTransaction(AdsPayment $adsPayment): bool
     {
-        return $adsPayment->address === config('app.adshares_wallet_cold_address');
+        return $adsPayment->address === config('app.Blockchain-Ads_wallet_cold_address');
     }
 
     private function handleSendOneTx(AdsPayment $adsPayment, SendOneTransaction $transaction): void

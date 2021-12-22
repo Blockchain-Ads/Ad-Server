@@ -13,8 +13,8 @@
         "ext-pdo_mysql": "*",
         "ext-sodium": "*",
         "ext-zip": "*",
-        "adshares/ads-client": "^1",
-        "adshares/fork": "dev-master",
+        "Blockchain-Ads/ads-client": "^1",
+        "Blockchain-Ads/fork": "dev-master",
         "aws/aws-sdk-php": "~3.0",
         "barryvdh/laravel-cors": "^0.11",
         "doctrine/collections": " v1.5",
@@ -50,16 +50,16 @@
             "database/factories"
         ],
         "psr-4": {
-            "Adshares\\Lib\\": "lib/",
-            "Adshares\\Adserver\\": "app/",
-            "Adshares\\": "src/"
+            "Blockchain-Ads\\Lib\\": "lib/",
+            "Blockchain-Ads\\Adserver\\": "app/",
+            "Blockchain-Ads\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Adshares\\Adserver\\Tests\\": "tests/app",
-            "Adshares\\Mock\\": "tests/mock",
-            "Adshares\\Tests\\": "tests/src"
+            "Blockchain-Ads\\Adserver\\Tests\\": "tests/app",
+            "Blockchain-Ads\\Mock\\": "tests/mock",
+            "Blockchain-Ads\\Tests\\": "tests/src"
         }
     },
     "extra": {
@@ -98,11 +98,11 @@
     "repositories": {
         "ads-php-client": {
             "type":"git",
-            "url": "https://github.com/adshares/ads-php-client.git"
+            "url": "https://github.com/Blockchain-Ads/ads-php-client.git"
         },
-        "adshares-fork": {
+        "Blockchain-Ads-fork": {
             "type":"git",
-            "url": "https://github.com/adshares/fork.git"
+            "url": "https://github.com/Blockchain-Ads/fork.git"
         }
     },
     "minimum-stability": "dev",

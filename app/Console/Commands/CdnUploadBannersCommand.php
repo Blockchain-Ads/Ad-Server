@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,13 +21,13 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Models\Banner;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Repository\CampaignRepository;
-use Adshares\Adserver\Services\Cdn\CdnProviderFactory;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Models\Banner;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Repository\CampaignRepository;
+use Blockchain-Ads\Adserver\Services\Cdn\CdnProviderFactory;
 use Exception;
 use Illuminate\Support\Facades\Log;
 

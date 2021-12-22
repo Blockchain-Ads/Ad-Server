@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Supply\Domain\Model;
+namespace Blockchain-Ads\Supply\Domain\Model;
 
-use Adshares\Common\Domain\Adapter\ArrayCollection;
-use Adshares\Common\Domain\Id;
-use Adshares\Supply\Domain\ValueObject\Budget;
-use Adshares\Supply\Domain\ValueObject\CampaignDate;
-use Adshares\Supply\Domain\ValueObject\SourceCampaign;
-use Adshares\Supply\Domain\ValueObject\Status;
+use Blockchain-Ads\Common\Domain\Adapter\ArrayCollection;
+use Blockchain-Ads\Common\Domain\Id;
+use Blockchain-Ads\Supply\Domain\ValueObject\Budget;
+use Blockchain-Ads\Supply\Domain\ValueObject\CampaignDate;
+use Blockchain-Ads\Supply\Domain\ValueObject\SourceCampaign;
+use Blockchain-Ads\Supply\Domain\ValueObject\Status;
 use Datetime;
 
 final class Campaign

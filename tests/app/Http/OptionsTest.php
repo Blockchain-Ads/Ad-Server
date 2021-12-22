@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Http;
+namespace Blockchain-Ads\Adserver\Tests\Http;
 
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Common\Application\Service\AdClassify;
-use Adshares\Common\Application\Service\AdUser;
-use Adshares\Mock\Client\DummyAdClassifyClient;
-use Adshares\Mock\Client\DummyAdUserClient;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Common\Application\Service\AdClassify;
+use Blockchain-Ads\Common\Application\Service\AdUser;
+use Blockchain-Ads\Mock\Client\DummyAdClassifyClient;
+use Blockchain-Ads\Mock\Client\DummyAdUserClient;
 
 class OptionsTest extends TestCase
 {

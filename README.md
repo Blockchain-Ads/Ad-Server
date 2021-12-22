@@ -5,41 +5,41 @@
 </p>
 <h3 align="center"><small>Blockchan-Ads / AdServer</small></h3>
 <p align="center">
-    <a href="https://github.com/adshares/adserver/issues/new?template=bug_report.md&labels=Bug">Report bug</a>
+    <a href="https://github.com/Blockchain-Ads/adserver/issues/new?template=bug_report.md&labels=Bug">Report bug</a>
     ·
-    <a href="https://github.com/adshares/adserver/issues/new?template=feature_request.md&labels=New%20Feature">Request feature</a>
+    <a href="https://github.com/Blockchain-Ads/adserver/issues/new?template=feature_request.md&labels=New%20Feature">Request feature</a>
     ·
-    <a href="https://github.com/adshares/adserver/wiki">Wiki</a>
+    <a href="https://github.com/Blockchain-Ads/adserver/wiki">Wiki</a>
 </p>
 <p align="center">
-    <a href="https://travis-ci.org/adshares/adserver" title="Build Status" target="_blank">
-        <img src="https://travis-ci.org/adshares/adserver.svg?branch=master" alt="Build Status">
+    <a href="https://travis-ci.org/Blockchain-Ads/adserver" title="Build Status" target="_blank">
+        <img src="https://travis-ci.org/Blockchain-Ads/adserver.svg?branch=master" alt="Build Status">
     </a>
-    <a href="https://sonarcloud.io/dashboard?id=adshares-adserver" title="Code Quality" target="_blank">
-        <img src="https://sonarcloud.io/api/project_badges/measure?project=adshares-adserver&metric=alert_status" alt="Code Quality">
+    <a href="https://sonarcloud.io/dashboard?id=Blockchain-Ads-adserver" title="Code Quality" target="_blank">
+        <img src="https://sonarcloud.io/api/project_badges/measure?project=Blockchain-Ads-adserver&metric=alert_status" alt="Code Quality">
     </a>
 </p>
 
 AdServer is the core software behind the ecosystem.
 
-For **Quick Start** see [INSTALLER](https://github.com/adshares/installer) Project.
+For **Quick Start** see [INSTALLER](https://github.com/Blockchain-Ads/installer) Project.
 
 ## Documentation
 
-- [Wiki](https://github.com/adshares/adserver/wiki)
+- [Wiki](https://github.com/Blockchain-Ads/adserver/wiki)
 - [Changelog](CHANGELOG.md)
 - [Contributing Guidelines](docs/CONTRIBUTING.md)
-- [Authors](https://github.com/adshares/adserver/contributors)
-- Available [Versions](https://github.com/adshares/adserver/tags) (we use [Semantic Versioning](http://semver.org/))
+- [Authors](https://github.com/Blockchain-Ads/adserver/contributors)
+- Available [Versions](https://github.com/Blockchain-Ads/adserver/tags) (we use [Semantic Versioning](http://semver.org/))
 
 ## Related projects
 
-- [AdUser](https://github.com/adshares/aduser)
-- [AdSelect](https://github.com/adshares/adselect)
-- [AdPay](https://github.com/adshares/adpay)
-- [AdPanel](https://github.com/adshares/adpanel)
-- [ADS](https://github.com/adshares/ads)
-- [INSTALLER](https://github.com/adshares/installer)
+- [AdUser](https://github.com/Blockchain-Ads/aduser)
+- [AdSelect](https://github.com/Blockchain-Ads/adselect)
+- [AdPay](https://github.com/Blockchain-Ads/adpay)
+- [AdPanel](https://github.com/Blockchain-Ads/adpanel)
+- [ADS](https://github.com/Blockchain-Ads/ads)
+- [INSTALLER](https://github.com/Blockchain-Ads/installer)
 
 ## License
 

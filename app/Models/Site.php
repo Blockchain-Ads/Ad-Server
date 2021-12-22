@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,17 +19,17 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Models;
+namespace Blockchain-Ads\Adserver\Models;
 
-use Adshares\Adserver\Events\GenerateUUID;
-use Adshares\Adserver\Models\Traits\AutomateMutators;
-use Adshares\Adserver\Models\Traits\BinHex;
-use Adshares\Adserver\Models\Traits\Ownership;
-use Adshares\Adserver\Services\Publisher\SiteCodeGenerator;
-use Adshares\Adserver\Services\Supply\SiteFilteringMatcher;
-use Adshares\Common\Application\Dto\PageRank;
-use Adshares\Common\Application\Service\AdUser;
-use Adshares\Common\Exception\InvalidArgumentException;
+use Blockchain-Ads\Adserver\Events\GenerateUUID;
+use Blockchain-Ads\Adserver\Models\Traits\AutomateMutators;
+use Blockchain-Ads\Adserver\Models\Traits\BinHex;
+use Blockchain-Ads\Adserver\Models\Traits\Ownership;
+use Blockchain-Ads\Adserver\Services\Publisher\SiteCodeGenerator;
+use Blockchain-Ads\Adserver\Services\Supply\SiteFilteringMatcher;
+use Blockchain-Ads\Common\Application\Dto\PageRank;
+use Blockchain-Ads\Common\Application\Service\AdUser;
+use Blockchain-Ads\Common\Exception\InvalidArgumentException;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;

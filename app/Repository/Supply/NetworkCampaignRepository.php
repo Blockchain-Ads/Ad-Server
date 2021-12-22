@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,20 +19,20 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Repository\Supply;
+namespace Blockchain-Ads\Adserver\Repository\Supply;
 
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Models\NetworkBanner;
-use Adshares\Adserver\Models\NetworkCampaign;
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Common\Domain\ValueObject\SecureUrl;
-use Adshares\Common\Domain\ValueObject\Uuid;
-use Adshares\Supply\Domain\Factory\CampaignFactory;
-use Adshares\Supply\Domain\Model\Banner;
-use Adshares\Supply\Domain\Model\Campaign;
-use Adshares\Supply\Domain\Model\CampaignCollection;
-use Adshares\Supply\Domain\Repository\CampaignRepository;
-use Adshares\Supply\Domain\ValueObject\Status;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Models\NetworkBanner;
+use Blockchain-Ads\Adserver\Models\NetworkCampaign;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Supply\Domain\Factory\CampaignFactory;
+use Blockchain-Ads\Supply\Domain\Model\Banner;
+use Blockchain-Ads\Supply\Domain\Model\Campaign;
+use Blockchain-Ads\Supply\Domain\Model\CampaignCollection;
+use Blockchain-Ads\Supply\Domain\Repository\CampaignRepository;
+use Blockchain-Ads\Supply\Domain\ValueObject\Status;
 use Exception;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Log;

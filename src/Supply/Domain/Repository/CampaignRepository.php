@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Supply\Domain\Repository;
+namespace Blockchain-Ads\Supply\Domain\Repository;
 
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Supply\Domain\Model\Campaign;
-use Adshares\Supply\Domain\Model\CampaignCollection;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Supply\Domain\Model\Campaign;
+use Blockchain-Ads\Supply\Domain\Model\CampaignCollection;
 
 interface CampaignRepository
 {

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Controllers;
+namespace Blockchain-Ads\Adserver\Http\Controllers;
 
-use Adshares\Adserver\Http\Controller;
-use Adshares\Classify\Application\Exception\BannerNotVerifiedException;
-use Adshares\Classify\Application\Service\ClassifierInterface;
-use Adshares\Classify\Domain\Model\Classification;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Classify\Application\Exception\BannerNotVerifiedException;
+use Blockchain-Ads\Classify\Application\Service\ClassifierInterface;
+use Blockchain-Ads\Classify\Domain\Model\Classification;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;

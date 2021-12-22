@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,10 +19,10 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Http\Controllers\Manager;
 
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Models\Notification;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Models\Notification;
 use Illuminate\Support\Facades\Auth;
 
 class NotificationsController extends Controller

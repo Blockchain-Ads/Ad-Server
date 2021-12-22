@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,10 +19,10 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Supply\Application\Service;
+namespace Blockchain-Ads\Supply\Application\Service;
 
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Supply\Domain\Repository\CampaignRepository;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Supply\Domain\Repository\CampaignRepository;
 
 class MarkedCampaignsAsDeleted
 {

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Repository\Common;
+namespace Blockchain-Ads\Adserver\Repository\Common;
 
-use Adshares\Adserver\Models\Config;
-use Adshares\Common\Infrastructure\Service\LicenseReader;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Common\Infrastructure\Service\LicenseReader;
 
 class TotalFeeReader
 {

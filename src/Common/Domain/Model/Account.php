@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Common\Domain\Model;
+namespace Blockchain-Ads\Common\Domain\Model;
 
-use Adshares\Common\Comparable;
-use Adshares\Common\Domain;
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Common\Identifiable;
+use Blockchain-Ads\Common\Comparable;
+use Blockchain-Ads\Common\Domain;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Common\Identifiable;
 
 final class Account implements Identifiable, Comparable
 {

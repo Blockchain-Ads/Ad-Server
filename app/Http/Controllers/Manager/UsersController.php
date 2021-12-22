@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Http\Controllers\Manager;
 
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\Site;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Utilities\DomainReader;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\Site;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Utilities\DomainReader;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;

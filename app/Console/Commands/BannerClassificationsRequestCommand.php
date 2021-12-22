@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Client\ClassifierExternalClient;
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Models\BannerClassification;
-use Adshares\Adserver\Repository\Common\ClassifierExternalRepository;
-use Adshares\Adserver\Repository\Common\Dto\ClassifierExternal;
-use Adshares\Common\Exception\RuntimeException;
+use Blockchain-Ads\Adserver\Client\ClassifierExternalClient;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Models\BannerClassification;
+use Blockchain-Ads\Adserver\Repository\Common\ClassifierExternalRepository;
+use Blockchain-Ads\Adserver\Repository\Common\Dto\ClassifierExternal;
+use Blockchain-Ads\Common\Exception\RuntimeException;
 use Illuminate\Support\Collection;
 
 class BannerClassificationsRequestCommand extends BaseCommand

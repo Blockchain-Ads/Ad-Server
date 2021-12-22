@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,26 +19,26 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Http\Controllers;
+namespace Blockchain-Ads\Adserver\Http\Controllers;
 
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Http\GzippedStreamedResponse;
-use Adshares\Adserver\Http\Utils;
-use Adshares\Adserver\Models\Banner;
-use Adshares\Adserver\Models\BannerClassification;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\EventConversionLog;
-use Adshares\Adserver\Models\EventLog;
-use Adshares\Adserver\Models\Payment;
-use Adshares\Adserver\Models\ServeDomain;
-use Adshares\Adserver\Repository\CampaignRepository;
-use Adshares\Adserver\Utilities\AdsUtils;
-use Adshares\Adserver\Utilities\DomainReader;
-use Adshares\Common\Domain\ValueObject\SecureUrl;
-use Adshares\Common\Exception\RuntimeException;
-use Adshares\Common\Infrastructure\Service\LicenseReader;
-use Adshares\Demand\Application\Service\PaymentDetailsVerify;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Http\GzippedStreamedResponse;
+use Blockchain-Ads\Adserver\Http\Utils;
+use Blockchain-Ads\Adserver\Models\Banner;
+use Blockchain-Ads\Adserver\Models\BannerClassification;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\EventConversionLog;
+use Blockchain-Ads\Adserver\Models\EventLog;
+use Blockchain-Ads\Adserver\Models\Payment;
+use Blockchain-Ads\Adserver\Models\ServeDomain;
+use Blockchain-Ads\Adserver\Repository\CampaignRepository;
+use Blockchain-Ads\Adserver\Utilities\AdsUtils;
+use Blockchain-Ads\Adserver\Utilities\DomainReader;
+use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;
+use Blockchain-Ads\Common\Exception\RuntimeException;
+use Blockchain-Ads\Common\Infrastructure\Service\LicenseReader;
+use Blockchain-Ads\Demand\Application\Service\PaymentDetailsVerify;
 use DateTime;
 use DateTimeInterface;
 use Illuminate\Database\Eloquent\ModelNotFoundException;

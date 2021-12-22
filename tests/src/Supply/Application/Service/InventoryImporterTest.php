@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,22 +19,22 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Test\Supply\Application\Service;
+namespace Blockchain-Ads\Test\Supply\Application\Service;
 
-use Adshares\Common\Application\TransactionManager;
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Mock\Client\DummyDemandClient;
-use Adshares\Supply\Application\Dto\Classification\Collection;
-use Adshares\Supply\Application\Service\BannerClassifier;
-use Adshares\Supply\Application\Service\Exception\UnexpectedClientResponseException;
-use Adshares\Supply\Application\Service\Exception\EmptyInventoryException;
-use Adshares\Supply\Application\Service\InventoryImporter;
-use Adshares\Supply\Application\Service\MarkedCampaignsAsDeleted;
-use Adshares\Supply\Application\Service\DemandClient;
-use Adshares\Supply\Domain\Model\CampaignCollection;
-use Adshares\Supply\Domain\Repository\CampaignRepository;
-use Adshares\Supply\Domain\Repository\Exception\CampaignRepositoryException;
-use Adshares\Supply\Domain\ValueObject\Status;
+use Blockchain-Ads\Common\Application\TransactionManager;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Mock\Client\DummyDemandClient;
+use Blockchain-Ads\Supply\Application\Dto\Classification\Collection;
+use Blockchain-Ads\Supply\Application\Service\BannerClassifier;
+use Blockchain-Ads\Supply\Application\Service\Exception\UnexpectedClientResponseException;
+use Blockchain-Ads\Supply\Application\Service\Exception\EmptyInventoryException;
+use Blockchain-Ads\Supply\Application\Service\InventoryImporter;
+use Blockchain-Ads\Supply\Application\Service\MarkedCampaignsAsDeleted;
+use Blockchain-Ads\Supply\Application\Service\DemandClient;
+use Blockchain-Ads\Supply\Domain\Model\CampaignCollection;
+use Blockchain-Ads\Supply\Domain\Repository\CampaignRepository;
+use Blockchain-Ads\Supply\Domain\Repository\Exception\CampaignRepositoryException;
+use Blockchain-Ads\Supply\Domain\ValueObject\Status;
 use PHPUnit\Framework\TestCase;
 
 final class InventoryImporterTest extends TestCase

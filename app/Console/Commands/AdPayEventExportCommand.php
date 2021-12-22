@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,21 +21,21 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Client\Mapper\AdPay\DemandEventMapper;
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\Conversion;
-use Adshares\Adserver\Models\EventLog;
-use Adshares\Common\Application\Service\AdUser;
-use Adshares\Common\Exception\Exception;
-use Adshares\Common\Exception\RuntimeException;
-use Adshares\Demand\Application\Dto\AdPayEvents;
-use Adshares\Demand\Application\Service\AdPay;
-use Adshares\Supply\Application\Dto\ImpressionContext;
-use Adshares\Supply\Application\Dto\ImpressionContextException;
-use Adshares\Supply\Application\Dto\UserContext;
+use Blockchain-Ads\Adserver\Client\Mapper\AdPay\DemandEventMapper;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\Conversion;
+use Blockchain-Ads\Adserver\Models\EventLog;
+use Blockchain-Ads\Common\Application\Service\AdUser;
+use Blockchain-Ads\Common\Exception\Exception;
+use Blockchain-Ads\Common\Exception\RuntimeException;
+use Blockchain-Ads\Demand\Application\Dto\AdPayEvents;
+use Blockchain-Ads\Demand\Application\Service\AdPay;
+use Blockchain-Ads\Supply\Application\Dto\ImpressionContext;
+use Blockchain-Ads\Supply\Application\Dto\ImpressionContextException;
+use Blockchain-Ads\Supply\Application\Dto\UserContext;
 use DateTime;
 use DateTimeImmutable;
 use DateTimeInterface;

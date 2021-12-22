@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -18,12 +18,12 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-use Adshares\Adserver\Models\NetworkHost;
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Common\Domain\ValueObject\Email;
-use Adshares\Common\Domain\ValueObject\Url;
-use Adshares\Supply\Application\Dto\Info;
-use Adshares\Supply\Application\Dto\InfoStatistics;
+use Blockchain-Ads\Adserver\Models\NetworkHost;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Common\Domain\ValueObject\Email;
+use Blockchain-Ads\Common\Domain\ValueObject\Url;
+use Blockchain-Ads\Supply\Application\Dto\Info;
+use Blockchain-Ads\Supply\Application\Dto\InfoStatistics;
 use Illuminate\Database\Seeder;
 
 class MockDataNetworkHostsSeeder extends Seeder
@@ -40,7 +40,7 @@ class MockDataNetworkHostsSeeder extends Seeder
             new Url('http://localhost:4200'),
             new Url('http://webserver/policies/privacy.html'),
             new Url('http://webserver/policies/terms.html'),
-            new Url('http://webserver/adshares/inventory/list'),
+            new Url('http://webserver/Blockchain-Ads/inventory/list'),
             new AccountId('0001-00000004-DBEB'),
             new Email('mail@example.com'),
             ['PUB', 'ADV'],

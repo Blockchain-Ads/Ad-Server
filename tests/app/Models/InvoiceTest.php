@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,12 +19,12 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Tests\Models;
+namespace Blockchain-Ads\Adserver\Tests\Models;
 
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\Invoice;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Tests\TestCase;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\Invoice;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Tests\TestCase;
 use Illuminate\Support\Carbon;
 
 class InvoiceTest extends TestCase

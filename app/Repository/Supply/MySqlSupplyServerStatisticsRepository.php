@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Repository\Supply;
+namespace Blockchain-Ads\Adserver\Repository\Supply;
 
-use Adshares\Adserver\Facades\DB;
-use Adshares\Common\Exception\RuntimeException;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Common\Exception\RuntimeException;
 
 class MySqlSupplyServerStatisticsRepository
 {

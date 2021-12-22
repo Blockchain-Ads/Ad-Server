@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Client\Mapper\AdPay;
+namespace Blockchain-Ads\Adserver\Tests\Client\Mapper\AdPay;
 
-use Adshares\Adserver\Client\Mapper\AdPay\DemandBidStrategyMapper;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Tests\TestCase;
+use Blockchain-Ads\Adserver\Client\Mapper\AdPay\DemandBidStrategyMapper;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Tests\TestCase;
 use Illuminate\Support\Collection;
 
 final class DemandCampaignMapperTest extends TestCase

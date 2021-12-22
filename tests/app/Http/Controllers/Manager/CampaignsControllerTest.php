@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,18 +21,18 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Tests\Http\Controllers\Manager;
 
-use Adshares\Adserver\Models\Banner;
-use Adshares\Adserver\Models\BidStrategy;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\ConversionDefinition;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\UserLedgerEntry;
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Common\Application\Dto\ExchangeRate;
-use Adshares\Common\Infrastructure\Service\ExchangeRateReader;
+use Blockchain-Ads\Adserver\Models\Banner;
+use Blockchain-Ads\Adserver\Models\BidStrategy;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\ConversionDefinition;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\UserLedgerEntry;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Common\Application\Dto\ExchangeRate;
+use Blockchain-Ads\Common\Infrastructure\Service\ExchangeRateReader;
 use DateTime;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
@@ -83,8 +83,8 @@ final class CampaignsControllerTest extends TestCase
         return [
             'basicInformation' => [
                 'status' => Campaign::STATUS_ACTIVE,
-                'name' => 'Adshares test campaign',
-                'targetUrl' => 'http://adshares.net',
+                'name' => 'Blockchain-Ads test campaign',
+                'targetUrl' => 'http://blockchain-ads.com',
                 'max_cpc' => 200000000000,
                 'max_cpm' => 100000000000,
                 'budget' => 10000000000000,
@@ -336,7 +336,7 @@ final class CampaignsControllerTest extends TestCase
         $campaignInputData['basicInformation']['budget'] = $budget;
         $campaignInputData['basicInformation']['dateEnd'] = null;
         if ($hasDomainTargeting) {
-            $campaignInputData['targeting']['requires']['site']['domain'] = ['www.adshares.net'];
+            $campaignInputData['targeting']['requires']['site']['domain'] = ['www.blockchain-ads.com'];
         }
 
         $response1 = $this->postJson(self::URI, ['campaign' => $campaignInputData]);

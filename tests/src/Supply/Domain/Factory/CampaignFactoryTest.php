@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,11 +19,11 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Test\Supply\Domain\Factory;
+namespace Blockchain-Ads\Test\Supply\Domain\Factory;
 
-use Adshares\Common\Domain\ValueObject\Uuid;
-use Adshares\Supply\Domain\Factory\CampaignFactory;
-use Adshares\Supply\Domain\Factory\Exception\InvalidCampaignArgumentException;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Supply\Domain\Factory\CampaignFactory;
+use Blockchain-Ads\Supply\Domain\Factory\Exception\InvalidCampaignArgumentException;
 use DateTime;
 use PHPUnit\Framework\TestCase;
 
@@ -37,7 +37,7 @@ final class CampaignFactoryTest extends TestCase
             'id' => Uuid::v4(),
             'demand_id' => Uuid::v4(),
             'publisher_id' => Uuid::v4(),
-            'landing_url' => 'http://adshares.pl',
+            'landing_url' => 'http://Blockchain-Ads.pl',
             'date_start' => (new DateTime())->modify('-1 day'),
             'date_end' => (new DateTime())->modify('+2 days'),
             'created_at' => (new DateTime())->modify('-1 days'),

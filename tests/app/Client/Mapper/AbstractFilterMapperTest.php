@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Client\Mapper;
+namespace Blockchain-Ads\Adserver\Tests\Client\Mapper;
 
-use Adshares\Adserver\Client\Mapper\AbstractFilterMapper;
-use Adshares\Adserver\Tests\TestCase;
+use Blockchain-Ads\Adserver\Client\Mapper\AbstractFilterMapper;
+use Blockchain-Ads\Adserver\Tests\TestCase;
 
 use function json_decode;
 
@@ -76,7 +76,7 @@ class AbstractFilterMapperTest extends TestCase
   }
 },"device":{"type":"desktop","os":"unix","browser":"chrome"},
 "user":{"language":["pl","en"],"country":"xx"},
-"site":{"url":["\/\/demo-site.adshares.net","net","adshares.net","demo-site.adshares.net"],
+"site":{"url":["\/\/demo-site.blockchain-ads.com","net","blockchain-ads.com","demo-site.blockchain-ads.com"],
 "tag":["pets: cats","info"]}} 
 JSON;
         $keywords = json_decode($keywordsJson, true);
@@ -95,10 +95,10 @@ JSON;
                     'user:language' => ['pl', 'en'],
                     'user:country' => ['xx'],
                     'site:url' => [
-                        '//demo-site.adshares.net',
+                        '//demo-site.blockchain-ads.com',
                         'net',
-                        'adshares.net',
-                        'demo-site.adshares.net',
+                        'blockchain-ads.com',
+                        'demo-site.blockchain-ads.com',
                     ],
                     'site:tag' => ['pets: cats', 'info'],
 

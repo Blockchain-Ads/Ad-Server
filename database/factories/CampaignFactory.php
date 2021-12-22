@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018 Adshares sp. z o.o.
+ * Copyright (c) 2018 Blockchain-Ads sp. z o.o.
  *
  * This file is part of AdServer
  *
@@ -18,7 +18,7 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-use Adshares\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\Campaign;
 use Faker\Generator as Faker;
 
 $factory->define(Campaign::class, function (Faker $faker) {

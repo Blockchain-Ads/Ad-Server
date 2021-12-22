@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Repository\Common\EloquentExchangeRateRepository;
-use Adshares\Adserver\Utilities\SqlUtils;
-use Adshares\Common\Application\Service\ExchangeRateRepository;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Repository\Common\EloquentExchangeRateRepository;
+use Blockchain-Ads\Adserver\Utilities\SqlUtils;
+use Blockchain-Ads\Common\Application\Service\ExchangeRateRepository;
 use Illuminate\Database\QueryException;
 
 class FetchExchangeRateCommand extends BaseCommand

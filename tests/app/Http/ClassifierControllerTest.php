@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Http;
+namespace Blockchain-Ads\Adserver\Tests\Http;
 
-use Adshares\Adserver\Models\Classification;
-use Adshares\Adserver\Models\NetworkBanner;
-use Adshares\Adserver\Models\NetworkCampaign;
-use Adshares\Adserver\Models\Site;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Tests\TestCase;
+use Blockchain-Ads\Adserver\Models\Classification;
+use Blockchain-Ads\Adserver\Models\NetworkBanner;
+use Blockchain-Ads\Adserver\Models\NetworkCampaign;
+use Blockchain-Ads\Adserver\Models\Site;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Tests\TestCase;
 use Illuminate\Database\Eloquent\Collection;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -277,7 +277,7 @@ final class ClassifierControllerTest extends TestCase
         $site = factory(Site::class)->create(['id' => 1, 'user_id' => $user->id]);
 
         factory(NetworkCampaign::class)->create(['id' => 1, 'landing_url' => 'http://example.com']);
-        factory(NetworkCampaign::class)->create(['id' => 2, 'landing_url' => 'http://adshares.net']);
+        factory(NetworkCampaign::class)->create(['id' => 2, 'landing_url' => 'http://blockchain-ads.com']);
         factory(NetworkBanner::class)->create(['id' => 1, 'network_campaign_id' => 1]);
         factory(NetworkBanner::class)->create(['id' => 2, 'network_campaign_id' => 1]);
         factory(NetworkBanner::class)->create(['id' => 3, 'network_campaign_id' => 2]);
@@ -298,15 +298,15 @@ final class ClassifierControllerTest extends TestCase
         $items = $content['items'];
 
         $this->assertCount(1, $items);
-        $this->assertEquals('http://adshares.net', $items[0]['landingUrl']);
+        $this->assertEquals('http://blockchain-ads.com', $items[0]['landingUrl']);
     }
 
     public function provideLandingUrl(): array
     {
         return [
-            ['http://adshares.net'],
-            ['adshares'],
-            ['adshares.net'],
+            ['http://blockchain-ads.com'],
+            ['Blockchain-Ads'],
+            ['blockchain-ads.com'],
         ];
     }
 }

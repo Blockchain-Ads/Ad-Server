@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Services;
+namespace Blockchain-Ads\Adserver\Tests\Services;
 
-use Adshares\Adserver\Http\Utils;
-use Adshares\Adserver\Services\ConversionValidator;
-use Adshares\Adserver\Tests\TestCase;
+use Blockchain-Ads\Adserver\Http\Utils;
+use Blockchain-Ads\Adserver\Services\ConversionValidator;
+use Blockchain-Ads\Adserver\Tests\TestCase;
 use Illuminate\Support\Facades\Cache;
 
 final class ConversionValidatorTest extends TestCase

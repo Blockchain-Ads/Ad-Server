@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Classify\Infrastructure\Service;
+namespace Blockchain-Ads\Classify\Infrastructure\Service;
 
-use Adshares\Classify\Application\Service\ClassifierInterface;
-use Adshares\Classify\Application\Exception\BannerNotVerifiedException;
-use Adshares\Classify\Domain\Model\Classification;
-use Adshares\Classify\Domain\Model\ClassificationCollection;
+use Blockchain-Ads\Classify\Application\Service\ClassifierInterface;
+use Blockchain-Ads\Classify\Application\Exception\BannerNotVerifiedException;
+use Blockchain-Ads\Classify\Domain\Model\Classification;
+use Blockchain-Ads\Classify\Domain\Model\ClassificationCollection;
 
 use function array_key_exists;
 

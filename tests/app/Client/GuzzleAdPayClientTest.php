@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Client;
+namespace Blockchain-Ads\Adserver\Tests\Client;
 
-use Adshares\Adserver\Client\GuzzleAdPayClient;
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Supply\Application\Service\Exception\UnexpectedClientResponseException;
+use Blockchain-Ads\Adserver\Client\GuzzleAdPayClient;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Supply\Application\Service\Exception\UnexpectedClientResponseException;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Handler\MockHandler;

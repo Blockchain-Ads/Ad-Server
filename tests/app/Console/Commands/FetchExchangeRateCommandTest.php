@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,13 +19,13 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Tests\Console\Commands;
+namespace Blockchain-Ads\Adserver\Tests\Console\Commands;
 
-use Adshares\Adserver\Repository\Common\EloquentExchangeRateRepository;
-use Adshares\Adserver\Tests\Console\ConsoleTestCase;
-use Adshares\Common\Application\Service\Exception\ExchangeRateNotAvailableException;
-use Adshares\Common\Application\Service\ExchangeRateRepository;
-use Adshares\Mock\Client\DummyExchangeRateRepository;
+use Blockchain-Ads\Adserver\Repository\Common\EloquentExchangeRateRepository;
+use Blockchain-Ads\Adserver\Tests\Console\ConsoleTestCase;
+use Blockchain-Ads\Common\Application\Service\Exception\ExchangeRateNotAvailableException;
+use Blockchain-Ads\Common\Application\Service\ExchangeRateRepository;
+use Blockchain-Ads\Mock\Client\DummyExchangeRateRepository;
 
 final class FetchExchangeRateCommandTest extends ConsoleTestCase
 {

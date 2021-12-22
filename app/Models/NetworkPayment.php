@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,13 +19,13 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Models;
+namespace Blockchain-Ads\Adserver\Models;
 
-use Adshares\Adserver\Models\Traits\AccountAddress;
-use Adshares\Adserver\Models\Traits\AutomateMutators;
-use Adshares\Adserver\Models\Traits\BinHex;
-use Adshares\Adserver\Models\Traits\JsonValue;
-use Adshares\Adserver\Models\Traits\TransactionId;
+use Blockchain-Ads\Adserver\Models\Traits\AccountAddress;
+use Blockchain-Ads\Adserver\Models\Traits\AutomateMutators;
+use Blockchain-Ads\Adserver\Models\Traits\BinHex;
+use Blockchain-Ads\Adserver\Models\Traits\JsonValue;
+use Blockchain-Ads\Adserver\Models\Traits\TransactionId;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;

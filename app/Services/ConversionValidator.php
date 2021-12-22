@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Services;
+namespace Blockchain-Ads\Adserver\Services;
 
-use Adshares\Adserver\Http\Utils;
-use Adshares\Common\Exception\RuntimeException;
+use Blockchain-Ads\Adserver\Http\Utils;
+use Blockchain-Ads\Common\Exception\RuntimeException;
 use Illuminate\Support\Facades\Cache;
 
 class ConversionValidator

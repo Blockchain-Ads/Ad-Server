@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Publisher\Service;
+namespace Blockchain-Ads\Publisher\Service;
 
-use Adshares\Publisher\Dto\Input\ChartInput;
-use Adshares\Publisher\Dto\Result\ChartResult;
-use Adshares\Publisher\Repository\StatsRepository;
+use Blockchain-Ads\Publisher\Dto\Input\ChartInput;
+use Blockchain-Ads\Publisher\Dto\Result\ChartResult;
+use Blockchain-Ads\Publisher\Repository\StatsRepository;
 
 final class ChartDataProvider
 {

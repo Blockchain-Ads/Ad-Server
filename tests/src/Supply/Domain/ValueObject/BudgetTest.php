@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,10 +19,10 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Test\Supply\ValueObject\Model;
+namespace Blockchain-Ads\Test\Supply\ValueObject\Model;
 
-use Adshares\Supply\Domain\ValueObject\Budget;
-use Adshares\Supply\Domain\ValueObject\Exception\InvalidBudgetValueException;
+use Blockchain-Ads\Supply\Domain\ValueObject\Budget;
+use Blockchain-Ads\Supply\Domain\ValueObject\Exception\InvalidBudgetValueException;
 use PHPUnit\Framework\TestCase;
 
 final class BudgetTest extends TestCase

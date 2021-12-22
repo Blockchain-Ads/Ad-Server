@@ -3,7 +3,7 @@
 
 {{-- Dear {{ $name }} --}}
 
-Please confirm this is your new email that you want to link with your Adshares account
+Please confirm this is your new email that you want to link with your Blockchain-Ads account
 
 @component('mail::button', ['url' => config('app.adpanel_url').$uri.$token])
 Confirm and save new email

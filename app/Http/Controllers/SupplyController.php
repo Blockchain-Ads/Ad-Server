@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,28 +19,28 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Http\Controllers;
+namespace Blockchain-Ads\Adserver\Http\Controllers;
 
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Http\Utils;
-use Adshares\Adserver\Models\NetworkBanner;
-use Adshares\Adserver\Models\NetworkCase;
-use Adshares\Adserver\Models\NetworkCaseClick;
-use Adshares\Adserver\Models\NetworkHost;
-use Adshares\Adserver\Models\NetworkImpression;
-use Adshares\Adserver\Models\NetworkVectorsMeta;
-use Adshares\Adserver\Models\ServeDomain;
-use Adshares\Adserver\Models\SupplyBlacklistedDomain;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\Zone;
-use Adshares\Adserver\Utilities\AdsUtils;
-use Adshares\Adserver\Utilities\CssUtils;
-use Adshares\Adserver\Utilities\DomainReader;
-use Adshares\Adserver\Utilities\SqlUtils;
-use Adshares\Common\Application\Service\AdUser;
-use Adshares\Common\Domain\ValueObject\SecureUrl;
-use Adshares\Common\Exception\RuntimeException;
-use Adshares\Supply\Application\Service\AdSelect;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Http\Utils;
+use Blockchain-Ads\Adserver\Models\NetworkBanner;
+use Blockchain-Ads\Adserver\Models\NetworkCase;
+use Blockchain-Ads\Adserver\Models\NetworkCaseClick;
+use Blockchain-Ads\Adserver\Models\NetworkHost;
+use Blockchain-Ads\Adserver\Models\NetworkImpression;
+use Blockchain-Ads\Adserver\Models\NetworkVectorsMeta;
+use Blockchain-Ads\Adserver\Models\ServeDomain;
+use Blockchain-Ads\Adserver\Models\SupplyBlacklistedDomain;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\Zone;
+use Blockchain-Ads\Adserver\Utilities\AdsUtils;
+use Blockchain-Ads\Adserver\Utilities\CssUtils;
+use Blockchain-Ads\Adserver\Utilities\DomainReader;
+use Blockchain-Ads\Adserver\Utilities\SqlUtils;
+use Blockchain-Ads\Common\Application\Service\AdUser;
+use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;
+use Blockchain-Ads\Common\Exception\RuntimeException;
+use Blockchain-Ads\Supply\Application\Service\AdSelect;
 use DateTime;
 use DateTimeInterface;
 use Exception;
@@ -232,7 +232,7 @@ class SupplyController extends Controller
         }
 
         $eventId = Utils::createCaseIdContainingEventType($caseId, 'click');
-        $payTo = AdsUtils::normalizeAddress(config('app.adshares_address'));
+        $payTo = AdsUtils::normalizeAddress(config('app.Blockchain-Ads_address'));
         try {
             $zoneId = Utils::getZoneIdFromContext($request->query->get('ctx'));
         } catch (RuntimeException $exception) {
@@ -317,7 +317,7 @@ class SupplyController extends Controller
 
         $caseId = $request->query->get('cid');
         $eventId = Utils::createCaseIdContainingEventType($caseId, 'view');
-        $payTo = AdsUtils::normalizeAddress(config('app.adshares_address'));
+        $payTo = AdsUtils::normalizeAddress(config('app.Blockchain-Ads_address'));
         try {
             $zoneId = Utils::getZoneIdFromContext($request->query->get('ctx'));
         } catch (RuntimeException $exception) {
@@ -494,7 +494,7 @@ class SupplyController extends Controller
 
     public function targetingReachList(): Response
     {
-        if (null === ($networkHost = NetworkHost::fetchByAddress((string)config('app.adshares_address')))) {
+        if (null === ($networkHost = NetworkHost::fetchByAddress((string)config('app.Blockchain-Ads_address')))) {
             return response(
                 ['code' => Response::HTTP_INTERNAL_SERVER_ERROR, 'message' => 'Cannot get adserver id'],
                 Response::HTTP_INTERNAL_SERVER_ERROR

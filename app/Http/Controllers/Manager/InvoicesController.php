@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,13 +19,13 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Http\Controllers\Manager;
 
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Http\Utils;
-use Adshares\Adserver\Mail\InvoiceCreated;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\Invoice;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Http\Utils;
+use Blockchain-Ads\Adserver\Mail\InvoiceCreated;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\Invoice;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -76,7 +76,7 @@ class InvoicesController extends Controller
 
         $mail = new InvoiceCreated($invoice);
         $mail->attach($invoice->pdf_file);
-        Mail::to($user)->bcc(config('app.adshares_operator_email'))->queue($mail);
+        Mail::to($user)->bcc(config('app.Blockchain-Ads_operator_email'))->queue($mail);
 
         return self::json($invoice, Response::HTTP_CREATED);
     }

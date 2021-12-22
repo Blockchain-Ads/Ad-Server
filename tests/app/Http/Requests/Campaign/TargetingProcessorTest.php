@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,14 +19,14 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Tests\Http\Requests\Campaign;
+namespace Blockchain-Ads\Adserver\Tests\Http\Requests\Campaign;
 
-use Adshares\Adserver\Http\Requests\Campaign\TargetingProcessor;
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Common\Application\Model\Selector;
-use Adshares\Common\Application\Service\AdUser;
-use Adshares\Common\Application\Service\ConfigurationRepository;
-use Adshares\Mock\Client\DummyAdUserClient;
+use Blockchain-Ads\Adserver\Http\Requests\Campaign\TargetingProcessor;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Common\Application\Model\Selector;
+use Blockchain-Ads\Common\Application\Service\AdUser;
+use Blockchain-Ads\Common\Application\Service\ConfigurationRepository;
+use Blockchain-Ads\Mock\Client\DummyAdUserClient;
 
 final class TargetingProcessorTest extends TestCase
 {

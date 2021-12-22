@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "urn:x-adshares:info:0.1",
+  "$id": "urn:x-Blockchain-Ads:info:0.1",
   "type": "object",
   "title": "Service Information Schema",
   "readOnly": true,
@@ -9,12 +9,12 @@
   ],
   "properties": {
     "service": {
-      "$ref": "urn:x-adshares#service"
+      "$ref": "urn:x-Blockchain-Ads#service"
     },
     "endpoints": {
       "type": "array",
       "items": {
-        "$ref": "urn:x-adshares#endpoint"
+        "$ref": "urn:x-Blockchain-Ads#endpoint"
       }
     }
   }

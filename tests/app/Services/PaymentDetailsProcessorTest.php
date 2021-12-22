@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,20 +21,20 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Services;
+namespace Blockchain-Ads\Adserver\Tests\Services;
 
-use Adshares\Adserver\Models\AdsPayment;
-use Adshares\Adserver\Models\NetworkCase;
-use Adshares\Adserver\Models\NetworkCasePayment;
-use Adshares\Adserver\Models\NetworkImpression;
-use Adshares\Adserver\Models\NetworkPayment;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Services\PaymentDetailsProcessor;
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Common\Application\Dto\ExchangeRate;
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Common\Infrastructure\Service\ExchangeRateReader;
-use Adshares\Common\Infrastructure\Service\LicenseReader;
+use Blockchain-Ads\Adserver\Models\AdsPayment;
+use Blockchain-Ads\Adserver\Models\NetworkCase;
+use Blockchain-Ads\Adserver\Models\NetworkCasePayment;
+use Blockchain-Ads\Adserver\Models\NetworkImpression;
+use Blockchain-Ads\Adserver\Models\NetworkPayment;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Services\PaymentDetailsProcessor;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Common\Application\Dto\ExchangeRate;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Common\Infrastructure\Service\ExchangeRateReader;
+use Blockchain-Ads\Common\Infrastructure\Service\LicenseReader;
 use DateTime;
 
 final class PaymentDetailsProcessorTest extends TestCase

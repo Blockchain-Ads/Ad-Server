@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,10 +19,10 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Tests;
+namespace Blockchain-Ads\Adserver\Tests;
 
-use Adshares\Common\Application\Service\ExchangeRateRepository;
-use Adshares\Mock\Client\DummyExchangeRateRepository;
+use Blockchain-Ads\Common\Application\Service\ExchangeRateRepository;
+use Blockchain-Ads\Mock\Client\DummyExchangeRateRepository;
 use Faker\Factory;
 use Faker\Generator;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;

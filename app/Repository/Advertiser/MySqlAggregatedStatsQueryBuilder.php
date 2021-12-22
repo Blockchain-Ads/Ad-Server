@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Repository\Advertiser;
+namespace Blockchain-Ads\Adserver\Repository\Advertiser;
 
-use Adshares\Adserver\Repository\Common\MySqlQueryBuilder;
-use Adshares\Advertiser\Repository\StatsRepository;
+use Blockchain-Ads\Adserver\Repository\Common\MySqlQueryBuilder;
+use Blockchain-Ads\Advertiser\Repository\StatsRepository;
 use DateTimeInterface;
 
 use function in_array;

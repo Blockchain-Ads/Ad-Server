@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,22 +21,22 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Http\Controllers\Manager;
 
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Http\Requests\UpdateAdminSettings;
-use Adshares\Adserver\Http\Requests\UpdateRegulation;
-use Adshares\Adserver\Http\Response\LicenseResponse;
-use Adshares\Adserver\Http\Response\SettingsResponse;
-use Adshares\Adserver\Mail\PanelPlaceholdersChange;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\PanelPlaceholder;
-use Adshares\Adserver\Models\SitesRejectedDomain;
-use Adshares\Adserver\Models\UserLedgerEntry;
-use Adshares\Adserver\Utilities\SiteValidator;
-use Adshares\Common\Application\Service\LicenseVault;
-use Adshares\Common\Exception\RuntimeException;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Http\Requests\UpdateAdminSettings;
+use Blockchain-Ads\Adserver\Http\Requests\UpdateRegulation;
+use Blockchain-Ads\Adserver\Http\Response\LicenseResponse;
+use Blockchain-Ads\Adserver\Http\Response\SettingsResponse;
+use Blockchain-Ads\Adserver\Mail\PanelPlaceholdersChange;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\PanelPlaceholder;
+use Blockchain-Ads\Adserver\Models\SitesRejectedDomain;
+use Blockchain-Ads\Adserver\Models\UserLedgerEntry;
+use Blockchain-Ads\Adserver\Utilities\SiteValidator;
+use Blockchain-Ads\Common\Application\Service\LicenseVault;
+use Blockchain-Ads\Common\Exception\RuntimeException;
 use DateTimeImmutable;
 use DateTimeInterface;
 use Exception;
@@ -167,8 +167,8 @@ class AdminController extends Controller
                 $emailSendDateTime =
                     $registerDateTime->modify(sprintf('+%d minutes', self::EMAIL_NOTIFICATION_DELAY_IN_MINUTES));
                 Config::upsertDateTime(Config::PANEL_PLACEHOLDER_NOTIFICATION_TIME, $emailSendDateTime);
-                Mail::to(config('app.adshares_operator_email'))
-                    ->bcc(config('app.adshares_support_email'))
+                Mail::to(config('app.Blockchain-Ads_operator_email'))
+                    ->bcc(config('app.Blockchain-Ads_support_email'))
                     ->later($emailSendDateTime, new PanelPlaceholdersChange());
             }
         } catch (Exception $exception) {

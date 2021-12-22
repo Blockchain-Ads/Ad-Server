@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Common\Infrastructure\Service;
+namespace Blockchain-Ads\Common\Infrastructure\Service;
 
-use Adshares\Common\Application\Service\LicenseDecoder;
-use Adshares\Common\Application\Service\LicenseVault;
-use Adshares\Common\Domain\ValueObject\License;
-use Adshares\Common\Exception\RuntimeException;
+use Blockchain-Ads\Common\Application\Service\LicenseDecoder;
+use Blockchain-Ads\Common\Application\Service\LicenseVault;
+use Blockchain-Ads\Common\Domain\ValueObject\License;
+use Blockchain-Ads\Common\Exception\RuntimeException;
 
 use function file_exists;
 use function file_get_contents;

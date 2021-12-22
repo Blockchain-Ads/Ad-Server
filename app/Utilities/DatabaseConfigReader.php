@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,9 +19,9 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Utilities;
+namespace Blockchain-Ads\Adserver\Utilities;
 
-use Adshares\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\Config;
 use Illuminate\Support\Facades\Config as SystemConfig;
 
 class DatabaseConfigReader
@@ -39,12 +39,12 @@ class DatabaseConfigReader
         $operatorTxFee = $settings[Config::OPERATOR_TX_FEE];
         $operatorRxFee = $settings[Config::OPERATOR_RX_FEE];
 
-        SystemConfig::set('app.adshares_wallet_min_amount', $hotWalletMinValue);
-        SystemConfig::set('app.adshares_wallet_max_amount', $hotWalletMaxValue);
-        SystemConfig::set('app.adshares_wallet_cold_address', $coldWalletAddress);
+        SystemConfig::set('app.Blockchain-Ads_wallet_min_amount', $hotWalletMinValue);
+        SystemConfig::set('app.Blockchain-Ads_wallet_max_amount', $hotWalletMaxValue);
+        SystemConfig::set('app.Blockchain-Ads_wallet_cold_address', $coldWalletAddress);
         SystemConfig::set('app.name', $serverName);
-        SystemConfig::set('app.adshares_operator_email', $technicalEmail);
-        SystemConfig::set('app.adshares_support_email', $supportEmail);
+        SystemConfig::set('app.Blockchain-Ads_operator_email', $technicalEmail);
+        SystemConfig::set('app.Blockchain-Ads_support_email', $supportEmail);
         SystemConfig::set('app.' . Config::OPERATOR_TX_FEE, $operatorTxFee);
         SystemConfig::set('app.' . Config::OPERATOR_RX_FEE, $operatorRxFee);
     }

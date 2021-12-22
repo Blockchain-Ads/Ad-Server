@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,13 +21,13 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Console\Commands;
+namespace Blockchain-Ads\Adserver\Tests\Console\Commands;
 
-use Adshares\Adserver\Models\Banner;
-use Adshares\Adserver\Models\BannerClassification;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Tests\Console\ConsoleTestCase;
+use Blockchain-Ads\Adserver\Models\Banner;
+use Blockchain-Ads\Adserver\Models\BannerClassification;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Tests\Console\ConsoleTestCase;
 use Illuminate\Database\Eloquent\Collection;
 
 use function implode;

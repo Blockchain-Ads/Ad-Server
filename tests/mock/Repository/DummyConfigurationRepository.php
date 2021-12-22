@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Mock\Repository;
+namespace Blockchain-Ads\Mock\Repository;
 
-use Adshares\Common\Application\Factory\TaxonomyFactory;
-use Adshares\Common\Application\Model\Selector;
-use Adshares\Common\Application\Service\ConfigurationRepository;
+use Blockchain-Ads\Common\Application\Factory\TaxonomyFactory;
+use Blockchain-Ads\Common\Application\Model\Selector;
+use Blockchain-Ads\Common\Application\Service\ConfigurationRepository;
 
 use function GuzzleHttp\json_decode;
 

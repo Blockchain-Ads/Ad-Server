@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Console;
+namespace Blockchain-Ads\Adserver\Tests\Console;
 
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Tests\TestCase;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Tests\TestCase;
 
 abstract class ConsoleTestCase extends TestCase
 {

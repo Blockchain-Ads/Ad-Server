@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,14 +19,14 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Models;
+namespace Blockchain-Ads\Adserver\Models;
 
-use Adshares\Adserver\Events\CreativeSha1;
-use Adshares\Adserver\Events\GenerateUUID;
-use Adshares\Adserver\Models\Traits\AutomateMutators;
-use Adshares\Adserver\Models\Traits\BinHex;
-use Adshares\Common\Domain\ValueObject\SecureUrl;
-use Adshares\Supply\Domain\ValueObject\Size;
+use Blockchain-Ads\Adserver\Events\CreativeSha1;
+use Blockchain-Ads\Adserver\Events\GenerateUUID;
+use Blockchain-Ads\Adserver\Models\Traits\AutomateMutators;
+use Blockchain-Ads\Adserver\Models\Traits\BinHex;
+use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;
+use Blockchain-Ads\Supply\Domain\ValueObject\Size;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;

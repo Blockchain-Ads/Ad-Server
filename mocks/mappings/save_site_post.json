@@ -36,7 +36,7 @@
       "adUnits": [
         {
           "status": 1,
-          "shortHeadline": "Adshares Dashboard Advertisement",
+          "shortHeadline": "Blockchain-Ads Dashboard Advertisement",
           "type": 0,
           "size": {
             "id": 1,
@@ -55,7 +55,7 @@
         },
         {
           "status": 2,
-          "shortHeadline": "Adshares Website Advertisement",
+          "shortHeadline": "Blockchain-Ads Website Advertisement",
           "type": 1,
           "size": {
             "id": 2,

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Response\Stats;
+namespace Blockchain-Ads\Adserver\Http\Response\Stats;
 
-use Adshares\Adserver\Services\Common\ReportsStorage;
+use Blockchain-Ads\Adserver\Services\Common\ReportsStorage;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Style\Border;
 use PhpOffice\PhpSpreadsheet\Style\Fill;
@@ -92,8 +92,8 @@ abstract class ReportResponse
         $spreadsheet->getProperties()
             ->setTitle($this->name)
             ->setSubject($this->name)
-            ->setDescription('Adshares report: ' . $this->name)
-            ->setKeywords('adshares report')
+            ->setDescription('Blockchain-Ads report: ' . $this->name)
+            ->setKeywords('Blockchain-Ads report')
             ->setCategory('Report');
 
         if ($this->creator !== null) {

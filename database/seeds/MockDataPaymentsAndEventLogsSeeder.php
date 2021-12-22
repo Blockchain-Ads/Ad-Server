@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018 Adshares sp. z o.o.
+ * Copyright (c) 2018 Blockchain-Ads sp. z o.o.
  *
  * This file is part of AdServer
  *
@@ -20,9 +20,9 @@
 
 declare(strict_types = 1);
 
-use Adshares\Adserver\Models\EventLog;
-use Adshares\Adserver\Models\Payment;
-use Adshares\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Adserver\Models\EventLog;
+use Blockchain-Ads\Adserver\Models\Payment;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
 use Illuminate\Database\Seeder;
 
 class MockDataPaymentsAndEventLogsSeeder extends Seeder

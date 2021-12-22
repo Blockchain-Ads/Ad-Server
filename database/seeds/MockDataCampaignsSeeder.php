@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018 Adshares sp. z o.o.
+ * Copyright (c) 2018 Blockchain-Ads sp. z o.o.
  *
  * This file is part of AdServer
  *
@@ -18,12 +18,12 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-use Adshares\Adserver\Models\Banner;
-use Adshares\Adserver\Models\BidStrategy;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\ConversionDefinition;
-use Adshares\Adserver\Models\User;
-use Adshares\Supply\Domain\ValueObject\Size;
+use Blockchain-Ads\Adserver\Models\Banner;
+use Blockchain-Ads\Adserver\Models\BidStrategy;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\ConversionDefinition;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Supply\Domain\ValueObject\Size;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -234,7 +234,7 @@ class MockDataCampaignsSeeder extends Seeder
             <script data-inject="1">'
             .file_get_contents(public_path('-/banner.js'))
             .'</script>
-            <a id="adsharesLink">
+            <a id="Blockchain-AdsLink">
             <img src="data:image/png;base64,'
             .$base64Image
             .'" width="'

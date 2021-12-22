@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,17 +21,17 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Supply\Application\Service;
+namespace Blockchain-Ads\Supply\Application\Service;
 
-use Adshares\Common\Application\TransactionManager;
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Supply\Application\Dto\Classification\Collection;
-use Adshares\Supply\Domain\Model\Banner;
-use Adshares\Supply\Domain\Model\Campaign;
-use Adshares\Supply\Domain\Model\CampaignCollection;
-use Adshares\Supply\Domain\Repository\CampaignRepository;
-use Adshares\Supply\Domain\Repository\Exception\CampaignRepositoryException;
-use Adshares\Supply\Domain\ValueObject\Classification;
+use Blockchain-Ads\Common\Application\TransactionManager;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Supply\Application\Dto\Classification\Collection;
+use Blockchain-Ads\Supply\Domain\Model\Banner;
+use Blockchain-Ads\Supply\Domain\Model\Campaign;
+use Blockchain-Ads\Supply\Domain\Model\CampaignCollection;
+use Blockchain-Ads\Supply\Domain\Repository\CampaignRepository;
+use Blockchain-Ads\Supply\Domain\Repository\Exception\CampaignRepositoryException;
+use Blockchain-Ads\Supply\Domain\ValueObject\Classification;
 
 class InventoryImporter
 {

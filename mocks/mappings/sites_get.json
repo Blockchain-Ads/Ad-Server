@@ -33,7 +33,7 @@
       },
       "adUnits": [{
         "status": 1,
-        "shortHeadline": "Adshares Dashboard Advertisement",
+        "shortHeadline": "Blockchain-Ads Dashboard Advertisement",
         "type": "Leaderboard 728x90",
 
         "budget": 20,
@@ -46,7 +46,7 @@
       },
         {
           "status": 0,
-          "shortHeadline": "Adshares Website Advertisement",
+          "shortHeadline": "Blockchain-Ads Website Advertisement",
           "type": "image",
 
           "budget": 20,
@@ -82,7 +82,7 @@
         },
         "adUnits": [{
           "status": 1,
-          "shortHeadline": "Adshares Dashboard Advertisement",
+          "shortHeadline": "Blockchain-Ads Dashboard Advertisement",
           "type": "Large mobile banner 300x90",
 
           "budget": 20,
@@ -95,7 +95,7 @@
         },
           {
             "status": 0,
-            "shortHeadline": "Adshares Website Advertisement",
+            "shortHeadline": "Blockchain-Ads Website Advertisement",
             "type": "image",
 
             "budget": 20,

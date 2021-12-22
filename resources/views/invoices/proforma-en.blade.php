@@ -138,7 +138,7 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td class="label">Online advertising in Adshares network</td>
+                        <td class="label">Online advertising in Blockchain-Ads network</td>
                         <td>@money($invoice->net_amount)</td>
                         <td>{{ $invoice->vat_rate }}</td>
                         <td>@money($invoice->vat_amount)</td>

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Services\Advertiser\Dto;
+namespace Blockchain-Ads\Adserver\Services\Advertiser\Dto;
 
-use Adshares\Adserver\Utilities\BinaryStringUtils;
+use Blockchain-Ads\Adserver\Utilities\BinaryStringUtils;
 
 class TargetingReachVector
 {

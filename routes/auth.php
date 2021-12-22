@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018-2019 Adshares sp. z o.o.
+ * Copyright (c) 2018-2019 Blockchain-Ads sp. z o.o.
  *
  * This file is part of AdServer
  *
@@ -20,9 +20,9 @@
 
 declare(strict_types = 1);
 
-use Adshares\Adserver\Http\Controllers\Manager\AuthController;
-use Adshares\Adserver\Http\Controllers\Manager\SettingsController;
-use Adshares\Adserver\Http\Kernel;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\AuthController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\SettingsController;
+use Blockchain-Ads\Adserver\Http\Kernel;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware([Kernel::JSON_API])->group(function () {

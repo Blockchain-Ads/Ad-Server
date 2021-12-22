@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,12 +19,12 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Http;
+namespace Blockchain-Ads\Adserver\Http;
 
-use Adshares\Adserver\Utilities\UuidStringGenerator;
-use Adshares\Common\Exception\RuntimeException;
-use Adshares\Supply\Application\Dto\ImpressionContext;
-use Adshares\Supply\Application\Dto\UserContext;
+use Blockchain-Ads\Adserver\Utilities\UuidStringGenerator;
+use Blockchain-Ads\Common\Exception\RuntimeException;
+use Blockchain-Ads\Supply\Application\Dto\ImpressionContext;
+use Blockchain-Ads\Supply\Application\Dto\UserContext;
 use DateTime;
 use Exception;
 use Illuminate\Http\Request;

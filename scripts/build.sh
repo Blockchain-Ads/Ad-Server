@@ -11,7 +11,7 @@ then
 
   git clone \
     --depth=1 \
-    https://github.com/adshares/adserver.git \
+    https://github.com/Blockchain-Ads/adserver.git \
     --branch ${BUILD_BRANCH:-master} \
     ${BUILD_PATH}/build
 

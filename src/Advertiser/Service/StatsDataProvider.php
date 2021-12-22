@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Advertiser\Service;
+namespace Blockchain-Ads\Advertiser\Service;
 
-use Adshares\Advertiser\Dto\Input\ConversionDataInput;
-use Adshares\Advertiser\Dto\Input\StatsInput;
-use Adshares\Advertiser\Dto\Result\Stats\ConversionDataCollection;
-use Adshares\Advertiser\Dto\Result\StatsResult;
-use Adshares\Advertiser\Repository\StatsRepository;
-use Adshares\Advertiser\Dto\Result\Stats\DataCollection;
+use Blockchain-Ads\Advertiser\Dto\Input\ConversionDataInput;
+use Blockchain-Ads\Advertiser\Dto\Input\StatsInput;
+use Blockchain-Ads\Advertiser\Dto\Result\Stats\ConversionDataCollection;
+use Blockchain-Ads\Advertiser\Dto\Result\StatsResult;
+use Blockchain-Ads\Advertiser\Repository\StatsRepository;
+use Blockchain-Ads\Advertiser\Dto\Result\Stats\DataCollection;
 
 class StatsDataProvider
 {

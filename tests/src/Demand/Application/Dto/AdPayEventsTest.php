@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Tests\Demand\Application\Dto;
+namespace Blockchain-Ads\Tests\Demand\Application\Dto;
 
-use Adshares\Demand\Application\Dto\AdPayEvents;
+use Blockchain-Ads\Demand\Application\Dto\AdPayEvents;
 use DateTime;
 use PHPUnit\Framework\TestCase;
 

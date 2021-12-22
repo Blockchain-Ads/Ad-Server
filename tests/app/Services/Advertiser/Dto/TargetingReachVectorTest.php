@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Services\Advertiser\Dto;
+namespace Blockchain-Ads\Adserver\Tests\Services\Advertiser\Dto;
 
-use Adshares\Adserver\Services\Advertiser\Dto\TargetingReachVector;
-use Adshares\Adserver\Tests\TestCase;
+use Blockchain-Ads\Adserver\Services\Advertiser\Dto\TargetingReachVector;
+use Blockchain-Ads\Adserver\Tests\TestCase;
 
 final class TargetingReachVectorTest extends TestCase
 {

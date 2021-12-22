@@ -39,7 +39,7 @@
       ],
       "keywords": {
         "source_host": "http://webserver",
-        "adshares_address": "0001-00000003-AB0C"
+        "Blockchain-Ads_address": "0001-00000003-AB0C"
       },
       "filters": {
         "exclude": {},

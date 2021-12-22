@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Client;
+namespace Blockchain-Ads\Adserver\Client;
 
-use Adshares\Adserver\Models\NetworkBanner;
-use Adshares\Classify\Domain\Model\Classification;
-use Adshares\Supply\Application\Dto\Classification\Collection;
-use Adshares\Supply\Application\Service\BannerClassifier;
-use Adshares\Classify\Application\Service\ClassifierInterface;
-use Adshares\Classify\Application\Exception\BannerNotVerifiedException;
+use Blockchain-Ads\Adserver\Models\NetworkBanner;
+use Blockchain-Ads\Classify\Domain\Model\Classification;
+use Blockchain-Ads\Supply\Application\Dto\Classification\Collection;
+use Blockchain-Ads\Supply\Application\Service\BannerClassifier;
+use Blockchain-Ads\Classify\Application\Service\ClassifierInterface;
+use Blockchain-Ads\Classify\Application\Exception\BannerNotVerifiedException;
 
 class LocalPublisherBannerClassifier implements BannerClassifier
 {

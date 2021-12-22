@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Test\Common\Domain\ValueObject;
+namespace Blockchain-Ads\Test\Common\Domain\ValueObject;
 
-use Adshares\Common\Domain\ValueObject\TransactionId;
+use Blockchain-Ads\Common\Domain\ValueObject\TransactionId;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 

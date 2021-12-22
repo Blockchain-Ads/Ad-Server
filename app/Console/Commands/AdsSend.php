@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,12 +19,12 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Ads\AdsClient;
-use Adshares\Ads\Command\SendOneCommand;
-use Adshares\Ads\Driver\CliDriver;
-use Adshares\Adserver\Models\User;
+use Blockchain-Ads\Ads\AdsClient;
+use Blockchain-Ads\Ads\Command\SendOneCommand;
+use Blockchain-Ads\Ads\Driver\CliDriver;
+use Blockchain-Ads\Adserver\Models\User;
 
 use function file_exists;
 use function GuzzleHttp\json_encode;
@@ -76,13 +76,13 @@ class AdsSend extends BaseCommand
             $client = $from;
         } else {
             $drv = new CliDriver(
-                $this->data[$from]['ADSHARES_ADDRESS'],
-                $this->data[$from]['ADSHARES_SECRET'],
-                $this->data[$from]['ADSHARES_NODE_HOST'],
-                $this->data[$from]['ADSHARES_NODE_PORT']
+                $this->data[$from]['Blockchain-Ads_ADDRESS'],
+                $this->data[$from]['Blockchain-Ads_SECRET'],
+                $this->data[$from]['Blockchain-Ads_NODE_HOST'],
+                $this->data[$from]['Blockchain-Ads_NODE_PORT']
             );
-            $drv->setCommand(config('app.adshares_command'));
-            $drv->setWorkingDir(config('app.adshares_workingdir'));
+            $drv->setCommand(config('app.Blockchain-Ads_command'));
+            $drv->setWorkingDir(config('app.Blockchain-Ads_workingdir'));
             $client = new AdsClient($drv);
         }
 
@@ -99,7 +99,7 @@ class AdsSend extends BaseCommand
         return [
             $client->runTransaction(
                 new SendOneCommand(
-                    config('app.adshares_address'),
+                    config('app.Blockchain-Ads_address'),
                     $amount * 10 ** 11,
                     str_pad($UID, 64, '0', STR_PAD_LEFT)
                 )

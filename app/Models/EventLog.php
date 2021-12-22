@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,18 +19,18 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Models;
+namespace Blockchain-Ads\Adserver\Models;
 
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Http\Utils;
-use Adshares\Adserver\Models\Traits\AccountAddress;
-use Adshares\Adserver\Models\Traits\AutomateMutators;
-use Adshares\Adserver\Models\Traits\BinHex;
-use Adshares\Adserver\Models\Traits\JsonValue;
-use Adshares\Adserver\Services\Demand\AdPayPaymentReportProcessor;
-use Adshares\Adserver\Utilities\DomainReader;
-use Adshares\Common\Domain\ValueObject\Uuid;
-use Adshares\Supply\Application\Dto\UserContext;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Http\Utils;
+use Blockchain-Ads\Adserver\Models\Traits\AccountAddress;
+use Blockchain-Ads\Adserver\Models\Traits\AutomateMutators;
+use Blockchain-Ads\Adserver\Models\Traits\BinHex;
+use Blockchain-Ads\Adserver\Models\Traits\JsonValue;
+use Blockchain-Ads\Adserver\Services\Demand\AdPayPaymentReportProcessor;
+use Blockchain-Ads\Adserver\Utilities\DomainReader;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Supply\Application\Dto\UserContext;
 use DateTime;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;

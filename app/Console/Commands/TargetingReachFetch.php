@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,16 +21,16 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Http\Utils;
-use Adshares\Adserver\Models\NetworkHost;
-use Adshares\Adserver\Models\NetworkVectorsMeta;
-use Adshares\Common\Exception\RuntimeException;
-use Adshares\Supply\Application\Service\Exception\EmptyInventoryException;
-use Adshares\Supply\Application\Service\Exception\UnexpectedClientResponseException;
-use Adshares\Supply\Application\Service\SupplyClient;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Http\Utils;
+use Blockchain-Ads\Adserver\Models\NetworkHost;
+use Blockchain-Ads\Adserver\Models\NetworkVectorsMeta;
+use Blockchain-Ads\Common\Exception\RuntimeException;
+use Blockchain-Ads\Supply\Application\Service\Exception\EmptyInventoryException;
+use Blockchain-Ads\Supply\Application\Service\Exception\UnexpectedClientResponseException;
+use Blockchain-Ads\Supply\Application\Service\SupplyClient;
 use DateTimeImmutable;
 use Illuminate\Support\Facades\DB;
 use Throwable;
@@ -65,7 +65,7 @@ class TargetingReachFetch extends BaseCommand
         }
         $this->info(sprintf('Start command %s', $this->name));
 
-        $adserverAddress = (string)config('app.adshares_address');
+        $adserverAddress = (string)config('app.Blockchain-Ads_address');
         $dateThreshold = new DateTimeImmutable('-23 hours');
         $networkHosts = NetworkHost::fetchHosts();
         $networkVectorsMetas = NetworkVectorsMeta::fetch()->keyBy('network_host_id');

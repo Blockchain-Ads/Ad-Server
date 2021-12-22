@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,13 +21,13 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Client;
+namespace Blockchain-Ads\Adserver\Client;
 
-use Adshares\Adserver\Repository\Common\ClassifierExternalRepository;
-use Adshares\Adserver\Repository\Common\Dto\ClassifierExternal;
-use Adshares\Common\Application\Dto\Taxonomy;
-use Adshares\Common\Application\Factory\TaxonomyFactory;
-use Adshares\Common\Application\Service\AdClassify;
+use Blockchain-Ads\Adserver\Repository\Common\ClassifierExternalRepository;
+use Blockchain-Ads\Adserver\Repository\Common\Dto\ClassifierExternal;
+use Blockchain-Ads\Common\Application\Dto\Taxonomy;
+use Blockchain-Ads\Common\Application\Factory\TaxonomyFactory;
+use Blockchain-Ads\Common\Application\Service\AdClassify;
 
 final class MultipleExternalClassifierAdClassifyClient implements AdClassify
 {

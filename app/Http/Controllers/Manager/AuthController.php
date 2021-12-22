@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,22 +19,22 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Http\Controllers\Manager;
 
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Mail\AuthRecovery;
-use Adshares\Adserver\Mail\Crm\UserRegistered;
-use Adshares\Adserver\Mail\UserEmailActivate;
-use Adshares\Adserver\Mail\UserEmailChangeConfirm1Old;
-use Adshares\Adserver\Mail\UserEmailChangeConfirm2New;
-use Adshares\Adserver\Mail\UserConfirmed;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\RefLink;
-use Adshares\Adserver\Models\Token;
-use Adshares\Adserver\Models\User;
-use Adshares\Common\Application\Service\Exception\ExchangeRateNotAvailableException;
-use Adshares\Common\Infrastructure\Service\ExchangeRateReader;
-use Adshares\Config\RegistrationMode;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Mail\AuthRecovery;
+use Blockchain-Ads\Adserver\Mail\Crm\UserRegistered;
+use Blockchain-Ads\Adserver\Mail\UserEmailActivate;
+use Blockchain-Ads\Adserver\Mail\UserEmailChangeConfirm1Old;
+use Blockchain-Ads\Adserver\Mail\UserEmailChangeConfirm2New;
+use Blockchain-Ads\Adserver\Mail\UserConfirmed;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\RefLink;
+use Blockchain-Ads\Adserver\Models\Token;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Common\Application\Service\Exception\ExchangeRateNotAvailableException;
+use Blockchain-Ads\Common\Infrastructure\Service\ExchangeRateReader;
+use Blockchain-Ads\Config\RegistrationMode;
 use DateTime;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;

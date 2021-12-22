@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,19 +19,19 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Http\Controllers\Manager;
 
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Utilities\InvoiceUtils;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Utilities\InvoiceUtils;
 use Illuminate\Http\JsonResponse;
 use Symfony\Component\Intl\Countries;
 
 class ConfigController extends Controller
 {
 
-    public function adsharesAddress(): JsonResponse
+    public function Blockchain-AdsAddress(): JsonResponse
     {
-        return self::json(['adsharesAddress' => config('app.adshares_address')], 200);
+        return self::json(['Blockchain-AdsAddress' => config('app.Blockchain-Ads_address')], 200);
     }
 
     public function countries(): JsonResponse

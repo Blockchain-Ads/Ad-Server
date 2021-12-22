@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,12 +19,12 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Tests\Console\Commands;
+namespace Blockchain-Ads\Adserver\Tests\Console\Commands;
 
-use Adshares\Adserver\Models\NetworkCampaign;
-use Adshares\Adserver\Tests\Console\ConsoleTestCase;
-use Adshares\Supply\Domain\Repository\CampaignRepository;
-use Adshares\Supply\Domain\ValueObject\Status;
+use Blockchain-Ads\Adserver\Models\NetworkCampaign;
+use Blockchain-Ads\Adserver\Tests\Console\ConsoleTestCase;
+use Blockchain-Ads\Supply\Domain\Repository\CampaignRepository;
+use Blockchain-Ads\Supply\Domain\ValueObject\Status;
 
 final class InventoryImporterCommandTest extends ConsoleTestCase
 {

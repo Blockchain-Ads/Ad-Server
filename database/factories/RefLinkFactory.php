@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -18,10 +18,10 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-use Adshares\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\User;
 use Faker\Generator as Faker;
 
-$factory->define(\Adshares\Adserver\Models\RefLink::class, function (Faker $faker) {
+$factory->define(\Blockchain-Ads\Adserver\Models\RefLink::class, function (Faker $faker) {
     return [
         'user_id' => function() {
             return factory(User::class)->create()->id;

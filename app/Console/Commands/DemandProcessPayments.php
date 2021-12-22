@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Exceptions\ConsoleCommandException;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\PaymentReport;
-use Adshares\Common\Exception\InvalidArgumentException;
+use Blockchain-Ads\Adserver\Exceptions\ConsoleCommandException;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\PaymentReport;
+use Blockchain-Ads\Common\Exception\InvalidArgumentException;
 use DateTime;
 use DateTimeInterface;
 use Illuminate\Database\Eloquent\Collection;

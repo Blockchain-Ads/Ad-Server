@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Client\Mapper\AdPay;
+namespace Blockchain-Ads\Adserver\Client\Mapper\AdPay;
 
-use Adshares\Adserver\Client\Mapper\JsonValueMapper;
-use Adshares\Adserver\Models\Conversion;
-use Adshares\Adserver\Models\EventLog;
-use Adshares\Common\Application\Service\AdUser;
+use Blockchain-Ads\Adserver\Client\Mapper\JsonValueMapper;
+use Blockchain-Ads\Adserver\Models\Conversion;
+use Blockchain-Ads\Adserver\Models\EventLog;
+use Blockchain-Ads\Common\Application\Service\AdUser;
 use Illuminate\Database\Eloquent\Collection;
 
 class DemandEventMapper

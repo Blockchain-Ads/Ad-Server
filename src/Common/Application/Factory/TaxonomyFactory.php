@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Common\Application\Factory;
+namespace Blockchain-Ads\Common\Application\Factory;
 
-use Adshares\Common\Application\Dto\Taxonomy;
-use Adshares\Common\Domain\ValueObject\SemVer;
-use Adshares\Common\Domain\ValueObject\Taxonomy\Schema;
-use Adshares\Common\Exception\RuntimeException;
+use Blockchain-Ads\Common\Application\Dto\Taxonomy;
+use Blockchain-Ads\Common\Domain\ValueObject\SemVer;
+use Blockchain-Ads\Common\Domain\ValueObject\Taxonomy\Schema;
+use Blockchain-Ads\Common\Exception\RuntimeException;
 use ErrorException;
 use Illuminate\Support\Facades\Log;
 
@@ -41,7 +41,7 @@ final class TaxonomyFactory
 
     public static function fromArray(array $taxonomy): Taxonomy
     {
-        $schema = Schema::fromString($taxonomy['$schema'] ?? 'urn:x-adshares:taxonomy');
+        $schema = Schema::fromString($taxonomy['$schema'] ?? 'urn:x-Blockchain-Ads:taxonomy');
 
         $fallbackVersion = ($taxonomy['meta'] ?? false) ? $taxonomy['meta']['version'] : '0.0.0';
         $version = SemVer::fromString($taxonomy['$version'] ?? $fallbackVersion);

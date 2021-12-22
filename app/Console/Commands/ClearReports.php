@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Models\ReportMeta;
-use Adshares\Adserver\Services\Common\ReportsStorage;
+use Blockchain-Ads\Adserver\Models\ReportMeta;
+use Blockchain-Ads\Adserver\Services\Common\ReportsStorage;
 use DateInterval;
 use DateTime;
 use Exception;

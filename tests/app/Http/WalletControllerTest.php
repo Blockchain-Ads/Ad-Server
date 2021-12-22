@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,13 +19,13 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Tests\Http;
+namespace Blockchain-Ads\Adserver\Tests\Http;
 
-use Adshares\Adserver\Mail\WithdrawalApproval;
-use Adshares\Adserver\Models\Token;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\UserLedgerEntry;
-use Adshares\Adserver\Tests\TestCase;
+use Blockchain-Ads\Adserver\Mail\WithdrawalApproval;
+use Blockchain-Ads\Adserver\Models\Token;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\UserLedgerEntry;
+use Blockchain-Ads\Adserver\Tests\TestCase;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Mail;
@@ -91,7 +91,7 @@ class WalletControllerTest extends TestCase
 
     public function testCalculateWithdrawInvalidAdServerAddress(): void
     {
-        Config::set('app.adshares_address', '');//invalid ADS address set for AdServer
+        Config::set('app.Blockchain-Ads_address', '');//invalid ADS address set for AdServer
         $this->actingAs(factory(User::class)->create(), 'api');
         $response = $this->postJson(
             '/api/calculate-withdrawal',
@@ -314,7 +314,7 @@ class WalletControllerTest extends TestCase
         $this->actingAs($user, 'api');
         $response = $this->get('/api/deposit-info');
 
-        $response->assertStatus(Response::HTTP_OK)->assertJson(['address' => config('app.adshares_address')]);
+        $response->assertStatus(Response::HTTP_OK)->assertJson(['address' => config('app.Blockchain-Ads_address')]);
         $content = json_decode($response->getContent());
 
         // check response field

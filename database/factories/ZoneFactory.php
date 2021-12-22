@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018 Adshares sp. z o.o.
+ * Copyright (c) 2018 Blockchain-Ads sp. z o.o.
  *
  * This file is part of AdServer
  *
@@ -18,8 +18,8 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-use Adshares\Adserver\Models\Zone;
-use Adshares\Supply\Domain\ValueObject\Size;
+use Blockchain-Ads\Adserver\Models\Zone;
+use Blockchain-Ads\Supply\Domain\ValueObject\Size;
 use Faker\Generator as Faker;
 
 $factory->define(Zone::class, function (Faker $faker) {

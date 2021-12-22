@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Http\Controllers;
+namespace Blockchain-Ads\Adserver\Tests\Http\Controllers;
 
-use Adshares\Adserver\Models\NetworkBanner;
-use Adshares\Adserver\Models\NetworkCampaign;
-use Adshares\Adserver\Models\NetworkHost;
-use Adshares\Adserver\Tests\TestCase;
+use Blockchain-Ads\Adserver\Models\NetworkBanner;
+use Blockchain-Ads\Adserver\Models\NetworkCampaign;
+use Blockchain-Ads\Adserver\Models\NetworkHost;
+use Blockchain-Ads\Adserver\Tests\TestCase;
 use Symfony\Component\HttpFoundation\Response;
 
 final class SupplyControllerTest extends TestCase

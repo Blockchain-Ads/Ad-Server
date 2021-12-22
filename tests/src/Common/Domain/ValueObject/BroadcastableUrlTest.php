@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Test\Common\Domain\ValueObject;
+namespace Blockchain-Ads\Test\Common\Domain\ValueObject;
 
-use Adshares\Common\Domain\ValueObject\Url;
-use Adshares\Network\BroadcastableUrl;
+use Blockchain-Ads\Common\Domain\ValueObject\Url;
+use Blockchain-Ads\Network\BroadcastableUrl;
 use PHPUnit\Framework\TestCase;
 
 use function array_map;
@@ -44,15 +44,15 @@ class BroadcastableUrlTest extends TestCase
     public function provider(): array
     {
         $values = [
-            ['https://adshares.net', 'https://adshares.net'],
-            ['https://🍕adshares.net', 'xn--https://adshares-pg68o.net'],
-            ['https://a🍕dshares.net', 'xn--https://adshares-qg68o.net'],
-            ['https://ads🍕hares.net', 'xn--https://adshares-sg68o.net'],
-            ['https://adshares🍕.net', 'xn--https://adshares-xg68o.net'],
-            ['https://adshares.🍕net', 'https://adshares.xn--net-o803b'],
-            ['https://adshares.n🍕et', 'https://adshares.xn--net-p803b'],
-            ['https://adshares.ne🍕t', 'https://adshares.xn--net-q803b'],
-            ['https://adshares.net🍕', 'https://adshares.xn--net-r803b'],
+            ['https://blockchain-ads.com', 'https://blockchain-ads.com'],
+            ['https://🍕blockchain-ads.com', 'xn--https://Blockchain-Ads-pg68o.net'],
+            ['https://a🍕dshares.net', 'xn--https://Blockchain-Ads-qg68o.net'],
+            ['https://ads🍕hares.net', 'xn--https://Blockchain-Ads-sg68o.net'],
+            ['https://Blockchain-Ads🍕.net', 'xn--https://Blockchain-Ads-xg68o.net'],
+            ['https://Blockchain-Ads.🍕net', 'https://Blockchain-Ads.xn--net-o803b'],
+            ['https://Blockchain-Ads.n🍕et', 'https://Blockchain-Ads.xn--net-p803b'],
+            ['https://Blockchain-Ads.ne🍕t', 'https://Blockchain-Ads.xn--net-q803b'],
+            ['https://blockchain-ads.com🍕', 'https://Blockchain-Ads.xn--net-r803b'],
         ];
 
         $mapper = function (array $args) {

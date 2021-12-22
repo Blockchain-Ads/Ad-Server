@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,20 +21,20 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Mock\Client;
+namespace Blockchain-Ads\Mock\Client;
 
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Http\Utils;
-use Adshares\Adserver\Models\NetworkBanner;
-use Adshares\Adserver\Models\NetworkCampaign;
-use Adshares\Adserver\Models\Zone;
-use Adshares\Adserver\Utilities\AdsUtils;
-use Adshares\Common\Domain\ValueObject\SecureUrl;
-use Adshares\Supply\Application\Dto\FoundBanners;
-use Adshares\Supply\Application\Dto\ImpressionContext;
-use Adshares\Supply\Application\Service\AdSelect;
-use Adshares\Supply\Domain\Model\CampaignCollection;
-use Adshares\Supply\Domain\ValueObject\Status;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Http\Utils;
+use Blockchain-Ads\Adserver\Models\NetworkBanner;
+use Blockchain-Ads\Adserver\Models\NetworkCampaign;
+use Blockchain-Ads\Adserver\Models\Zone;
+use Blockchain-Ads\Adserver\Utilities\AdsUtils;
+use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;
+use Blockchain-Ads\Supply\Application\Dto\FoundBanners;
+use Blockchain-Ads\Supply\Application\Dto\ImpressionContext;
+use Blockchain-Ads\Supply\Application\Service\AdSelect;
+use Blockchain-Ads\Supply\Domain\Model\CampaignCollection;
+use Blockchain-Ads\Supply\Domain\ValueObject\Status;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Collection;
 use InvalidArgumentException;
@@ -88,7 +88,7 @@ final class DummyAdSelectClient implements AdSelect
                     'publisher_id' => $zoneData[$bannerId]['publisher_id'],
                     'zone_id' => $zoneData[$bannerId]['zone_id'],
                     'pay_from' => $campaign->source_address,
-                    'pay_to' => AdsUtils::normalizeAddress(config('app.adshares_address')),
+                    'pay_to' => AdsUtils::normalizeAddress(config('app.Blockchain-Ads_address')),
                     'type' => $banner->type,
                     'size' => $banner->size,
                     'serve_url' => $banner->serve_url,

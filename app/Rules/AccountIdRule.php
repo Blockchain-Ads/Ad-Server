@@ -1,8 +1,8 @@
 <?php
 
-namespace Adshares\Adserver\Rules;
+namespace Blockchain-Ads\Adserver\Rules;
 
-use Adshares\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
 use Illuminate\Contracts\Validation\Rule;
 
 class AccountIdRule implements Rule

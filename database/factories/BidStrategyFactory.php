@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018-2019 Adshares sp. z o.o.
+ * Copyright (c) 2018-2019 Blockchain-Ads sp. z o.o.
  *
  * This file is part of AdServer
  *
@@ -20,7 +20,7 @@
 
 declare(strict_types = 1);
 
-use Adshares\Adserver\Models\BidStrategy;
+use Blockchain-Ads\Adserver\Models\BidStrategy;
 use Faker\Generator as Faker;
 
 $factory->define(BidStrategy::class, function (Faker $faker) {

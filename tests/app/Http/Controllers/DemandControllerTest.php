@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,16 +21,16 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Http\Controllers;
+namespace Blockchain-Ads\Adserver\Tests\Http\Controllers;
 
-use Adshares\Adserver\Models\Banner;
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\EventLog;
-use Adshares\Adserver\Models\Payment;
-use Adshares\Adserver\Models\ServeDomain;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Demand\Application\Service\PaymentDetailsVerify;
+use Blockchain-Ads\Adserver\Models\Banner;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\EventLog;
+use Blockchain-Ads\Adserver\Models\Payment;
+use Blockchain-Ads\Adserver\Models\ServeDomain;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Demand\Application\Service\PaymentDetailsVerify;
 use Illuminate\Support\Facades\Config;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -40,7 +40,7 @@ final class DemandControllerTest extends TestCase
 {
     private const PAYMENT_DETAIL_URL = '/payment-details';
 
-    private const INVENTORY_LIST_URL = '/adshares/inventory/list';
+    private const INVENTORY_LIST_URL = '/Blockchain-Ads/inventory/list';
 
     public function testPaymentDetailsWhenMoreThanOnePaymentExistsForGivenTransactionIdAndAddress(): void
     {

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Response\Stats;
+namespace Blockchain-Ads\Adserver\Http\Response\Stats;
 
-use Adshares\Adserver\Models\BidStrategy;
+use Blockchain-Ads\Adserver\Models\BidStrategy;
 use DateTimeImmutable;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Style\Border;
@@ -105,8 +105,8 @@ class BidStrategySpreadsheetResponse
         $spreadsheet->getProperties()
             ->setTitle($this->bidStrategy->name)
             ->setSubject($this->bidStrategy->name)
-            ->setDescription('Adshares bid strategy: ' . $this->bidStrategy->name)
-            ->setKeywords('adshares bid strategy')
+            ->setDescription('Blockchain-Ads bid strategy: ' . $this->bidStrategy->name)
+            ->setKeywords('Blockchain-Ads bid strategy')
             ->setCategory('Bid strategy');
 
         if ($this->creator !== null) {

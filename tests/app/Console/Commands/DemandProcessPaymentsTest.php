@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,15 +21,15 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Console\Commands;
+namespace Blockchain-Ads\Adserver\Tests\Console\Commands;
 
-use Adshares\Adserver\Console\Commands\AdPayGetPayments;
-use Adshares\Adserver\Console\Commands\DemandSendPayments;
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\PaymentReport;
-use Adshares\Adserver\Tests\Console\ConsoleTestCase;
-use Adshares\Mock\Console\Kernel as KernelMock;
+use Blockchain-Ads\Adserver\Console\Commands\AdPayGetPayments;
+use Blockchain-Ads\Adserver\Console\Commands\DemandSendPayments;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\PaymentReport;
+use Blockchain-Ads\Adserver\Tests\Console\ConsoleTestCase;
+use Blockchain-Ads\Mock\Console\Kernel as KernelMock;
 use DateTime;
 use Illuminate\Contracts\Console\Kernel;
 use Symfony\Component\Console\Exception\LogicException;

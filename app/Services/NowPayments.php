@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,16 +21,16 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Services;
+namespace Blockchain-Ads\Adserver\Services;
 
-use Adshares\Ads\Util\AdsConverter;
-use Adshares\Adserver\Mail\DepositProcessed;
-use Adshares\Adserver\Models\NowPaymentsLog;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\UserLedgerEntry;
-use Adshares\Common\Application\Service\Exception\ExchangeRateNotAvailableException;
-use Adshares\Common\Domain\ValueObject\SecureUrl;
-use Adshares\Common\Infrastructure\Service\ExchangeRateReader;
+use Blockchain-Ads\Ads\Util\AdsConverter;
+use Blockchain-Ads\Adserver\Mail\DepositProcessed;
+use Blockchain-Ads\Adserver\Models\NowPaymentsLog;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\UserLedgerEntry;
+use Blockchain-Ads\Common\Application\Service\Exception\ExchangeRateNotAvailableException;
+use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;
+use Blockchain-Ads\Common\Infrastructure\Service\ExchangeRateReader;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\RequestOptions;

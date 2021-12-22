@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018-2019 Adshares sp. z o.o.
+ * Copyright (c) 2018-2019 Blockchain-Ads sp. z o.o.
  *
  * This file is part of AdServer
  *
@@ -20,7 +20,7 @@
 
 declare(strict_types = 1);
 
-use Adshares\Adserver\Models\ConversionDefinition;
+use Blockchain-Ads\Adserver\Models\ConversionDefinition;
 use Faker\Generator as Faker;
 
 $factory->define(

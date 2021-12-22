@@ -97,8 +97,8 @@ export MAIL_PORT=${MAIL_PORT:-1025}
 export MAIL_USERNAME=${MAIL_USERNAME}
 export MAIL_PASSWORD=${MAIL_PASSWORD}
 export MAIL_ENCRYPTION=${MAIL_ENCRYPTION:-null}
-export MAIL_FROM_ADDRESS=${MAIL_FROM_ADDRESS:-dev@adshares.net}
-export MAIL_FROM_NAME=${MAIL_FROM_NAME:-'[dev] AdShares'}
+export MAIL_FROM_ADDRESS=${MAIL_FROM_ADDRESS:-dev@blockchain-ads.com}
+export MAIL_FROM_NAME=${MAIL_FROM_NAME:-'[dev] Blockchain-Ads'}
 
 export ADSERVER_URL=${ADSERVER_URL:-http://localhost:8101}
 export ADSERVER_ID=${ADSERVER_ID:-example.com}
@@ -106,10 +106,10 @@ export ADSERVER_SECRET=${ADSERVER_SECRET:-secret}
 
 export ADPANEL_URL=${ADPANEL_URL:-http://localhost:8102}
 
-export ADSHARES_ADDRESS=${ADSHARES_ADDRESS:-0001-00000001-8B4E}
-export ADSHARES_NODE_HOST=${ADSHARES_NODE_HOST:-esc.dock}
-export ADSHARES_NODE_PORT=${ADSHARES_NODE_PORT:-9081}
-export ADSHARES_SECRET=${ADSHARES_SECRET:-secret}
+export Blockchain-Ads_ADDRESS=${Blockchain-Ads_ADDRESS:-0001-00000001-8B4E}
+export Blockchain-Ads_NODE_HOST=${Blockchain-Ads_NODE_HOST:-esc.dock}
+export Blockchain-Ads_NODE_PORT=${Blockchain-Ads_NODE_PORT:-9081}
+export Blockchain-Ads_SECRET=${Blockchain-Ads_SECRET:-secret}
 
 export ADUSER_BASE_URL=${ADUSER_BASE_URL:-${ADUSER_INTERNAL_LOCATION:-${ADUSER_EXTERNAL_LOCATION}}}
 

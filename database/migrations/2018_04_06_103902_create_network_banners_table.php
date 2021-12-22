@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018 Adshares sp. z o.o.
+ * Copyright (c) 2018 Blockchain-Ads sp. z o.o.
  *
  * This file is part of AdServer
  *
@@ -18,7 +18,7 @@
  * along with AdServer.  If not, see <https://www.gnu.org/licenses/>
  */
 
-use Adshares\Supply\Domain\ValueObject\Status;
+use Blockchain-Ads\Supply\Domain\ValueObject\Status;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 

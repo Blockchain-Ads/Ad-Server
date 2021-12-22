@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Tests\Publisher\Repository;
+namespace Blockchain-Ads\Tests\Publisher\Repository;
 
-use Adshares\Publisher\Dto\Result\ChartResult;
-use Adshares\Publisher\Dto\Result\Stats\Calculation;
-use Adshares\Publisher\Dto\Result\Stats\DataCollection;
-use Adshares\Publisher\Dto\Result\Stats\DataEntry;
-use Adshares\Publisher\Dto\Result\Stats\Total;
-use Adshares\Publisher\Repository\StatsRepository;
+use Blockchain-Ads\Publisher\Dto\Result\ChartResult;
+use Blockchain-Ads\Publisher\Dto\Result\Stats\Calculation;
+use Blockchain-Ads\Publisher\Dto\Result\Stats\DataCollection;
+use Blockchain-Ads\Publisher\Dto\Result\Stats\DataEntry;
+use Blockchain-Ads\Publisher\Dto\Result\Stats\Total;
+use Blockchain-Ads\Publisher\Repository\StatsRepository;
 use DateTime;
 
 class DummyStatsRepository implements StatsRepository

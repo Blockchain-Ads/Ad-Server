@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Common\Application\Model;
+namespace Blockchain-Ads\Common\Application\Model;
 
-use Adshares\Common\Application\Dto\Taxonomy;
-use Adshares\Common\Application\Dto\Taxonomy\Item;
-use Adshares\Common\Application\Model\Selector\Option;
+use Blockchain-Ads\Common\Application\Dto\Taxonomy;
+use Blockchain-Ads\Common\Application\Dto\Taxonomy\Item;
+use Blockchain-Ads\Common\Application\Model\Selector\Option;
 
 use function array_filter;
 

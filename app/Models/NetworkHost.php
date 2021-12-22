@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,16 +21,16 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Models;
+namespace Blockchain-Ads\Adserver\Models;
 
-use Adshares\Adserver\Http\Response\InfoResponse;
-use Adshares\Adserver\Models\Traits\AutomateMutators;
-use Adshares\Common\Domain\ValueObject\EmptyAccountId;
-use Adshares\Common\Domain\ValueObject\NullUrl;
-use Adshares\Common\Domain\ValueObject\SecureUrl;
-use Adshares\Config\RegistrationMode;
-use Adshares\Supply\Application\Dto\Info;
-use Adshares\Supply\Domain\ValueObject\Status;
+use Blockchain-Ads\Adserver\Http\Response\InfoResponse;
+use Blockchain-Ads\Adserver\Models\Traits\AutomateMutators;
+use Blockchain-Ads\Common\Domain\ValueObject\EmptyAccountId;
+use Blockchain-Ads\Common\Domain\ValueObject\NullUrl;
+use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;
+use Blockchain-Ads\Config\RegistrationMode;
+use Blockchain-Ads\Supply\Application\Dto\Info;
+use Blockchain-Ads\Supply\Domain\ValueObject\Status;
 use DateTime;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -144,14 +144,14 @@ class NetworkHost extends Model
         }
 
         return new Info(
-            InfoResponse::ADSHARES_MODULE_NAME,
+            InfoResponse::Blockchain-Ads_MODULE_NAME,
             'bc-tmp-srv',
             'pre-v0.3',
             new SecureUrl($this->attributes['host']),
             new NullUrl(),
             new NullUrl(),
             new NullUrl(),
-            new SecureUrl($this->attributes['host'] . '/adshares/inventory/list'),
+            new SecureUrl($this->attributes['host'] . '/Blockchain-Ads/inventory/list'),
             new EmptyAccountId(),
             null,
             [Info::CAPABILITY_ADVERTISER],

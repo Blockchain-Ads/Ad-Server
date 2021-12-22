@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,13 +21,13 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Common\Domain\ValueObject\Taxonomy;
+namespace Blockchain-Ads\Common\Domain\ValueObject\Taxonomy;
 
 use InvalidArgumentException;
 
 final class Schema
 {
-    private const SCHEMA_PREFIX = 'urn:x-adshares:taxonomy';
+    private const SCHEMA_PREFIX = 'urn:x-Blockchain-Ads:taxonomy';
 
     /** @var string */
     private $value;

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Providers\Supply;
+namespace Blockchain-Ads\Adserver\Providers\Supply;
 
-use Adshares\Adserver\Services\Supply\SiteFilteringUpdater;
-use Adshares\Classify\Application\Service\ClassifierInterface;
-use Adshares\Classify\Infrastructure\Service\LocalClassifier;
+use Blockchain-Ads\Adserver\Services\Supply\SiteFilteringUpdater;
+use Blockchain-Ads\Classify\Application\Service\ClassifierInterface;
+use Blockchain-Ads\Classify\Infrastructure\Service\LocalClassifier;
 use Illuminate\Support\ServiceProvider;
 
 class ClassifyProvider extends ServiceProvider

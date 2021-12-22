@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Repository\Common;
+namespace Blockchain-Ads\Adserver\Tests\Repository\Common;
 
-use Adshares\Adserver\Repository\Common\EloquentExchangeRateRepository;
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Common\Application\Dto\ExchangeRate;
-use Adshares\Common\Application\Service\Exception\ExchangeRateNotAvailableException;
+use Blockchain-Ads\Adserver\Repository\Common\EloquentExchangeRateRepository;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Common\Application\Dto\ExchangeRate;
+use Blockchain-Ads\Common\Application\Service\Exception\ExchangeRateNotAvailableException;
 use DateTime;
 
 final class EloquentExchangeRateRepositoryTest extends TestCase

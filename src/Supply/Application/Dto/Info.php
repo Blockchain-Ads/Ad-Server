@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,17 +21,17 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Supply\Application\Dto;
+namespace Blockchain-Ads\Supply\Application\Dto;
 
-use Adshares\Common\Domain\Id;
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Common\Domain\ValueObject\Commission;
-use Adshares\Common\Domain\ValueObject\Email;
-use Adshares\Common\Domain\ValueObject\EmptyAccountId;
-use Adshares\Common\Domain\ValueObject\Url;
-use Adshares\Common\Exception\RuntimeException;
-use Adshares\Common\UrlInterface;
-use Adshares\Config\RegistrationMode;
+use Blockchain-Ads\Common\Domain\Id;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Common\Domain\ValueObject\Commission;
+use Blockchain-Ads\Common\Domain\ValueObject\Email;
+use Blockchain-Ads\Common\Domain\ValueObject\EmptyAccountId;
+use Blockchain-Ads\Common\Domain\ValueObject\Url;
+use Blockchain-Ads\Common\Exception\RuntimeException;
+use Blockchain-Ads\Common\UrlInterface;
+use Blockchain-Ads\Config\RegistrationMode;
 
 final class Info
 {

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,21 +19,21 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Ads\AdsClient;
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Models\AdsPayment;
-use Adshares\Adserver\Models\NetworkCaseLogsHourlyMeta;
-use Adshares\Adserver\Models\NetworkHost;
-use Adshares\Adserver\Services\Dto\PaymentProcessingResult;
-use Adshares\Adserver\Services\LicenseFeeSender;
-use Adshares\Adserver\Services\PaymentDetailsProcessor;
-use Adshares\Common\Infrastructure\Service\LicenseReader;
-use Adshares\Supply\Application\Service\DemandClient;
-use Adshares\Supply\Application\Service\Exception\EmptyInventoryException;
-use Adshares\Supply\Application\Service\Exception\UnexpectedClientResponseException;
+use Blockchain-Ads\Ads\AdsClient;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Models\AdsPayment;
+use Blockchain-Ads\Adserver\Models\NetworkCaseLogsHourlyMeta;
+use Blockchain-Ads\Adserver\Models\NetworkHost;
+use Blockchain-Ads\Adserver\Services\Dto\PaymentProcessingResult;
+use Blockchain-Ads\Adserver\Services\LicenseFeeSender;
+use Blockchain-Ads\Adserver\Services\PaymentDetailsProcessor;
+use Blockchain-Ads\Common\Infrastructure\Service\LicenseReader;
+use Blockchain-Ads\Supply\Application\Service\DemandClient;
+use Blockchain-Ads\Supply\Application\Service\Exception\EmptyInventoryException;
+use Blockchain-Ads\Supply\Application\Service\Exception\UnexpectedClientResponseException;
 use DateTimeImmutable;
 use stdClass;
 use Throwable;

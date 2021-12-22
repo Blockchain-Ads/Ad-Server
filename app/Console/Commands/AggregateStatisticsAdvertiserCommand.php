@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,13 +21,13 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Exceptions\Advertiser\MissingEventsException;
-use Adshares\Adserver\Models\EventLogsHourlyMeta;
-use Adshares\Adserver\Utilities\DateUtils;
-use Adshares\Advertiser\Repository\StatsRepository;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Exceptions\Advertiser\MissingEventsException;
+use Blockchain-Ads\Adserver\Models\EventLogsHourlyMeta;
+use Blockchain-Ads\Adserver\Utilities\DateUtils;
+use Blockchain-Ads\Advertiser\Repository\StatsRepository;
 use DateTime;
 use DateTimeInterface;
 use Illuminate\Support\Facades\DB;

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,15 +21,15 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Response;
+namespace Blockchain-Ads\Adserver\Http\Response;
 
-use Adshares\Adserver\Models\Config;
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Common\Domain\ValueObject\Email;
-use Adshares\Common\Domain\ValueObject\SecureUrl;
-use Adshares\Common\Domain\ValueObject\Url;
-use Adshares\Supply\Application\Dto\Info;
-use Adshares\Supply\Application\Dto\InfoStatistics;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Common\Domain\ValueObject\Email;
+use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;
+use Blockchain-Ads\Common\Domain\ValueObject\Url;
+use Blockchain-Ads\Supply\Application\Dto\Info;
+use Blockchain-Ads\Supply\Application\Dto\InfoStatistics;
 use Illuminate\Contracts\Support\Arrayable;
 
 final class InfoResponse implements Arrayable
@@ -37,7 +37,7 @@ final class InfoResponse implements Arrayable
     /** @var Info */
     private $info;
 
-    public const ADSHARES_MODULE_NAME = 'adserver';
+    public const Blockchain-Ads_MODULE_NAME = 'adserver';
 
     public function __construct(Info $info)
     {
@@ -69,7 +69,7 @@ final class InfoResponse implements Arrayable
         $settings = Config::fetchAdminSettings();
         return new self(
             new Info(
-                self::ADSHARES_MODULE_NAME,
+                self::Blockchain-Ads_MODULE_NAME,
                 (string)config('app.name'),
                 (string)config('app.version'),
                 new SecureUrl((string)config('app.url')),
@@ -77,7 +77,7 @@ final class InfoResponse implements Arrayable
                 new SecureUrl((string)config('app.privacy_url')),
                 new SecureUrl((string)config('app.terms_url')),
                 new SecureUrl(route('demand-inventory')),
-                new AccountId((string)config('app.adshares_address')),
+                new AccountId((string)config('app.Blockchain-Ads_address')),
                 new Email($settings[Config::SUPPORT_EMAIL]),
                 [Info::CAPABILITY_ADVERTISER, Info::CAPABILITY_PUBLISHER],
                 $settings[Config::REGISTRATION_MODE]

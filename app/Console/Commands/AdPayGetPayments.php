@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,20 +21,20 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Exceptions\Demand\AdPayReportMissingEventsException;
-use Adshares\Adserver\Exceptions\Demand\AdPayReportNotReadyException;
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Models\Conversion;
-use Adshares\Adserver\Models\ConversionDefinition;
-use Adshares\Adserver\Models\EventLog;
-use Adshares\Adserver\Models\UserLedgerEntry;
-use Adshares\Adserver\Services\Demand\AdPayPaymentReportProcessor;
-use Adshares\Common\Application\Dto\ExchangeRate;
-use Adshares\Common\Infrastructure\Service\ExchangeRateReader;
-use Adshares\Demand\Application\Service\AdPay;
-use Adshares\Supply\Application\Service\Exception\UnexpectedClientResponseException;
+use Blockchain-Ads\Adserver\Exceptions\Demand\AdPayReportMissingEventsException;
+use Blockchain-Ads\Adserver\Exceptions\Demand\AdPayReportNotReadyException;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Models\Conversion;
+use Blockchain-Ads\Adserver\Models\ConversionDefinition;
+use Blockchain-Ads\Adserver\Models\EventLog;
+use Blockchain-Ads\Adserver\Models\UserLedgerEntry;
+use Blockchain-Ads\Adserver\Services\Demand\AdPayPaymentReportProcessor;
+use Blockchain-Ads\Common\Application\Dto\ExchangeRate;
+use Blockchain-Ads\Common\Infrastructure\Service\ExchangeRateReader;
+use Blockchain-Ads\Demand\Application\Service\AdPay;
+use Blockchain-Ads\Supply\Application\Service\Exception\UnexpectedClientResponseException;
 use DateTime;
 use Illuminate\Support\Collection;
 

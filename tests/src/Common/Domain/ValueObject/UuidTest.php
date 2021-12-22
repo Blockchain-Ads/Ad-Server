@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,10 +19,10 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Test\Common\Domain\ValueObject;
+namespace Blockchain-Ads\Test\Common\Domain\ValueObject;
 
-use Adshares\Common\Domain\ValueObject\Exception\InvalidUuidException;
-use Adshares\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Common\Domain\ValueObject\Exception\InvalidUuidException;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
 use PHPUnit\Framework\TestCase;
 
 final class UuidTest extends TestCase

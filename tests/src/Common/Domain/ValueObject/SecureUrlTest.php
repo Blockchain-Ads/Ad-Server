@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Tests\Common\Domain\ValueObject;
+namespace Blockchain-Ads\Tests\Common\Domain\ValueObject;
 
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Common\Domain\ValueObject\SecureUrl;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;
 
 class SecureUrlTest extends TestCase
 {
@@ -33,11 +33,11 @@ class SecureUrlTest extends TestCase
     {
         $secureUrl = new SecureUrl($url);
 
-        self::assertSame('https://adshares.net', (string)$secureUrl);
+        self::assertSame('https://blockchain-ads.com', (string)$secureUrl);
     }
 
     public function provider(): array
     {
-        return [['http://adshares.net'], ['https://adshares.net']];
+        return [['http://blockchain-ads.com'], ['https://blockchain-ads.com']];
     }
 }

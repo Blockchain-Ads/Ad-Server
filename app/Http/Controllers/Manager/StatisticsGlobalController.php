@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,13 +21,13 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Http\Controllers\Manager;
 
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Repository\Common\TotalFeeReader;
-use Adshares\Adserver\Repository\Demand\MySqlDemandServerStatisticsRepository;
-use Adshares\Adserver\Repository\Supply\MySqlSupplyServerStatisticsRepository;
-use Adshares\Common\Exception\InvalidArgumentException;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Repository\Common\TotalFeeReader;
+use Blockchain-Ads\Adserver\Repository\Demand\MySqlDemandServerStatisticsRepository;
+use Blockchain-Ads\Adserver\Repository\Supply\MySqlSupplyServerStatisticsRepository;
+use Blockchain-Ads\Common\Exception\InvalidArgumentException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpFoundation\StreamedResponse;

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Tests\Supply\Application\Dto;
+namespace Blockchain-Ads\Tests\Supply\Application\Dto;
 
-use Adshares\Supply\Application\Dto\ImpressionContext;
+use Blockchain-Ads\Supply\Application\Dto\ImpressionContext;
 use PHPUnit\Framework\TestCase;
 
 use function json_decode;

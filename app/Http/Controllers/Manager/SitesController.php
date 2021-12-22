@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,25 +19,25 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Http\Controllers\Manager;
 
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Http\Requests\GetSiteCode;
-use Adshares\Adserver\Http\Response\Site\SizesResponse;
-use Adshares\Adserver\Jobs\AdUserRegisterUrl;
-use Adshares\Adserver\Mail\Crm\SiteAdded;
-use Adshares\Adserver\Models\Site;
-use Adshares\Adserver\Models\SitesRejectedDomain;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\Zone;
-use Adshares\Adserver\Services\Publisher\SiteCategoriesValidator;
-use Adshares\Adserver\Services\Publisher\SiteCodeGenerator;
-use Adshares\Adserver\Services\Supply\SiteFilteringUpdater;
-use Adshares\Adserver\Utilities\DomainReader;
-use Adshares\Adserver\Utilities\SiteValidator;
-use Adshares\Common\Application\Dto\PageRank;
-use Adshares\Common\Exception\InvalidArgumentException;
-use Adshares\Supply\Domain\ValueObject\Size;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Http\Requests\GetSiteCode;
+use Blockchain-Ads\Adserver\Http\Response\Site\SizesResponse;
+use Blockchain-Ads\Adserver\Jobs\AdUserRegisterUrl;
+use Blockchain-Ads\Adserver\Mail\Crm\SiteAdded;
+use Blockchain-Ads\Adserver\Models\Site;
+use Blockchain-Ads\Adserver\Models\SitesRejectedDomain;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\Zone;
+use Blockchain-Ads\Adserver\Services\Publisher\SiteCategoriesValidator;
+use Blockchain-Ads\Adserver\Services\Publisher\SiteCodeGenerator;
+use Blockchain-Ads\Adserver\Services\Supply\SiteFilteringUpdater;
+use Blockchain-Ads\Adserver\Utilities\DomainReader;
+use Blockchain-Ads\Adserver\Utilities\SiteValidator;
+use Blockchain-Ads\Common\Application\Dto\PageRank;
+use Blockchain-Ads\Common\Exception\InvalidArgumentException;
+use Blockchain-Ads\Supply\Domain\ValueObject\Size;
 use Closure;
 use Exception;
 use Illuminate\Http\Request;

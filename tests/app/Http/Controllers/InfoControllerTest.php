@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,11 +19,11 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Tests\Http\Controllers;
+namespace Blockchain-Ads\Adserver\Tests\Http\Controllers;
 
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Config\RegistrationMode;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Config\RegistrationMode;
 use Illuminate\Http\Response;
 
 class InfoControllerTest extends TestCase
@@ -47,7 +47,7 @@ class InfoControllerTest extends TestCase
                 'panelUrl' => 'http://adpanel',
                 'privacyUrl' => 'https://test/policies/privacy.html',
                 'termsUrl' => 'https://test/policies/terms.html',
-                'inventoryUrl' => 'https://test/adshares/inventory/list',
+                'inventoryUrl' => 'https://test/Blockchain-Ads/inventory/list',
                 'adsAddress' => '0001-00000005-CBCA',
                 'supportEmail' => 'mail@example.com',
                 'demandFee' => 0.0199,

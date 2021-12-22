@@ -28,7 +28,7 @@
       "isEmailConfirmed": false,
       "authToken": "someauthtokenvalue",
       "adserverWallet": {
-        "adsharesAddress": "0001-0000001F-34FC",
+        "Blockchain-AdsAddress": "0001-0000001F-34FC",
         "paymentMemo": "Admin 007",
         "autoWithdrawPeriod": 1,
         "autoWithdrawAmount": 200,

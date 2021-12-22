@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Services\Publisher;
+namespace Blockchain-Ads\Adserver\Services\Publisher;
 
-use Adshares\Adserver\Http\Requests\Campaign\TargetingProcessor;
-use Adshares\Common\Application\Service\ConfigurationRepository;
-use Adshares\Common\Exception\InvalidArgumentException;
+use Blockchain-Ads\Adserver\Http\Requests\Campaign\TargetingProcessor;
+use Blockchain-Ads\Common\Application\Service\ConfigurationRepository;
+use Blockchain-Ads\Common\Exception\InvalidArgumentException;
 
 class SiteCategoriesValidator
 {

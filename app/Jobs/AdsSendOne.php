@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,16 +19,16 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Jobs;
+namespace Blockchain-Ads\Adserver\Jobs;
 
-use Adshares\Ads\AdsClient;
-use Adshares\Ads\Command\SendOneCommand;
-use Adshares\Ads\Driver\CommandError;
-use Adshares\Ads\Exception\CommandException;
-use Adshares\Ads\Util\AdsValidator;
-use Adshares\Adserver\Exceptions\JobException;
-use Adshares\Adserver\Models\UserLedgerEntry;
-use Adshares\Adserver\Models\UserLedgerException;
+use Blockchain-Ads\Ads\AdsClient;
+use Blockchain-Ads\Ads\Command\SendOneCommand;
+use Blockchain-Ads\Ads\Driver\CommandError;
+use Blockchain-Ads\Ads\Exception\CommandException;
+use Blockchain-Ads\Ads\Util\AdsValidator;
+use Blockchain-Ads\Adserver\Exceptions\JobException;
+use Blockchain-Ads\Adserver\Models\UserLedgerEntry;
+use Blockchain-Ads\Adserver\Models\UserLedgerException;
 use Exception;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

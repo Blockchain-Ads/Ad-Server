@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Uploader\Zip;
+namespace Blockchain-Ads\Adserver\Uploader\Zip;
 
-use Adshares\Adserver\Uploader\UploadedFile;
+use Blockchain-Ads\Adserver\Uploader\UploadedFile;
 
 class UploadedZip implements UploadedFile
 {

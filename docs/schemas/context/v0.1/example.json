@@ -1,5 +1,5 @@
 {
-  "$schema": "urn:x-adshares:context:0.1",
+  "$schema": "urn:x-Blockchain-Ads:context:0.1",
   "data": [
     {
       "key": "human_score",

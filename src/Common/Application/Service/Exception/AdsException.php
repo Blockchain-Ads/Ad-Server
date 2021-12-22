@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Common\Application\Service\Exception;
+namespace Blockchain-Ads\Common\Application\Service\Exception;
 
-use Adshares\Ads\Driver\CommandError;
+use Blockchain-Ads\Ads\Driver\CommandError;
 use RuntimeException;
 
 class AdsException extends RuntimeException

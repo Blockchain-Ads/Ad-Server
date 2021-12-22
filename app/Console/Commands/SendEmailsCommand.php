@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,13 +21,13 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Models\Email;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Services\Common\Dto\EmailData;
-use Adshares\Adserver\Services\Common\EmailJobsQueuing;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Models\Email;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Services\Common\Dto\EmailData;
+use Blockchain-Ads\Adserver\Services\Common\EmailJobsQueuing;
 use Illuminate\Support\Collection;
 
 use function file;

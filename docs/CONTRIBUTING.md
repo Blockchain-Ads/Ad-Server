@@ -11,7 +11,7 @@ it asks for helps us resolve issues faster.
 
 If you think that you have found a security issue in code, don't use the bug
 report and don't publish it publicly. Instead, send an email to the security
-reports list ([security@adshares.net](mailto:security@adshares.net)).
+reports list ([security@blockchain-ads.com](mailto:security@blockchain-ads.com)).
 
 ## Submitting a Patch
 
@@ -29,12 +29,12 @@ Some things that will increase the chance that your pull request is accepted:
 - Ensure the PR description clearly describes the problem and solution. 
 - Include the relevant issue number if applicable.
 
-[bug list]: https://github.com/adshares/adserver/labels/Bug
-[bug report template]: https://github.com/adshares/adserver/issues/new?template=bug_report.md&labels=Bug
-[issues]: https://github.com/adshares/adserver/issues
-[telegram]: https://t.me/adshares
-[tech_email]: mailto:tech@adshares.net
-[pr]: https://github.com/adshares/adserver/compare/
+[bug list]: https://github.com/Blockchain-Ads/adserver/labels/Bug
+[bug report template]: https://github.com/Blockchain-Ads/adserver/issues/new?template=bug_report.md&labels=Bug
+[issues]: https://github.com/Blockchain-Ads/adserver/issues
+[telegram]: https://t.me/Blockchain-Ads
+[tech_email]: mailto:tech@blockchain-ads.com
+[pr]: https://github.com/Blockchain-Ads/adserver/compare/
 [style]: https://www.php-fig.org/psr/psr-2/
 [commit]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 

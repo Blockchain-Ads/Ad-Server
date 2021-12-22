@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "urn:x-adshares:taxonomy#",
+  "$id": "urn:x-Blockchain-Ads:taxonomy#",
   "type": "object",
   "definitions": {
     "semanticVersion": {

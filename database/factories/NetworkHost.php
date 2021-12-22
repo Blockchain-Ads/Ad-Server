@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -18,12 +18,12 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-use Adshares\Adserver\Models\NetworkHost;
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Common\Domain\ValueObject\Email;
-use Adshares\Common\Domain\ValueObject\Url;
-use Adshares\Supply\Application\Dto\Info;
-use Adshares\Supply\Application\Dto\InfoStatistics;
+use Blockchain-Ads\Adserver\Models\NetworkHost;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Common\Domain\ValueObject\Email;
+use Blockchain-Ads\Common\Domain\ValueObject\Url;
+use Blockchain-Ads\Supply\Application\Dto\Info;
+use Blockchain-Ads\Supply\Application\Dto\InfoStatistics;
 use Faker\Generator as Faker;
 
 $factory->define(
@@ -49,7 +49,7 @@ $factory->define(
             new Url($host.':4200'),
             new Url($host.'/policies/privacy.html'),
             new Url($host.'/policies/terms.html'),
-            new Url($host.'/adshares/inventory/list'),
+            new Url($host.'/Blockchain-Ads/inventory/list'),
             new AccountId('0001-00000004-DBEB'),
             new Email($faker->companyEmail),
             ['PUB', 'ADV'],

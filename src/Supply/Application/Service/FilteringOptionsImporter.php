@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Supply\Application\Service;
+namespace Blockchain-Ads\Supply\Application\Service;
 
-use Adshares\Common\Application\Model\Selector;
-use Adshares\Common\Application\Service\AdClassify;
-use Adshares\Common\Application\Service\ConfigurationRepository;
+use Blockchain-Ads\Common\Application\Model\Selector;
+use Blockchain-Ads\Common\Application\Service\AdClassify;
+use Blockchain-Ads\Common\Application\Service\ConfigurationRepository;
 
 class FilteringOptionsImporter
 {

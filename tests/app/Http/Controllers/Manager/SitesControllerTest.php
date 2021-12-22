@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,18 +19,18 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Tests\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Tests\Http\Controllers\Manager;
 
-use Adshares\Adserver\Models\Site;
-use Adshares\Adserver\Models\SitesRejectedDomain;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\Zone;
-use Adshares\Adserver\Services\Supply\SiteFilteringUpdater;
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Common\Application\Service\AdUser;
-use Adshares\Common\Application\Service\ConfigurationRepository;
-use Adshares\Mock\Client\DummyAdUserClient;
-use Adshares\Mock\Repository\DummyConfigurationRepository;
+use Blockchain-Ads\Adserver\Models\Site;
+use Blockchain-Ads\Adserver\Models\SitesRejectedDomain;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\Zone;
+use Blockchain-Ads\Adserver\Services\Supply\SiteFilteringUpdater;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Common\Application\Service\AdUser;
+use Blockchain-Ads\Common\Application\Service\ConfigurationRepository;
+use Blockchain-Ads\Mock\Client\DummyAdUserClient;
+use Blockchain-Ads\Mock\Repository\DummyConfigurationRepository;
 use DateTimeImmutable;
 use RuntimeException;
 use Symfony\Component\HttpFoundation\Response;

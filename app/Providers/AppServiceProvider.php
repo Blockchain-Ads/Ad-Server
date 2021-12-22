@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,28 +19,28 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Providers;
+namespace Blockchain-Ads\Adserver\Providers;
 
-use Adshares\Ads\AdsClient;
-use Adshares\Ads\Driver\CliDriver;
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Repository\Advertiser\MySqlStatsRepository as MysqlAdvertiserStatsRepository;
-use Adshares\Adserver\Repository\Common\EloquentExchangeRateRepository;
-use Adshares\Adserver\Repository\Publisher\MySqlStatsRepository as MysqlPublisherStatsRepository;
-use Adshares\Adserver\Services\AdsExchange;
-use Adshares\Adserver\Services\Common\AdsLogReader;
-use Adshares\Adserver\Services\NowPayments;
-use Adshares\Advertiser\Repository\StatsRepository as AdvertiserStatsRepository;
-use Adshares\Common\Application\Service\ExchangeRateRepository;
-use Adshares\Common\Application\Service\LicenseDecoder;
-use Adshares\Common\Application\Service\LicenseVault;
-use Adshares\Common\Infrastructure\Service\ExchangeRateReader;
-use Adshares\Common\Infrastructure\Service\LicenseDecoderV1;
-use Adshares\Common\Infrastructure\Service\LicenseReader;
-use Adshares\Common\Infrastructure\Service\LicenseVaultFilesystem;
-use Adshares\Demand\Application\Service\TransferMoneyToColdWallet;
-use Adshares\Demand\Application\Service\WalletFundsChecker;
-use Adshares\Publisher\Repository\StatsRepository as PublisherStatsRepository;
+use Blockchain-Ads\Ads\AdsClient;
+use Blockchain-Ads\Ads\Driver\CliDriver;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Repository\Advertiser\MySqlStatsRepository as MysqlAdvertiserStatsRepository;
+use Blockchain-Ads\Adserver\Repository\Common\EloquentExchangeRateRepository;
+use Blockchain-Ads\Adserver\Repository\Publisher\MySqlStatsRepository as MysqlPublisherStatsRepository;
+use Blockchain-Ads\Adserver\Services\AdsExchange;
+use Blockchain-Ads\Adserver\Services\Common\AdsLogReader;
+use Blockchain-Ads\Adserver\Services\NowPayments;
+use Blockchain-Ads\Advertiser\Repository\StatsRepository as AdvertiserStatsRepository;
+use Blockchain-Ads\Common\Application\Service\ExchangeRateRepository;
+use Blockchain-Ads\Common\Application\Service\LicenseDecoder;
+use Blockchain-Ads\Common\Application\Service\LicenseVault;
+use Blockchain-Ads\Common\Infrastructure\Service\ExchangeRateReader;
+use Blockchain-Ads\Common\Infrastructure\Service\LicenseDecoderV1;
+use Blockchain-Ads\Common\Infrastructure\Service\LicenseReader;
+use Blockchain-Ads\Common\Infrastructure\Service\LicenseVaultFilesystem;
+use Blockchain-Ads\Demand\Application\Service\TransferMoneyToColdWallet;
+use Blockchain-Ads\Demand\Application\Service\WalletFundsChecker;
+use Blockchain-Ads\Publisher\Repository\StatsRepository as PublisherStatsRepository;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Log;
@@ -55,13 +55,13 @@ class AppServiceProvider extends ServiceProvider
             AdsClient::class,
             function () {
                 $drv = new CliDriver(
-                    config('app.adshares_address'),
-                    config('app.adshares_secret'),
-                    config('app.adshares_node_host'),
-                    config('app.adshares_node_port')
+                    config('app.Blockchain-Ads_address'),
+                    config('app.Blockchain-Ads_secret'),
+                    config('app.Blockchain-Ads_node_host'),
+                    config('app.Blockchain-Ads_node_port')
                 );
-                $drv->setCommand(config('app.adshares_command'));
-                $drv->setWorkingDir(config('app.adshares_workingdir'));
+                $drv->setCommand(config('app.Blockchain-Ads_command'));
+                $drv->setWorkingDir(config('app.Blockchain-Ads_workingdir'));
 
                 return new AdsClient($drv);
             }
@@ -91,9 +91,9 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             TransferMoneyToColdWallet::class,
             function (Application $app) {
-                $coldWalletAddress = (string)config('app.adshares_wallet_cold_address');
-                $minAmount = (int)config('app.adshares_wallet_min_amount');
-                $maxAmount = (int)config('app.adshares_wallet_max_amount');
+                $coldWalletAddress = (string)config('app.Blockchain-Ads_wallet_cold_address');
+                $minAmount = (int)config('app.Blockchain-Ads_wallet_min_amount');
+                $maxAmount = (int)config('app.Blockchain-Ads_wallet_max_amount');
                 $adsClient = $app->make(AdsClient::class);
 
                 return new TransferMoneyToColdWallet($minAmount, $maxAmount, $coldWalletAddress, $adsClient);
@@ -103,8 +103,8 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             WalletFundsChecker::class,
             function (Application $app) {
-                $minAmount = (int)config('app.adshares_wallet_min_amount');
-                $maxAmount = (int)config('app.adshares_wallet_max_amount');
+                $minAmount = (int)config('app.Blockchain-Ads_wallet_min_amount');
+                $maxAmount = (int)config('app.Blockchain-Ads_wallet_max_amount');
                 $adsClient = $app->make(AdsClient::class);
 
                 return new WalletFundsChecker($minAmount, $maxAmount, $adsClient);

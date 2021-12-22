@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Request\Classifier;
+namespace Blockchain-Ads\Adserver\Http\Request\Classifier;
 
-use Adshares\Adserver\Models\NetworkBanner;
-use Adshares\Common\Domain\ValueObject\Exception\InvalidUuidException;
-use Adshares\Common\Domain\ValueObject\Uuid;
-use Adshares\Supply\Domain\ValueObject\Size;
+use Blockchain-Ads\Adserver\Models\NetworkBanner;
+use Blockchain-Ads\Common\Domain\ValueObject\Exception\InvalidUuidException;
+use Blockchain-Ads\Common\Domain\ValueObject\Uuid;
+use Blockchain-Ads\Supply\Domain\ValueObject\Size;
 use InvalidArgumentException;
 use Symfony\Component\HttpFoundation\Request;
 

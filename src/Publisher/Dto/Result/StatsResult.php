@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Publisher\Dto\Result;
+namespace Blockchain-Ads\Publisher\Dto\Result;
 
-use Adshares\Publisher\Dto\Result\Stats\Total;
-use Adshares\Publisher\Dto\Result\Stats\DataCollection;
+use Blockchain-Ads\Publisher\Dto\Result\Stats\Total;
+use Blockchain-Ads\Publisher\Dto\Result\Stats\DataCollection;
 
 class StatsResult
 {

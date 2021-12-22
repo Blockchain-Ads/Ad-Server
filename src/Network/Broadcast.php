@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Network;
+namespace Blockchain-Ads\Network;
 
-use Adshares\Ads\Command\BroadcastCommand as AdsClientBroadcastCommand;
+use Blockchain-Ads\Ads\Command\BroadcastCommand as AdsClientBroadcastCommand;
 
 final class Broadcast extends AdsClientBroadcastCommand
 {

@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2019 Adshares sp. z o.o.
+ * Copyright (c) 2019 Blockchain-Ads sp. z o.o.
  *
  * This file is part of AdServer
  *
@@ -55,14 +55,14 @@ return [
 
         'single' => [
             'driver' => 'single',
-            'tap' => [Adshares\Adserver\Logging\CustomizeFormatter::class],
+            'tap' => [Blockchain-Ads\Adserver\Logging\CustomizeFormatter::class],
             'path' => env('LOG_FILE_PATH', storage_path('logs/adserver.log')),
             'level' => env('LOG_LEVEL', 'warning'),
         ],
 
         'daily' => [
             'driver' => 'daily',
-            'tap' => [Adshares\Adserver\Logging\CustomizeFormatter::class],
+            'tap' => [Blockchain-Ads\Adserver\Logging\CustomizeFormatter::class],
             'path' => env('LOG_FILE_PATH', storage_path('logs/adserver.log')),
             'level' => env('LOG_LEVEL', 'warning'),
             'days' => 7,

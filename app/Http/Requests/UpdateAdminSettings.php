@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,14 +19,14 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Http\Requests;
+namespace Blockchain-Ads\Adserver\Http\Requests;
 
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Rules\AccountIdRule;
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Common\Domain\ValueObject\Commission;
-use Adshares\Common\Domain\ValueObject\Email;
-use Adshares\Config\RegistrationMode;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Rules\AccountIdRule;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Common\Domain\ValueObject\Commission;
+use Blockchain-Ads\Common\Domain\ValueObject\Email;
+use Blockchain-Ads\Config\RegistrationMode;
 use Illuminate\Validation\Rule;
 
 class UpdateAdminSettings extends FormRequest
@@ -51,7 +51,7 @@ class UpdateAdminSettings extends FormRequest
 
     public function rules(): array
     {
-        $blacklistedAccountIds = [new AccountId(config('app.adshares_address'))];
+        $blacklistedAccountIds = [new AccountId(config('app.Blockchain-Ads_address'))];
 
         $rules = [
             'settings.cold_wallet_is_active' => 'required|boolean',

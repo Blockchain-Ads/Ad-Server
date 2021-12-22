@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,14 +21,14 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Tests\Http\Controllers\Manager;
 
-use Adshares\Adserver\Models\BidStrategy;
-use Adshares\Adserver\Models\BidStrategyDetail;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Common\Application\Service\ConfigurationRepository;
-use Adshares\Mock\Repository\DummyConfigurationRepository;
+use Blockchain-Ads\Adserver\Models\BidStrategy;
+use Blockchain-Ads\Adserver\Models\BidStrategyDetail;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Common\Application\Service\ConfigurationRepository;
+use Blockchain-Ads\Mock\Repository\DummyConfigurationRepository;
 use DateTimeImmutable;
 use Illuminate\Http\Response;
 use Illuminate\Http\UploadedFile;

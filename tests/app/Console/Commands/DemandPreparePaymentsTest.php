@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Console\Commands;
+namespace Blockchain-Ads\Adserver\Tests\Console\Commands;
 
-use Adshares\Adserver\Models\EventLog;
-use Adshares\Adserver\Models\Payment;
-use Adshares\Adserver\Tests\Console\ConsoleTestCase;
-use Adshares\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Adserver\Models\EventLog;
+use Blockchain-Ads\Adserver\Models\Payment;
+use Blockchain-Ads\Adserver\Tests\Console\ConsoleTestCase;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
 use Illuminate\Database\Eloquent\Collection;
 
 class DemandPreparePaymentsTest extends ConsoleTestCase

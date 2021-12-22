@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,9 +19,9 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Mail\Crm;
+namespace Blockchain-Ads\Adserver\Mail\Crm;
 
-use Adshares\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\Campaign;
 use DateTime;
 use DateTimeInterface;
 use Illuminate\Bus\Queueable;

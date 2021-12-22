@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,15 +21,15 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Common\Infrastructure\Service;
+namespace Blockchain-Ads\Common\Infrastructure\Service;
 
-use Adshares\Ads\AdsClient;
-use Adshares\Ads\Command\SendManyCommand;
-use Adshares\Ads\Entity\Tx;
-use Adshares\Ads\Exception\CommandException;
-use Adshares\Adserver\Models\Payment;
-use Adshares\Common\Application\Service\Ads;
-use Adshares\Common\Application\Service\Exception\AdsException;
+use Blockchain-Ads\Ads\AdsClient;
+use Blockchain-Ads\Ads\Command\SendManyCommand;
+use Blockchain-Ads\Ads\Entity\Tx;
+use Blockchain-Ads\Ads\Exception\CommandException;
+use Blockchain-Ads\Adserver\Models\Payment;
+use Blockchain-Ads\Common\Application\Service\Ads;
+use Blockchain-Ads\Common\Application\Service\Exception\AdsException;
 use Illuminate\Support\Collection;
 
 class PhpAdsClient implements Ads

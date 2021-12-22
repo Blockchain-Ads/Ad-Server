@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Repository\Common;
+namespace Blockchain-Ads\Adserver\Tests\Repository\Common;
 
-use Adshares\Adserver\Repository\Common\MySqlQueryBuilder;
+use Blockchain-Ads\Adserver\Repository\Common\MySqlQueryBuilder;
 use PHPUnit\Framework\TestCase;
 
 final class MysqlQueryBuilderTest extends TestCase

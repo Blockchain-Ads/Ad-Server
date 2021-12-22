@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Response\Classifier;
+namespace Blockchain-Ads\Adserver\Http\Response\Classifier;
 
-use Adshares\Adserver\Models\Classification;
+use Blockchain-Ads\Adserver\Models\Classification;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection;
 

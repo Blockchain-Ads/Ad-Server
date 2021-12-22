@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Middleware;
+namespace Blockchain-Ads\Adserver\Http\Middleware;
 
-use Adshares\Adserver\Models\Token;
-use Adshares\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\Token;
+use Blockchain-Ads\Adserver\Models\User;
 use Closure;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\Request;
@@ -32,7 +32,7 @@ use Illuminate\Support\Facades\Auth;
 
 class Impersonation
 {
-    private const HEADER_NAME = 'x-adshares-impersonation';
+    private const HEADER_NAME = 'x-Blockchain-Ads-impersonation';
 
     public function handle(Request $request, Closure $next)
     {

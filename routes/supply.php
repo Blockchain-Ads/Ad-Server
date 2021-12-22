@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018-2019 Adshares sp. z o.o.
+ * Copyright (c) 2018-2019 Blockchain-Ads sp. z o.o.
  *
  * This file is part of AdServer
  *
@@ -20,8 +20,8 @@
 
 declare(strict_types = 1);
 
-use Adshares\Adserver\Http\Controllers\Manager\Simulator;
-use Adshares\Adserver\Http\Controllers\SupplyController;
+use Blockchain-Ads\Adserver\Http\Controllers\Manager\Simulator;
+use Blockchain-Ads\Adserver\Http\Controllers\SupplyController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/supply/find', [SupplyController::class, 'find']);

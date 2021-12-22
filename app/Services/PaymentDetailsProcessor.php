@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,19 +21,19 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Services;
+namespace Blockchain-Ads\Adserver\Services;
 
-use Adshares\Adserver\Exceptions\MissingInitialConfigurationException;
-use Adshares\Adserver\Models\AdsPayment;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\ConfigException;
-use Adshares\Adserver\Models\NetworkCase;
-use Adshares\Adserver\Models\NetworkCasePayment;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\UserLedgerEntry;
-use Adshares\Adserver\Services\Dto\PaymentProcessingResult;
-use Adshares\Common\Infrastructure\Service\ExchangeRateReader;
-use Adshares\Common\Infrastructure\Service\LicenseReader;
+use Blockchain-Ads\Adserver\Exceptions\MissingInitialConfigurationException;
+use Blockchain-Ads\Adserver\Models\AdsPayment;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\ConfigException;
+use Blockchain-Ads\Adserver\Models\NetworkCase;
+use Blockchain-Ads\Adserver\Models\NetworkCasePayment;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\UserLedgerEntry;
+use Blockchain-Ads\Adserver\Services\Dto\PaymentProcessingResult;
+use Blockchain-Ads\Common\Infrastructure\Service\ExchangeRateReader;
+use Blockchain-Ads\Common\Infrastructure\Service\LicenseReader;
 use DateTime;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Collection;
@@ -58,7 +58,7 @@ class PaymentDetailsProcessor
         ExchangeRateReader $exchangeRateReader,
         LicenseReader $licenseReader
     ) {
-        $this->adServerAddress = (string)config('app.adshares_address');
+        $this->adServerAddress = (string)config('app.Blockchain-Ads_address');
         $this->exchangeRateReader = $exchangeRateReader;
         $this->licenseReader = $licenseReader;
     }

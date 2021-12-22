@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -18,11 +18,11 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-use Adshares\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\User;
 use Faker\Generator as Faker;
 
 $factory->define(
-    \Adshares\Adserver\Models\Invoice::class,
+    \Blockchain-Ads\Adserver\Models\Invoice::class,
     function (Faker $faker) {
         $issuedDate = new \Illuminate\Support\Carbon($faker->date());
         $netAmount = $faker->randomFloat(2, 0, 9999999);
@@ -31,7 +31,7 @@ $factory->define(
             'user_id' => function () {
                 return factory(User::class)->create()->id;
             },
-            'type' => \Adshares\Adserver\Models\Invoice::TYPE_PROFORMA,
+            'type' => \Blockchain-Ads\Adserver\Models\Invoice::TYPE_PROFORMA,
             'number' => $faker->unique()->numerify('PROF ###/##/####'),
             'issue_date' => $issuedDate,
             'due_date' => $issuedDate->addDays(14),

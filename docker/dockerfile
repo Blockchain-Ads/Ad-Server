@@ -19,7 +19,7 @@ ENV PHP_ETC_DIR="/etc/php/${PHP_VER}"
 RUN apt-get -q update && apt-get -qyf --no-install-recommends install \
     apt-utils gpg-agent software-properties-common build-essential curl \
     && apt-get -y remove cmdtest \
-    && add-apt-repository ppa:adshares/releases -y \
+    && add-apt-repository ppa:Blockchain-Ads/releases -y \
     && add-apt-repository -y ppa:ondrej/php \
     && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
     && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \

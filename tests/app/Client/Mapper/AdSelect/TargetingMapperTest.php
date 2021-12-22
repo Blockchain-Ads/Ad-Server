@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,9 +21,9 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Client\Mapper\AdSelect;
+namespace Blockchain-Ads\Adserver\Tests\Client\Mapper\AdSelect;
 
-use Adshares\Adserver\Client\Mapper\AdSelect\TargetingMapper;
+use Blockchain-Ads\Adserver\Client\Mapper\AdSelect\TargetingMapper;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 

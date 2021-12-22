@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,13 +21,13 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Common\Application\Dto\Taxonomy;
+namespace Blockchain-Ads\Common\Application\Dto\Taxonomy;
 
-use Adshares\Common\Application\Dto\Taxonomy\Item\Type;
-use Adshares\Common\Application\Dto\Taxonomy\Item\Value;
-use Adshares\Common\Application\Model\Selector;
-use Adshares\Common\Application\Model\Selector\Option;
-use Adshares\Common\Application\Model\Selector\OptionValue;
+use Blockchain-Ads\Common\Application\Dto\Taxonomy\Item\Type;
+use Blockchain-Ads\Common\Application\Dto\Taxonomy\Item\Value;
+use Blockchain-Ads\Common\Application\Model\Selector;
+use Blockchain-Ads\Common\Application\Model\Selector\Option;
+use Blockchain-Ads\Common\Application\Model\Selector\OptionValue;
 use InvalidArgumentException;
 
 use function array_map;

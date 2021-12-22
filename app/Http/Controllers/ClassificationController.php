@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,16 +19,16 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Http\Controllers;
+namespace Blockchain-Ads\Adserver\Http\Controllers;
 
-use Adshares\Adserver\Client\ClassifierExternalClient;
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Mail\BannerClassified;
-use Adshares\Adserver\Models\Banner;
-use Adshares\Adserver\Models\BannerClassification;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Repository\Common\ClassifierExternalRepository;
-use Adshares\Adserver\Services\Common\ClassifierExternalSignatureVerifier;
+use Blockchain-Ads\Adserver\Client\ClassifierExternalClient;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Mail\BannerClassified;
+use Blockchain-Ads\Adserver\Models\Banner;
+use Blockchain-Ads\Adserver\Models\BannerClassification;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Repository\Common\ClassifierExternalRepository;
+use Blockchain-Ads\Adserver\Services\Common\ClassifierExternalSignatureVerifier;
 use DateTime;
 use DateTimeInterface;
 use Illuminate\Http\Request;

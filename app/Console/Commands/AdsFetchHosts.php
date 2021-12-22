@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,20 +21,20 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Ads\AdsClient;
-use Adshares\Ads\Driver\CommandError;
-use Adshares\Ads\Entity\Broadcast;
-use Adshares\Ads\Exception\CommandException;
-use Adshares\Adserver\Console\Locker;
-use Adshares\Adserver\Http\Response\InfoResponse;
-use Adshares\Adserver\Models\NetworkHost;
-use Adshares\Common\Exception\RuntimeException;
-use Adshares\Network\BroadcastableUrl;
-use Adshares\Supply\Application\Dto\Info;
-use Adshares\Supply\Application\Service\DemandClient;
-use Adshares\Supply\Application\Service\Exception\UnexpectedClientResponseException;
+use Blockchain-Ads\Ads\AdsClient;
+use Blockchain-Ads\Ads\Driver\CommandError;
+use Blockchain-Ads\Ads\Entity\Broadcast;
+use Blockchain-Ads\Ads\Exception\CommandException;
+use Blockchain-Ads\Adserver\Console\Locker;
+use Blockchain-Ads\Adserver\Http\Response\InfoResponse;
+use Blockchain-Ads\Adserver\Models\NetworkHost;
+use Blockchain-Ads\Common\Exception\RuntimeException;
+use Blockchain-Ads\Network\BroadcastableUrl;
+use Blockchain-Ads\Supply\Application\Dto\Info;
+use Blockchain-Ads\Supply\Application\Service\DemandClient;
+use Blockchain-Ads\Supply\Application\Service\Exception\UnexpectedClientResponseException;
 use Illuminate\Support\Facades\Log;
 
 class AdsFetchHosts extends BaseCommand
@@ -151,7 +151,7 @@ class AdsFetchHosts extends BaseCommand
 
     private function validateInfo(Info $info, string $address): void
     {
-        if (InfoResponse::ADSHARES_MODULE_NAME !== $info->getModule()) {
+        if (InfoResponse::Blockchain-Ads_MODULE_NAME !== $info->getModule()) {
             throw new RuntimeException(sprintf('Info for invalid module: %s', $info->getModule()));
         }
 

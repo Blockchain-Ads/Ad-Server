@@ -14,7 +14,7 @@
       "basicInformation": {
         "status": 2,
         "name": "Campaign for Education",
-        "targetUrl": "www.adshares.net",
+        "targetUrl": "www.blockchain-ads.com",
         "bidStrategyName": "CPC",
         "bidValue": 0.2,
         "budget": 455,
@@ -48,7 +48,7 @@
         {
           "id": 31987321798,
           "status": 1,
-          "shortHeadline": "Adshares Dashboard Advertisement",
+          "shortHeadline": "Blockchain-Ads Dashboard Advertisement",
           "type": "image",
           "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP3l58naYcoyqfxstOVPyZdlC4gwNCw89YZts9ThIrUZVrbA8i3g",
           "imageSize": "222 KB",
@@ -63,7 +63,7 @@
         {
           "id": 123823187,
           "status": 2,
-          "shortHeadline": "Adshares Website Advertisement",
+          "shortHeadline": "Blockchain-Ads Website Advertisement",
           "type": "image",
           "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP3l58naYcoyqfxstOVPyZdlC4gwNCw89YZts9ThIrUZVrbA8i3g",
           "imageSize": "222 KB",

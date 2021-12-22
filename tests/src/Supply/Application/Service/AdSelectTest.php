@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,18 +21,18 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Tests\Supply\Application\Service;
+namespace Blockchain-Ads\Tests\Supply\Application\Service;
 
-use Adshares\Adserver\Models\NetworkBanner;
-use Adshares\Adserver\Models\NetworkCampaign;
-use Adshares\Adserver\Models\Site;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\Zone;
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Mock\Client\DummyAdSelectClient;
-use Adshares\Supply\Application\Dto\ImpressionContext;
-use Adshares\Supply\Application\Service\AdSelect;
-use Adshares\Supply\Domain\ValueObject\Status;
+use Blockchain-Ads\Adserver\Models\NetworkBanner;
+use Blockchain-Ads\Adserver\Models\NetworkCampaign;
+use Blockchain-Ads\Adserver\Models\Site;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\Zone;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Mock\Client\DummyAdSelectClient;
+use Blockchain-Ads\Supply\Application\Dto\ImpressionContext;
+use Blockchain-Ads\Supply\Application\Service\AdSelect;
+use Blockchain-Ads\Supply\Domain\ValueObject\Status;
 
 class AdSelectTest extends TestCase
 {

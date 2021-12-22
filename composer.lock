@@ -7,11 +7,11 @@
     "content-hash": "e21c0d29b6ae5a4dfa354959918a2ac3",
     "packages": [
         {
-            "name": "adshares/ads-client",
+            "name": "Blockchain-Ads/ads-client",
             "version": "v1.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/adshares/ads-php-client.git",
+                "url": "https://github.com/Blockchain-Ads/ads-php-client.git",
                 "reference": "1c9542054ca5562415ae352ccbcb41dc3f34284d"
             },
             "require": {
@@ -36,12 +36,12 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Adshares\\Ads\\": "src/"
+                    "Blockchain-Ads\\Ads\\": "src/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "Adshares\\Ads\\Tests\\": "tests/"
+                    "Blockchain-Ads\\Ads\\Tests\\": "tests/"
                 }
             },
             "scripts": {
@@ -59,35 +59,35 @@
             ],
             "authors": [
                 {
-                    "name": "Adshares",
-                    "homepage": "https://adshares.pl"
+                    "name": "Blockchain-Ads",
+                    "homepage": "https://Blockchain-Ads.pl"
                 },
                 {
                     "name": "Contributors",
-                    "homepage": "https://github.com/adshares/ads-php-client/graphs/contributors"
+                    "homepage": "https://github.com/Blockchain-Ads/ads-php-client/graphs/contributors"
                 }
             ],
             "description": "PHP client for the ADS blockchain",
-            "homepage": "https://github.com/adshares/ads-php-client",
+            "homepage": "https://github.com/Blockchain-Ads/ads-php-client",
             "keywords": [
                 "ads",
-                "adshares",
+                "Blockchain-Ads",
                 "blockchain",
                 "esc",
                 "php"
             ],
             "support": {
-                "issues": "https://github.com/adshares/ads-php-client/issues",
-                "source": "https://github.com/adshares/ads-php-client"
+                "issues": "https://github.com/Blockchain-Ads/ads-php-client/issues",
+                "source": "https://github.com/Blockchain-Ads/ads-php-client"
             },
             "time": "2021-08-18T13:24:17+00:00"
         },
         {
-            "name": "adshares/fork",
+            "name": "Blockchain-Ads/fork",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/adshares/fork.git",
+                "url": "https://github.com/Blockchain-Ads/fork.git",
                 "reference": "71f49fc9d7dcc21ce7f5d602b73c7ab65016c7bd"
             },
             "require": {
@@ -9702,7 +9702,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "adshares/fork": 20
+        "Blockchain-Ads/fork": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Models\Payment;
-use Adshares\Common\Application\Service\Ads;
-use Adshares\Common\Application\Service\Exception\AdsException;
+use Blockchain-Ads\Adserver\Models\Payment;
+use Blockchain-Ads\Common\Application\Service\Ads;
+use Blockchain-Ads\Common\Application\Service\Exception\AdsException;
 use Illuminate\Database\Eloquent\Collection;
 
 class DemandSendPayments extends BaseCommand
@@ -72,7 +72,7 @@ class DemandSendPayments extends BaseCommand
             return self::STATUS_OK;
         }
 
-        $this->info("Sending $paymentCount payments from " . config('app.adshares_address') . '.');
+        $this->info("Sending $paymentCount payments from " . config('app.Blockchain-Ads_address') . '.');
 
         try {
             $tx = $ads->sendPayments($payments);

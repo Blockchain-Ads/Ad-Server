@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Services\Common;
+namespace Blockchain-Ads\Adserver\Services\Common;
 
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Mail\Newsletter;
-use Adshares\Adserver\Services\Common\Dto\EmailData;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Mail\Newsletter;
+use Blockchain-Ads\Adserver\Services\Common\Dto\EmailData;
 use DateTime;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Mail;

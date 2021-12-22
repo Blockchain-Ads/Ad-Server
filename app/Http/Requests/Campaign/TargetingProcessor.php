@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Requests\Campaign;
+namespace Blockchain-Ads\Adserver\Http\Requests\Campaign;
 
-use Adshares\Adserver\ViewModel\OptionsSelector;
-use Adshares\Common\Application\Model\Selector;
+use Blockchain-Ads\Adserver\ViewModel\OptionsSelector;
+use Blockchain-Ads\Common\Application\Model\Selector;
 
 class TargetingProcessor
 {

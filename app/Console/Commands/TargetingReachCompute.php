@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Models\NetworkHost;
-use Adshares\Adserver\Services\Advertiser\NetworkVectorComputer;
+use Blockchain-Ads\Adserver\Models\NetworkHost;
+use Blockchain-Ads\Adserver\Services\Advertiser\NetworkVectorComputer;
 use DateInterval;
 use DateTimeImmutable;
 use Exception;
@@ -83,7 +83,7 @@ class TargetingReachCompute extends BaseCommand
 
     private function fetchAdserverId(): ?int
     {
-        if (null === ($networkHost = NetworkHost::fetchByAddress((string)config('app.adshares_address')))) {
+        if (null === ($networkHost = NetworkHost::fetchByAddress((string)config('app.Blockchain-Ads_address')))) {
             return null;
         }
 

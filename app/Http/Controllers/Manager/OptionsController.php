@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,15 +21,15 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Http\Controllers\Manager;
 
-use Adshares\Adserver\Client\Mapper\AbstractFilterMapper;
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Http\Requests\TargetingReachRequest;
-use Adshares\Adserver\Repository\Common\ClassifierExternalRepository;
-use Adshares\Adserver\Services\Advertiser\TargetingReachComputer;
-use Adshares\Adserver\ViewModel\OptionsSelector;
-use Adshares\Common\Application\Service\ConfigurationRepository;
+use Blockchain-Ads\Adserver\Client\Mapper\AbstractFilterMapper;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Http\Requests\TargetingReachRequest;
+use Blockchain-Ads\Adserver\Repository\Common\ClassifierExternalRepository;
+use Blockchain-Ads\Adserver\Services\Advertiser\TargetingReachComputer;
+use Blockchain-Ads\Adserver\ViewModel\OptionsSelector;
+use Blockchain-Ads\Common\Application\Service\ConfigurationRepository;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
 

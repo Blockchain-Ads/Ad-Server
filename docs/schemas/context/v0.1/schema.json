@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "urn:x-adshares:context:0.1",
+  "$id": "urn:x-Blockchain-Ads:context:0.1",
   "required": [
     "data"
   ],

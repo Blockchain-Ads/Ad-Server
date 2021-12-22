@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,26 +19,26 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Http\Controllers\Manager;
+namespace Blockchain-Ads\Adserver\Http\Controllers\Manager;
 
-use Adshares\Ads\Util\AdsValidator;
-use Adshares\Adserver\Facades\DB;
-use Adshares\Adserver\Http\Controller;
-use Adshares\Adserver\Jobs\AdsSendOne;
-use Adshares\Adserver\Mail\WithdrawalApproval;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Models\Token;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\UserLedgerEntry;
-use Adshares\Adserver\Repository\Common\MySqlQueryBuilder;
-use Adshares\Adserver\Services\AdsExchange;
-use Adshares\Adserver\Services\NowPayments;
-use Adshares\Adserver\Utilities\AdsUtils;
-use Adshares\Common\Application\Service\Exception\ExchangeRateNotAvailableException;
-use Adshares\Common\Domain\ValueObject\AccountId;
-use Adshares\Common\Domain\ValueObject\SecureUrl;
-use Adshares\Common\Exception\InvalidArgumentException;
-use Adshares\Common\Infrastructure\Service\ExchangeRateReader;
+use Blockchain-Ads\Ads\Util\AdsValidator;
+use Blockchain-Ads\Adserver\Facades\DB;
+use Blockchain-Ads\Adserver\Http\Controller;
+use Blockchain-Ads\Adserver\Jobs\AdsSendOne;
+use Blockchain-Ads\Adserver\Mail\WithdrawalApproval;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Models\Token;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\UserLedgerEntry;
+use Blockchain-Ads\Adserver\Repository\Common\MySqlQueryBuilder;
+use Blockchain-Ads\Adserver\Services\AdsExchange;
+use Blockchain-Ads\Adserver\Services\NowPayments;
+use Blockchain-Ads\Adserver\Utilities\AdsUtils;
+use Blockchain-Ads\Common\Application\Service\Exception\ExchangeRateNotAvailableException;
+use Blockchain-Ads\Common\Domain\ValueObject\AccountId;
+use Blockchain-Ads\Common\Domain\ValueObject\SecureUrl;
+use Blockchain-Ads\Common\Exception\InvalidArgumentException;
+use Blockchain-Ads\Common\Infrastructure\Service\ExchangeRateReader;
 use DateTime;
 use DateTimeInterface;
 use DateTimeZone;
@@ -168,7 +168,7 @@ class WalletController extends Controller
     private function getAdServerAdsAddress(): AccountId
     {
         try {
-            return new AccountId(config('app.adshares_address'));
+            return new AccountId(config('app.Blockchain-Ads_address'));
         } catch (InvalidArgumentException $e) {
             Log::error(sprintf('Invalid ADS address is set: %s', $e->getMessage()));
 

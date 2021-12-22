@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,11 +21,11 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Mock\Client;
+namespace Blockchain-Ads\Mock\Client;
 
-use Adshares\Adserver\Utilities\DateUtils;
-use Adshares\Common\Application\Dto\ExchangeRate;
-use Adshares\Common\Application\Service\ExchangeRateRepository;
+use Blockchain-Ads\Adserver\Utilities\DateUtils;
+use Blockchain-Ads\Common\Application\Dto\ExchangeRate;
+use Blockchain-Ads\Common\Application\Service\ExchangeRateRepository;
 use DateTime;
 
 class DummyExchangeRateRepository implements ExchangeRateRepository

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Console\Commands;
+namespace Blockchain-Ads\Adserver\Console\Commands;
 
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Utilities\SqlUtils;
-use Adshares\Common\Domain\ValueObject\Email;
-use Adshares\Common\Exception\RuntimeException;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Utilities\SqlUtils;
+use Blockchain-Ads\Common\Domain\ValueObject\Email;
+use Blockchain-Ads\Common\Exception\RuntimeException;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Hash;
 
@@ -54,7 +54,7 @@ class CreateAdminUserCommand extends BaseCommand
             $password = env('TMP_ADMIN_PASSWORD');
         }
 
-        $input = $this->ask('Please type an admin email', config('app.adshares_operator_email'));
+        $input = $this->ask('Please type an admin email', config('app.Blockchain-Ads_operator_email'));
 
         if (!$input) {
             $this->error('Email address cannot be empty');

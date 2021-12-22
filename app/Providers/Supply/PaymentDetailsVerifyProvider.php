@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,12 +21,12 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Providers\Supply;
+namespace Blockchain-Ads\Adserver\Providers\Supply;
 
-use Adshares\Common\Application\Service\Ads;
-use Adshares\Common\Application\Service\SignatureVerifier;
-use Adshares\Common\Infrastructure\Service\SodiumCompatSignatureVerifier;
-use Adshares\Demand\Application\Service\PaymentDetailsVerify;
+use Blockchain-Ads\Common\Application\Service\Ads;
+use Blockchain-Ads\Common\Application\Service\SignatureVerifier;
+use Blockchain-Ads\Common\Infrastructure\Service\SodiumCompatSignatureVerifier;
+use Blockchain-Ads\Demand\Application\Service\PaymentDetailsVerify;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 

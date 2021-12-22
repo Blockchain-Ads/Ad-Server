@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,11 +19,11 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Events;
+namespace Blockchain-Ads\Adserver\Events;
 
-use Adshares\Adserver\Models\Notification;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Models\UserSettings;
+use Blockchain-Ads\Adserver\Models\Notification;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Models\UserSettings;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 

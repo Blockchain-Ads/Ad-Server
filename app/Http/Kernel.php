@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -19,15 +19,15 @@
  * along with AdServer. If not, see <https://www.gnu.org/licenses/>
  */
 
-namespace Adshares\Adserver\Http;
+namespace Blockchain-Ads\Adserver\Http;
 
-use Adshares\Adserver\Http\Middleware\CamelizeJsonResponse;
-use Adshares\Adserver\Http\Middleware\Impersonation;
-use Adshares\Adserver\Http\Middleware\RequireAdminAccess;
-use Adshares\Adserver\Http\Middleware\RequireGuestAccess;
-use Adshares\Adserver\Http\Middleware\SnakizeRequest;
-use Adshares\Adserver\Http\Middleware\TrustProxies;
-use Adshares\Adserver\Utilities\DatabaseConfigReader;
+use Blockchain-Ads\Adserver\Http\Middleware\CamelizeJsonResponse;
+use Blockchain-Ads\Adserver\Http\Middleware\Impersonation;
+use Blockchain-Ads\Adserver\Http\Middleware\RequireAdminAccess;
+use Blockchain-Ads\Adserver\Http\Middleware\RequireGuestAccess;
+use Blockchain-Ads\Adserver\Http\Middleware\SnakizeRequest;
+use Blockchain-Ads\Adserver\Http\Middleware\TrustProxies;
+use Blockchain-Ads\Adserver\Utilities\DatabaseConfigReader;
 use Barryvdh\Cors\HandleCors;
 use Illuminate\Auth\Middleware\Authenticate;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;

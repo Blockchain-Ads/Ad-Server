@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,16 +21,16 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Services\Common;
+namespace Blockchain-Ads\Adserver\Tests\Services\Common;
 
-use Adshares\Ads\AdsClient;
-use Adshares\Ads\Command\GetLogCommand;
-use Adshares\Ads\Exception\CommandException;
-use Adshares\Ads\Response\GetLogResponse;
-use Adshares\Adserver\Models\AdsPayment;
-use Adshares\Adserver\Models\Config;
-use Adshares\Adserver\Services\Common\AdsLogReader;
-use Adshares\Adserver\Tests\TestCase;
+use Blockchain-Ads\Ads\AdsClient;
+use Blockchain-Ads\Ads\Command\GetLogCommand;
+use Blockchain-Ads\Ads\Exception\CommandException;
+use Blockchain-Ads\Ads\Response\GetLogResponse;
+use Blockchain-Ads\Adserver\Models\AdsPayment;
+use Blockchain-Ads\Adserver\Models\Config;
+use Blockchain-Ads\Adserver\Services\Common\AdsLogReader;
+use Blockchain-Ads\Adserver\Tests\TestCase;
 use DateTime;
 use DateTimeInterface;
 

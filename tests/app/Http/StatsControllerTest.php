@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018-2021 Adshares sp. z o.o.
+ * Copyright (c) 2021 Blockchain-Ads Co. Ltd
  *
  * This file is part of AdServer
  *
@@ -21,13 +21,13 @@
 
 declare(strict_types=1);
 
-namespace Adshares\Adserver\Tests\Http;
+namespace Blockchain-Ads\Adserver\Tests\Http;
 
-use Adshares\Adserver\Models\Campaign;
-use Adshares\Adserver\Models\User;
-use Adshares\Adserver\Tests\TestCase;
-use Adshares\Advertiser\Repository\StatsRepository;
-use Adshares\Tests\Advertiser\Repository\DummyStatsRepository;
+use Blockchain-Ads\Adserver\Models\Campaign;
+use Blockchain-Ads\Adserver\Models\User;
+use Blockchain-Ads\Adserver\Tests\TestCase;
+use Blockchain-Ads\Advertiser\Repository\StatsRepository;
+use Blockchain-Ads\Tests\Advertiser\Repository\DummyStatsRepository;
 use DateTime;
 use DateTimeInterface;
 use Symfony\Component\HttpFoundation\Response;
